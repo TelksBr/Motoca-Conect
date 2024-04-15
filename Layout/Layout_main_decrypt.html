@@ -2,911 +2,915 @@
 <html class="w-full h-full" lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>VR BRASIL| @TALKERA</title>
+  <title>VR BRASIL| @TALKERA</title>
 
 </head>
 <style>
-    *,
-     :after,
-     :before {
-        box-sizing: border-box;
-        border: 0 solid #e5e7eb
-    }
-    
-     :after,
-     :before {
-        --tw-content: ""
-    }
-    
-    html {
-        line-height: 1.5;
-        -webkit-text-size-adjust: 100%;
-        -moz-tab-size: 4;
-        -o-tab-size: 4;
-        tab-size: 4;
-        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-        font-feature-settings: normal;
-        font-variation-settings: normal
-    }
-    
-    body {
-        margin: 0;
-        line-height: inherit
-    }
-    
-    hr {
-        height: 0;
-        color: inherit;
-        border-top-width: 1px
-    }
-    
-    abbr:where([title]) {
-        -webkit-text-decoration: underline dotted;
-        text-decoration: underline dotted
-    }
-    
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-size: inherit;
-        font-weight: inherit
-    }
-    
-    a {
-        color: inherit;
-        text-decoration: inherit
-    }
-    
-    b,
-    strong {
-        font-weight: bolder
-    }
-    
-    code,
-    kbd,
-    pre,
-    samp {
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-        font-size: 1em
-    }
-    
-    small {
-        font-size: 80%
-    }
-    
-    sub,
-    sup {
-        font-size: 75%;
-        line-height: 0;
-        position: relative;
-        vertical-align: initial
-    }
-    
-    sub {
-        bottom: -.25em
-    }
-    
-    sup {
-        top: -.5em
-    }
-    
-    table {
-        text-indent: 0;
-        border-color: inherit;
-        border-collapse: collapse
-    }
-    
-    button,
-    input,
-    optgroup,
-    select,
-    textarea {
-        font-family: inherit;
-        font-feature-settings: inherit;
-        font-variation-settings: inherit;
-        font-size: 100%;
-        font-weight: inherit;
-        line-height: inherit;
-        color: inherit;
-        margin: 0;
-        padding: 0
-    }
-    
-    button,
-    select {
-        text-transform: none
-    }
-    
-    [type=button],
-    [type=reset],
-    [type=submit],
-    button {
-        -webkit-appearance: button;
-        background-color: initial;
-        background-image: none
-    }
-    
-     :-moz-focusring {
-        outline: auto
-    }
-    
-     :-moz-ui-invalid {
-        box-shadow: none
-    }
-    
-    progress {
-        vertical-align: initial
-    }
-    
-     ::-webkit-inner-spin-button,
-     ::-webkit-outer-spin-button {
-        height: auto
-    }
-    
-    [type=search] {
-        -webkit-appearance: textfield;
-        outline-offset: -2px
-    }
-    
-     ::-webkit-search-decoration {
-        -webkit-appearance: none
-    }
-    
-     ::-webkit-file-upload-button {
-        -webkit-appearance: button;
-        font: inherit
-    }
-    
-    summary {
-        display: list-item
-    }
-    
-    blockquote,
-    dd,
-    dl,
-    figure,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    hr,
-    p,
-    pre {
-        margin: 0
-    }
-    
-    fieldset {
-        margin: 0
-    }
-    
-    fieldset,
-    legend {
-        padding: 0
-    }
-    
-    menu,
-    ol,
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0
-    }
-    
-    dialog {
-        padding: 0
-    }
-    
-    textarea {
-        resize: vertical
-    }
-    
-    input::-moz-placeholder,
-    textarea::-moz-placeholder {
-        opacity: 1;
-        color: #e5e7eb
-    }
-    
-    input::placeholder,
-    textarea::placeholder {
-        opacity: 1;
-        color: #e5e7eb
-    }
-    
-    [role=button],
-    button {
-        cursor: pointer
-    }
-    
-     :disabled {
-        cursor: default
-    }
-    
-    audio,
-    canvas,
-    embed,
-    iframe,
-    img,
-    object,
-    svg,
-    video {
-        display: block;
-        vertical-align: middle
-    }
-    
-    img,
-    video {
-        max-width: 100%;
-        height: auto
-    }
-    
-    [hidden] {
-        display: none
-    }
-    
-    *,
-     ::backdrop,
-     :after,
-     :before {
-        --tw-border-spacing-x: 0;
-        --tw-border-spacing-y: 0;
-        --tw-translate-x: 0;
-        --tw-translate-y: 0;
-        --tw-rotate: 0;
-        --tw-skew-x: 0;
-        --tw-skew-y: 0;
-        --tw-scale-x: 1;
-        --tw-scale-y: 1;
-        --tw-pan-x: ;
-        --tw-pan-y: ;
-        --tw-pinch-zoom: ;
-        --tw-scroll-snap-strictness: proximity;
-        --tw-gradient-from-position: ;
-        --tw-gradient-via-position: ;
-        --tw-gradient-to-position: ;
-        --tw-ordinal: ;
-        --tw-slashed-zero: ;
-        --tw-numeric-figure: ;
-        --tw-numeric-spacing: ;
-        --tw-numeric-fraction: ;
-        --tw-ring-inset: ;
-        --tw-ring-offset-width: 0px;
-        --tw-ring-offset-color: #fff;
-        --tw-ring-color: #3b82f680;
-        --tw-ring-offset-shadow: 0 0 #0000;
-        --tw-ring-shadow: 0 0 #0000;
-        --tw-shadow: 0 0 #0000;
-        --tw-shadow-colored: 0 0 #0000;
-        --tw-blur: ;
-        --tw-brightness: ;
-        --tw-contrast: ;
-        --tw-grayscale: ;
-        --tw-hue-rotate: ;
-        --tw-invert: ;
-        --tw-saturate: ;
-        --tw-sepia: ;
-        --tw-drop-shadow: ;
-        --tw-backdrop-blur: ;
-        --tw-backdrop-brightness: ;
-        --tw-backdrop-contrast: ;
-        --tw-backdrop-grayscale: ;
-        --tw-backdrop-hue-rotate: ;
-        --tw-backdrop-invert: ;
-        --tw-backdrop-opacity: ;
-        --tw-backdrop-saturate: ;
-        --tw-backdrop-sepia:
-    }
-    
-    .absolute {
-        position: absolute
-    }
-    
-    .relative {
-        position: relative
-    }
-    
-    .bottom-1 {
-        bottom: .25rem
-    }
-    
-    .left-1\/2 {
-        left: 50%
-    }
-    
-    .right-1 {
-        right: .25rem
-    }
-    
-    .top-1 {
-        top: .25rem
-    }
-    
-    .my-3 {
-        margin-top: .75rem;
-        margin-bottom: .75rem
-    }
-    
-    .mb-1 {
-        margin-bottom: .25rem
-    }
-    
-    .mb-2 {
-        margin-bottom: .5rem
-    }
-    
-    .mb-3 {
-        margin-bottom: .75rem
-    }
-    
-    .ml-auto {
-        margin-left: auto
-    }
-    
-    .mt-14 {
-        margin-top: 3.5rem
-    }
-    
-    .mt-2 {
-        margin-top: .5rem
-    }
-    
-    .mt-2\.5 {
-        margin-top: .625rem
-    }
-    
-    .mt-3 {
-        margin-top: .75rem
-    }
-    
-    .mt-5 {
-        margin-top: 1.25rem
-    }
-    
-    .mt-8 {
-        margin-top: 2rem
-    }
-    
-    .mt-auto {
-        margin-top: auto
-    }
-    
-    .block {
-        display: block
-    }
-    
-    .flex {
-        display: flex
-    }
-    
-    .grid {
-        display: grid
-    }
-    
-    .hidden {
-        display: none
-    }
-    
-    .h-1\/5 {
-        height: 20%
-    }
-    
-    .h-10 {
-        height: 2.5rem
-    }
-    
-    .h-12 {
-        height: 3rem
-    }
-    
-    .h-2\/3 {
-        height: 66.666667%
-    }
-    
-    .h-2\/4 {
-        height: 50%
-    }
-    
-    .h-20 {
-        height: 5rem
-    }
-    
-    .h-3 {
-        height: .75rem
-    }
-    
-    .h-4 {
-        height: 1rem
-    }
-    
-    .h-5 {
-        height: 1.25rem
-    }
-    
-    .h-6 {
-        height: 1.5rem
-    }
-    
-    .h-8 {
-        height: 2rem
-    }
-    
-    .h-9 {
-        height: 2.25rem
-    }
-    
-    .h-\[100\%\] {
-        height: 100%
-    }
-    
-    .h-\[40px\] {
-        height: 40px
-    }
-    
-    .h-\[90\%\] {
-        height: 90%
-    }
-    
-    .h-\[calc\(100\%-160px\)\] {
-        height: calc(100% - 160px)
-    }
-    
-    .h-auto {
-        height: auto
-    }
-    
-    .h-full {
-        height: 100%
-    }
-    
-    .max-h-8 {
-        max-height: 2rem
-    }
-    
-    .max-h-\[10\%\] {
-        max-height: 10%
-    }
-    
-    .max-h-\[66\.666667\%\] {
-        max-height: 66.666667%
-    }
-    
-    .min-h-\[40px\] {
-        min-height: 40px
-    }
-    
-    .w-10 {
-        width: 2.5rem
-    }
-    
-    .w-11\/12 {
-        width: 91.666667%
-    }
-    
-    .w-14 {
-        width: 3.5rem
-    }
-    
-    .w-2\/4 {
-        width: 50%
-    }
-    
-    .w-20 {
-        width: 5rem
-    }
-    
-    .w-4 {
-        width: 1rem
-    }
-    
-    .w-4\/5 {
-        width: 80%
-    }
-    
-    .w-5 {
-        width: 1.25rem
-    }
-    
-    .w-5\/6 {
-        width: 83.333333%
-    }
-    
-    .w-6 {
-        width: 1.5rem
-    }
-    
-    .w-8 {
-        width: 2rem
-    }
-    
-    .w-\[40px\] {
-        width: 40px
-    }
-    
-    .w-\[calc\(100\%-30px\)\] {
-        width: calc(100% - 30px)
-    }
-    
-    .w-\[calc\(100\%-40px\)\] {
-        width: calc(100% - 40px)
-    }
-    
-    .w-auto {
-        width: auto
-    }
-    
-    .w-full {
-        width: 100%
-    }
-    
-    .flex-1 {
-        flex: 1 1 0%
-    }
-    
-    .-translate-x-1\/2 {
-        --tw-translate-x: -50%
-    }
-    
-    .-translate-x-1\/2,
-    .-translate-x-full {
-        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-    }
-    
-    .-translate-x-full {
-        --tw-translate-x: -100%
-    }
-    
-    .-translate-y-1\/2 {
-        --tw-translate-y: -50%
-    }
-    
-    .-translate-y-1\/2,
-    .scale-0 {
-        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-    }
-    
-    .scale-0 {
-        --tw-scale-x: 0;
-        --tw-scale-y: 0
-    }
-    
-    .transform {
-        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-    }
-    
-    .cursor-none {
-        cursor: none
-    }
-    
-    .grid-cols-2 {
-        grid-template-columns: repeat(2, minmax(0, 1fr))
-    }
-    
-    .flex-col {
-        flex-direction: column
-    }
-    
-    .items-end {
-        align-items: flex-end
-    }
-    
-    .items-center {
-        align-items: center
-    }
-    
-    .justify-center {
-        justify-content: center
-    }
-    
-    .justify-between {
-        justify-content: space-between
-    }
-    
-    .justify-items-center {
-        justify-items: center
-    }
-    
-    .gap-1 {
-        gap: .25rem
-    }
-    
-    .gap-2 {
-        gap: .5rem
-    }
-    
-    .gap-3 {
-        gap: .75rem
-    }
-    
-    .gap-5 {
-        gap: 1.25rem
-    }
-    
-    .overflow-auto {
-        overflow: auto
-    }
-    
-    .overflow-hidden,
-    .truncate {
-        overflow: hidden
-    }
-    
-    .truncate {
-        text-overflow: ellipsis;
-        white-space: nowrap
-    }
-    
-    .rounded-full {
-        border-radius: 9999px
-    }
-    
-    .rounded-md {
-        border-radius: .375rem
-    }
-    
-    .rounded-t-md {
-        border-top-left-radius: .375rem;
-        border-top-right-radius: .375rem
-    }
-    
-    .border {
-        border-width: 1px
-    }
-    
-    .border-b {
-        border-bottom-width: 1px
-    }
-    
-    .border-\[\#01010342\] {
-        border-color: #afcbe6
-    }
-    
-    .border-\[\#767881\] {
-        --tw-border-opacity: 1;
-        border-color: rgb(118 120 129/var(--tw-border-opacity))
-    }
-    
-    .bg-\[\#070610\] {
-        --tw-bg-opacity: 1;
-        background-color: #2a2a2c
-    }
-    
-    .bg-\[\#0a0c17ab\] {
-        background-color: #5aee6685
-    }
-    
-    .bg-\[\#0c0d18e0\] {
-        /* background: linear-gradient(45deg, rgba(20, 20, 44, 0.863), rgb(27, 27, 0.863), rgba(31, 28, 58, 0.897)); */
-        background-color: #262626
-    }
-    
-    .bg-\[\#121c28\] {
-        background-color: #01180af6
-    }
-    
-    .bg-\[\#14141489\] {
-        background-color: #14141489
-    }
-    
-    .bg-\[\#414cb8\] {
-        --tw-bg-opacity: 1;
-        background-color: rgb(65 76 184/var(--tw-bg-opacity))
-    }
-    
-    .bg-\[\#575e81\] {
-        --tw-bg-opacity: 1;
-        background-color: rgb(87 94 129/var(--tw-bg-opacity))
-    }
-    
-    .bg-red-900 {
-        --tw-bg-opacity: 1;
-        background-color: rgb(127 29 29/var(--tw-bg-opacity))
-    }
-    
-    .bg-transparent {
-        background-color: initial
-    }
-    
-    .bg-gradient-to-r {
-        background-image: linear-gradient(to right, var(--tw-gradient-stops))
-    }
-    
-    .from-\[\#0a0c17ab\] {
-        --tw-gradient-from: #0535d502 var(--tw-gradient-from-position);
-        --tw-gradient-to: #0a0c1700 var(--tw-gradient-to-position);
-        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
-    }
-    
-    .to-transparent {
-        --tw-gradient-to: #0000 var(--tw-gradient-to-position)
-    }
-    
-    .stroke-\[\#FFFFFF\],
-    .stroke-white {
-        stroke: #5A8DEE
-    }
-    
-    .p-2 {
-        padding: .5rem
-    }
-    
-    .px-1 {
-        padding-left: .25rem;
-        padding-right: .25rem
-    }
-    
-    .px-2 {
-        padding-left: .5rem;
-        padding-right: .5rem
-    }
-    
-    .px-3 {
-        padding-left: .75rem;
-        padding-right: .75rem
-    }
-    
-    .px-\[10\%\] {
-        padding-left: 10%;
-        padding-right: 10%
-    }
-    
-    .px-\[10px\] {
-        padding-left: 10px;
-        padding-right: 10px
-    }
-    
-    .py-2 {
-        padding-top: .5rem;
-        padding-bottom: .5rem
-    }
-    
-    .py-2\.5 {
-        padding-top: .625rem;
-        padding-bottom: .625rem
-    }
-    
-    .pb-\[30px\] {
-        padding-bottom: 30px
-    }
-    
-    .pl-1 {
-        padding-left: .25rem
-    }
-    
-    .pr-6 {
-        padding-right: 1.5rem
-    }
-    
-    .pt-\[10px\] {
-        padding-top: 10px
-    }
-    
-    .text-center {
-        text-align: center
-    }
-    
-    .text-\[0\.5rem\] {
-        font-size: .5rem
-    }
-    
-    .text-\[0\.65rem\] {
-        font-size: .65rem
-    }
-    
-    .text-\[0\.6rem\] {
-        font-size: .6rem
-    }
-    
-    .text-lg {
-        font-size: 1.125rem;
-        line-height: 1.75rem
-    }
-    
-    .text-sm {
-        font-size: .875rem;
-        line-height: 1.25rem
-    }
-    
-    .text-xs {
-        font-size: .75rem;
-        line-height: 1rem
-    }
-    
-    .font-medium {
-        font-weight: 500
-    }
-    
-    .leading-7 {
-        line-height: 1.75rem
-    }
-    
-    .text-\[\#11c9ff\] {
-        --tw-text-opacity: 1;
-        color: rgb(17 201 255/var(--tw-text-opacity))
-    }
-    
-    .text-\[\#767881\] {
-        --tw-text-opacity: 1;
-        color: rgb(118 120 129/var(--tw-text-opacity))
-    }
-    
-    .text-\[\#7d7f81\] {
-        --tw-text-opacity: 1;
-        color: #FFFFFF
-    }
-    
-    .text-\[\#FF0000\] {
-        --tw-text-opacity: 1;
-        color: rgb(255 0 0/var(--tw-text-opacity))
-    }
-    
-    .text-\[\#FFFFFF\],
-    .text-white {
-        --tw-text-opacity: 1;
-        color: #FFFFFF;
-    }
-    
-    .shadow-\[0px_0px_10px_0px_rgba\(18\2c 22\2c 34\2c 1\)\] {
-        --tw-shadow: 0px 0px 10px 0px #121622;
-        --tw-shadow-colored: 0px 0px 10px 0px var(--tw-shadow-color);
-        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
-    }
-    
-    .outline-none {
-        outline: 2px solid #0000;
-        outline-offset: 2px
-    }
-    
-    .transition-\[max-height\] {
-        transition-property: max-height;
-        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-        transition-duration: .15s
-    }
-    
-    .transition-all {
-        transition-property: all;
-        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-        transition-duration: .15s
-    }
-    
-    .duration-1000 {
-        transition-duration: 1s
-    }
+  *,
+  :after,
+  :before {
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb
+  }
+
+  :after,
+  :before {
+    --tw-content: ""
+  }
+
+  html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-feature-settings: normal;
+    font-variation-settings: normal
+  }
+
+  body {
+    margin: 0;
+    line-height: inherit
+  }
+
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px
+  }
+
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: inherit
+  }
+
+  a {
+    color: inherit;
+    text-decoration: inherit
+  }
+
+  b,
+  strong {
+    font-weight: bolder
+  }
+
+  code,
+  kbd,
+  pre,
+  samp {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    font-size: 1em
+  }
+
+  small {
+    font-size: 80%
+  }
+
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: initial
+  }
+
+  sub {
+    bottom: -.25em
+  }
+
+  sup {
+    top: -.5em
+  }
+
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse
+  }
+
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0
+  }
+
+  button,
+  select {
+    text-transform: none
+  }
+
+  [type=button],
+  [type=reset],
+  [type=submit],
+  button {
+    -webkit-appearance: button;
+    background-color: initial;
+    background-image: none
+  }
+
+  :-moz-focusring {
+    outline: auto
+  }
+
+  :-moz-ui-invalid {
+    box-shadow: none
+  }
+
+  progress {
+    vertical-align: initial
+  }
+
+  ::-webkit-inner-spin-button,
+  ::-webkit-outer-spin-button {
+    height: auto
+  }
+
+  [type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+  }
+
+  ::-webkit-search-decoration {
+    -webkit-appearance: none
+  }
+
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+  }
+
+  summary {
+    display: list-item
+  }
+
+  blockquote,
+  dd,
+  dl,
+  figure,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  hr,
+  p,
+  pre {
+    margin: 0
+  }
+
+  fieldset {
+    margin: 0
+  }
+
+  fieldset,
+  legend {
+    padding: 0
+  }
+
+  menu,
+  ol,
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+  }
+
+  dialog {
+    padding: 0
+  }
+
+  textarea {
+    resize: vertical
+  }
+
+  input::-moz-placeholder,
+  textarea::-moz-placeholder {
+    opacity: 1;
+    color: #e5e7eb
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    opacity: 1;
+    color: #e5e7eb
+  }
+
+  [role=button],
+  button {
+    cursor: pointer
+  }
+
+  :disabled {
+    cursor: default
+  }
+
+  audio,
+  canvas,
+  embed,
+  iframe,
+  img,
+  object,
+  svg,
+  video {
+    display: block;
+    vertical-align: middle
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    height: auto
+  }
+
+  [hidden] {
+    display: none
+  }
+
+  *,
+  ::backdrop,
+  :after,
+  :before {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #3b82f680;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia:
+  }
+
+  .absolute {
+    position: absolute
+  }
+
+  .relative {
+    position: relative
+  }
+
+  .bottom-1 {
+    bottom: .25rem
+  }
+
+  .left-1\/2 {
+    left: 50%
+  }
+
+  .right-1 {
+    right: .25rem
+  }
+
+  .top-1 {
+    top: .25rem
+  }
+
+  .my-3 {
+    margin-top: .75rem;
+    margin-bottom: .75rem
+  }
+
+  .mb-1 {
+    margin-bottom: .25rem
+  }
+
+  .mb-2 {
+    margin-bottom: .5rem
+  }
+
+  .mb-3 {
+    margin-bottom: .75rem
+  }
+
+  .ml-auto {
+    margin-left: auto
+  }
+
+  .mt-14 {
+    margin-top: 3.5rem
+  }
+
+  .mt-2 {
+    margin-top: .5rem
+  }
+
+  .mt-2\.5 {
+    margin-top: .625rem
+  }
+
+  .mt-3 {
+    margin-top: .75rem
+  }
+
+  .mt-5 {
+    margin-top: 1.25rem
+  }
+
+  .mt-8 {
+    margin-top: 2rem
+  }
+
+  .mt-auto {
+    margin-top: auto
+  }
+
+  .block {
+    display: block
+  }
+
+  .flex {
+    display: flex
+  }
+
+  .grid {
+    display: grid
+  }
+
+  .hidden {
+    display: none
+  }
+
+  .h-1\/5 {
+    height: 20%
+  }
+
+  .h-10 {
+    height: 2.5rem
+  }
+
+  .h-12 {
+    height: 3rem
+  }
+
+  .h-2\/3 {
+    height: 66.666667%
+  }
+
+  .h-2\/4 {
+    height: 50%
+  }
+
+  .h-20 {
+    height: 5rem
+  }
+
+  .h-3 {
+    height: .75rem
+  }
+
+  .h-4 {
+    height: 1rem
+  }
+
+  .h-5 {
+    height: 1.25rem
+  }
+
+  .h-6 {
+    height: 1.5rem
+  }
+
+  .h-8 {
+    height: 2rem
+  }
+
+  .h-9 {
+    height: 2.25rem
+  }
+
+  .h-\[100\%\] {
+    height: 100%
+  }
+
+  .h-\[40px\] {
+    height: 40px
+  }
+
+  .h-\[90\%\] {
+    height: 90%
+  }
+
+  .h-\[calc\(100\%-160px\)\] {
+    height: calc(100% - 160px)
+  }
+
+  .h-auto {
+    height: auto
+  }
+
+  .h-full {
+    height: 100%
+  }
+
+  .max-h-8 {
+    max-height: 2rem
+  }
+
+  .max-h-\[10\%\] {
+    max-height: 10%
+  }
+
+  .max-h-\[66\.666667\%\] {
+    max-height: 66.666667%
+  }
+
+  .min-h-\[40px\] {
+    min-height: 40px
+  }
+
+  .w-10 {
+    width: 2.5rem
+  }
+
+  .w-11\/12 {
+    width: 91.666667%
+  }
+
+  .w-14 {
+    width: 3.5rem
+  }
+
+  .w-2\/4 {
+    width: 50%
+  }
+
+  .w-20 {
+    width: 5rem
+  }
+
+  .w-4 {
+    width: 1rem
+  }
+
+  .w-4\/5 {
+    width: 80%
+  }
+
+  .w-5 {
+    width: 1.25rem
+  }
+
+  .w-5\/6 {
+    width: 83.333333%
+  }
+
+  .w-6 {
+    width: 1.5rem
+  }
+
+  .w-8 {
+    width: 2rem
+  }
+
+  .w-\[40px\] {
+    width: 40px
+  }
+
+  .w-\[calc\(100\%-30px\)\] {
+    width: calc(100% - 30px)
+  }
+
+  .w-\[calc\(100\%-40px\)\] {
+    width: calc(100% - 40px)
+  }
+
+  .w-auto {
+    width: auto
+  }
+
+  .w-full {
+    width: 100%
+  }
+
+  .flex-1 {
+    flex: 1 1 0%
+  }
+
+  .-translate-x-1\/2 {
+    --tw-translate-x: -50%
+  }
+
+  .-translate-x-1\/2,
+  .-translate-x-full {
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+  }
+
+  .-translate-x-full {
+    --tw-translate-x: -100%
+  }
+
+  .-translate-y-1\/2 {
+    --tw-translate-y: -50%
+  }
+
+  .-translate-y-1\/2,
+  .scale-0 {
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+  }
+
+  .scale-0 {
+    --tw-scale-x: 0;
+    --tw-scale-y: 0
+  }
+
+  .transform {
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+  }
+
+  .cursor-none {
+    cursor: none
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+  }
+
+  .flex-col {
+    flex-direction: column
+  }
+
+  .items-end {
+    align-items: flex-end
+  }
+
+  .items-center {
+    align-items: center
+  }
+
+  .justify-center {
+    justify-content: center
+  }
+
+  .justify-between {
+    justify-content: space-between
+  }
+
+  .justify-items-center {
+    justify-items: center
+  }
+
+  .gap-1 {
+    gap: .25rem
+  }
+
+  .gap-2 {
+    gap: .5rem
+  }
+
+  .gap-3 {
+    gap: .75rem
+  }
+
+  .gap-5 {
+    gap: 1.25rem
+  }
+
+  .overflow-auto {
+    overflow: auto
+  }
+
+  .overflow-hidden,
+  .truncate {
+    overflow: hidden
+  }
+
+  .truncate {
+    text-overflow: ellipsis;
+    white-space: nowrap
+  }
+
+  .rounded-full {
+    border-radius: 9999px
+  }
+
+  .rounded-md {
+    border-radius: .375rem
+  }
+
+  .rounded-t-md {
+    border-top-left-radius: .375rem;
+    border-top-right-radius: .375rem
+  }
+
+  .border {
+    border-width: 1px
+  }
+
+  .border-b {
+    border-bottom-width: 1px
+  }
+
+  .border-\[\#01010342\] {
+    border-color: #afcbe6
+  }
+
+  .border-\[\#767881\] {
+    --tw-border-opacity: 1;
+    border-color: rgb(118 120 129/var(--tw-border-opacity))
+  }
+
+  .bg-\[\#070610\] {
+    --tw-bg-opacity: 1;
+    background-color: #2a2a2c
+  }
+
+  .bg-\[\#0a0c17ab\] {
+    background-color: #5aee6685
+  }
+
+  .bg-\[\#0c0d18e0\] {
+    /* background: linear-gradient(45deg, rgba(20, 20, 44, 0.863), rgb(27, 27, 0.863), rgba(31, 28, 58, 0.897)); */
+    background-color: #262626
+  }
+
+  .bg-\[\#121c28\] {
+
+    background-color: #01180af6
+  }
+
+  .bg-\[\#14141489\] {
+    background-color: #14141489
+  }
+
+  .bg-\[\#414cb8\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(65 76 184/var(--tw-bg-opacity))
+  }
+
+  .bg-\[\#575e81\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(87 94 129/var(--tw-bg-opacity))
+  }
+
+  .bg-red-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(127 29 29/var(--tw-bg-opacity))
+  }
+
+  .bg-transparent {
+    background-color: initial
+  }
+
+  .bg-gradient-to-r {
+    background-image: linear-gradient(to right, var(--tw-gradient-stops))
+  }
+
+  .from-\[\#0a0c17ab\] {
+    --tw-gradient-from: #0535d502 var(--tw-gradient-from-position);
+    --tw-gradient-to: #0a0c1700 var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
+  }
+
+  .to-transparent {
+    --tw-gradient-to: #0000 var(--tw-gradient-to-position)
+  }
+
+  .stroke-\[\#FFFFFF\],
+  .stroke-white {
+    stroke: #5A8DEE
+  }
+
+  .p-2 {
+    padding: .5rem
+  }
+
+  .px-1 {
+    padding-left: .25rem;
+    padding-right: .25rem
+  }
+
+  .px-2 {
+    padding-left: .5rem;
+    padding-right: .5rem
+  }
+
+  .px-3 {
+    padding-left: .75rem;
+    padding-right: .75rem
+  }
+
+  .px-\[10\%\] {
+    padding-left: 10%;
+    padding-right: 10%
+  }
+
+  .px-\[10px\] {
+    padding-left: 10px;
+    padding-right: 10px
+  }
+
+  .py-2 {
+    padding-top: .5rem;
+    padding-bottom: .5rem
+  }
+
+  .py-2\.5 {
+    padding-top: .625rem;
+    padding-bottom: .625rem
+  }
+
+  .pb-\[30px\] {
+    padding-bottom: 30px
+  }
+
+  .pl-1 {
+    padding-left: .25rem
+  }
+
+  .pr-6 {
+    padding-right: 1.5rem
+  }
+
+  .pt-\[10px\] {
+    padding-top: 10px
+  }
+
+  .text-center {
+    text-align: center
+  }
+
+  .text-\[0\.5rem\] {
+    font-size: .5rem
+  }
+
+  .text-\[0\.65rem\] {
+    font-size: .65rem
+  }
+
+  .text-\[0\.6rem\] {
+    font-size: .6rem
+  }
+
+  .text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem
+  }
+
+  .text-sm {
+    font-size: .875rem;
+    line-height: 1.25rem
+  }
+
+  .text-xs {
+    font-size: .75rem;
+    line-height: 1rem
+  }
+
+  .font-medium {
+    font-weight: 500
+  }
+
+  .leading-7 {
+    line-height: 1.75rem
+  }
+
+  .text-\[\#11c9ff\] {
+    --tw-text-opacity: 1;
+    color: rgb(17 201 255/var(--tw-text-opacity))
+  }
+
+  .text-\[\#767881\] {
+    --tw-text-opacity: 1;
+    color: rgb(118 120 129/var(--tw-text-opacity))
+  }
+
+  .text-\[\#7d7f81\] {
+    --tw-text-opacity: 1;
+    color: #FFFFFF
+  }
+
+  .text-\[\#FF0000\] {
+    --tw-text-opacity: 1;
+    color: rgb(255 0 0/var(--tw-text-opacity))
+  }
+
+  .text-\[\#FFFFFF\],
+  .text-white {
+    --tw-text-opacity: 1;
+    color: #FFFFFF;
+  }
+
+  .shadow-\[0px_0px_10px_0px_rgba\(18\2c 22\2c 34\2c 1\)\] {
+    --tw-shadow: 0px 0px 10px 0px #121622;
+    --tw-shadow-colored: 0px 0px 10px 0px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+  }
+
+  .outline-none {
+    outline: 2px solid #0000;
+    outline-offset: 2px
+  }
+
+  .transition-\[max-height\] {
+    transition-property: max-height;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s
+  }
+
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s
+  }
+
+  .duration-1000 {
+    transition-duration: 1s
+  }
 </style>
 
 <body class="w-full h-full">
-    <main class="w-full h-full flex flex-col relative">
-        <section class="w-full h-full flex flex-col px-[10px] pt-[10px] pb-[30px] overflow-hidden" id="container-home">
-            <section class="flex justify-between items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="text-[#FFFFFF] w-8 h-8" id="open-menu" viewBox="0 0 16 16">
+  <main class="w-full h-full flex flex-col relative">
+    <section class="w-full h-full flex flex-col px-[10px] pt-[10px] pb-[30px] overflow-hidden" id="container-home">
+      <section class="flex justify-between items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="text-[#FFFFFF] w-8 h-8"
+          id="open-menu" viewBox="0 0 16 16">
           <path fill-rule="evenodd"
             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
         </svg>
 
-                <div>
-                    <span class="text-[#FFFFFF] text-sm" id="ip-status"></span>
+        <div>
+          <span class="text-[#FFFFFF] text-sm" id="ip-status"></span>
 
-                </div>
-                <div>
-                    <span class="text-[#FFFFFF] text-sm" id="vpn-status">Inativo</span>
+        </div>
+        <div>
+          <span class="text-[#FFFFFF] text-sm" id="vpn-status">Inativo</span>
 
-                </div>
-            </section>
-
-
-            <section class=" flex justify-center">
-                <img class="w-auto" id="app-logo" src="" alt="logo">
-            </section>
+        </div>
+      </section>
 
 
-            <section class="w-full h-[40px] flex justify-between items-center gap-2 mt-2.5">
-                <button class="w-[calc(100%-40px)] h-full flex items-center justify-between gap-1 px-1 rounded-md cursor-none outline-none bg-[#070610]" id="button-of-list-carrier" type="button" title="Selecionar Configuração">
+      <section class=" flex justify-center">
+        <img class="w-auto" id="app-logo" src="" alt="logo">
+      </section>
+
+
+      <section class="w-full h-[40px] flex justify-between items-center gap-2 mt-2.5">
+        <button
+          class="w-[calc(100%-40px)] h-full flex items-center justify-between gap-1 px-1 rounded-md cursor-none outline-none bg-[#070610]"
+          id="button-of-list-carrier" type="button" title="Selecionar Configuração">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="w-6 h-6 text-[#FFFFFF]"
             viewBox="0 0 16 16">
             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
@@ -921,7 +925,9 @@
           </svg>
         </button>
 
-                <button class="w-[40px] h-full flex items-center justify-center rounded-md cursor-none outline-none bg-[#070610]" id="button-open-checkuser" type="button" title="checkuser">
+        <button
+          class="w-[40px] h-full flex items-center justify-center rounded-md cursor-none outline-none bg-[#070610]"
+          id="button-open-checkuser" type="button" title="checkuser">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="text-[#FFFFFF]"
             viewBox="0 0 16 16">
             <path
@@ -930,25 +936,34 @@
               d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
           </svg>
         </button>
-            </section>
+      </section>
 
-            <section class="w-full h-auto flex flex-col items-center gap-3 mt-2.5 py-2.5 rounded-md" style="background: linear-gradient(45deg, rgba(52, 52, 58, 0.459), rgba(27, 27, 27, 0.274), rgba(13, 12, 22, 0.116)) center center / cover no-repeat;">
-                <h1 class="text-[#7d7f81] text-lg font-medium">Dados de Acesso</h1>
+      <section class="w-full h-auto flex flex-col items-center gap-3 mt-2.5 py-2.5 rounded-md"
+        style="background: linear-gradient(45deg, rgba(52, 52, 58, 0.459), rgba(27, 27, 27, 0.274), rgba(13, 12, 22, 0.116)) center center / cover no-repeat;">
+        <h1 class="text-[#7d7f81] text-lg font-medium">Dados de Acesso</h1>
 
-                <div class="w-11/12 h-9 overflow-hidden border border-[#01010342] rounded-md bg-gradient-to-r from-[#0a0c17ab] to-transparent" id="container-input-username">
-                    <input class="w-full h-full pl-1 outline-none text-[#FFFFFF] bg-transparent" id="input-username" type="text" placeholder="Usuário">
-                </div>
+        <div
+          class="w-11/12 h-9 overflow-hidden border border-[#01010342] rounded-md bg-gradient-to-r from-[#0a0c17ab] to-transparent"
+          id="container-input-username">
+          <input class="w-full h-full pl-1 outline-none text-[#FFFFFF] bg-transparent" id="input-username" type="text"
+            placeholder="Usuário">
+        </div>
 
-                <div class="w-11/12 h-9 flex items-center relative overflow-hidden border border-[#01010342] rounded-md bg-gradient-to-r from-[#0a0c17ab] to-transparent" id="container-input-password">
-                    <input class="w-[calc(100%-30px)] h-full pl-1 outline-none text-[#FFFFFF] bg-transparent" id="input-password" type="password" placeholder="Senha">
+        <div
+          class="w-11/12 h-9 flex items-center relative overflow-hidden border border-[#01010342] rounded-md bg-gradient-to-r from-[#0a0c17ab] to-transparent"
+          id="container-input-password">
+          <input class="w-[calc(100%-30px)] h-full pl-1 outline-none text-[#FFFFFF] bg-transparent" id="input-password"
+            type="password" placeholder="Senha">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="w-5 h-5 absolute right-1 text-[#FFFFFF]" id="eye-view-password" viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE"
+            class="w-5 h-5 absolute right-1 text-[#FFFFFF]" id="eye-view-password" viewBox="0 0 16 16">
             <path
               d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
             <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
           </svg>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="w-5 h-5 absolute right-1 text-[#FFFFFF] hidden" id="eye-not-view-password" viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE"
+            class="w-5 h-5 absolute right-1 text-[#FFFFFF] hidden" id="eye-not-view-password" viewBox="0 0 16 16">
             <path
               d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486z" />
             <path
@@ -957,18 +972,23 @@
               d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708" />
           </svg>
 
-                </div>
+        </div>
 
-                <div class="w-11/12 h-9 hidden items-center relative overflow-hidden border border-[#01010342] rounded-md bg-gradient-to-r from-[#0a0c17ab] to-transparent" id="container-input-uuid">
-                    <input class="w-[calc(100%-30px)] h-full pl-1 outline-none text-[#FFFFFF] bg-transparent" id="input-uuid" type="password" placeholder="UUID">
+        <div
+          class="w-11/12 h-9 hidden items-center relative overflow-hidden border border-[#01010342] rounded-md bg-gradient-to-r from-[#0a0c17ab] to-transparent"
+          id="container-input-uuid">
+          <input class="w-[calc(100%-30px)] h-full pl-1 outline-none text-[#FFFFFF] bg-transparent" id="input-uuid"
+            type="password" placeholder="UUID">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="w-5 h-5 absolute right-1 text-[#FFFFFF]" id="eye-view-uuid" viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE"
+            class="w-5 h-5 absolute right-1 text-[#FFFFFF]" id="eye-view-uuid" viewBox="0 0 16 16">
             <path
               d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
             <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
           </svg>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="w-5 h-5 absolute right-1 text-[#FFFFFF] hidden" id="eye-not-view-uuid" viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE"
+            class="w-5 h-5 absolute right-1 text-[#FFFFFF] hidden" id="eye-not-view-uuid" viewBox="0 0 16 16">
             <path
               d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486z" />
             <path
@@ -976,35 +996,38 @@
             <path
               d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708" />
           </svg>
-                </div>
+        </div>
 
-                <button class="w-11/12 h-9 rounded-md shadow-[0px_0px_10px_0px_rgba(18,22,34,1)] bg-[#0a0c17ab] cursor-none" id="button-vpn-start-stop" type="button" title="conectar ou desconectar vpn">
+        <button class="w-11/12 h-9 rounded-md shadow-[0px_0px_10px_0px_rgba(18,22,34,1)] bg-[#0a0c17ab] cursor-none"
+          id="button-vpn-start-stop" type="button" title="conectar ou desconectar vpn">
           <span class="text-sm font-medium text-[#FFFFFF]" id="status-button-vpn">Conectar</span>
         </button>
-            </section>
+      </section>
 
-            <section class="w-full h-auto grid grid-cols-2 justify-items-center mt-auto py-2.5">
-                <span class="text-[#FFFFFF]">Download</span>
+      <section class="w-full h-auto grid grid-cols-2 justify-items-center mt-auto py-2.5">
+        <span class="text-[#FFFFFF]">Download</span>
 
-                <span class="text-[#FFFFFF]">Upload</span>
+        <span class="text-[#FFFFFF]">Upload</span>
 
-                <span class="text-[#FFFFFF]" id="download-value">0 B/s</span>
+        <span class="text-[#FFFFFF]" id="download-value">0 B/s</span>
 
-                <span class="text-[#FFFFFF]" id="upload-value">0 B/s</span>
-            </section>
+        <span class="text-[#FFFFFF]" id="upload-value">0 B/s</span>
+      </section>
 
-            <section class="w-full h-10 flex items-center justify-center gap-2 mt-auto rounded-md bg-[#070610]" id="button-logs">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="text-[#FFFFFF] w-4 h-4" viewBox="0 0 16 16">
+      <section class="w-full h-10 flex items-center justify-center gap-2 mt-auto rounded-md bg-[#070610]"
+        id="button-logs">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="text-[#FFFFFF] w-4 h-4"
+          viewBox="0 0 16 16">
           <path
             d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5" />
           <path
             d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
         </svg>
 
-                <span class="text-[#FFFFFF] text-sm font-medium">REGISTRO</span>
-            </section>
+        <span class="text-[#FFFFFF] text-sm font-medium">REGISTRO</span>
+      </section>
 
-            <!-- <section class="w-full h-10 flex items-center justify-center gap-2 mt-2.5 bg-[#070610]"
+      <!-- <section class="w-full h-10 flex items-center justify-center gap-2 mt-2.5 bg-[#070610]"
         id="nav-renew"">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5A8DEE"
         class="stroke-[#FFFFFF] w-5 h-5">
@@ -1016,39 +1039,44 @@
 
 
 
-        </section>
+    </section>
 
-        <section class="w-5/6 h-full flex flex-col items-center absolute transition-all bg-[#0c0d18e0] -translate-x-full" id="container-menu">
-            <section class="w-full h-10 flex justify-between items-center px-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="ml-auto text-[#FFFFFF] w-8 h-8" id="hidden-menu" viewBox="0 0 16 16">
+    <section class="w-5/6 h-full flex flex-col items-center absolute transition-all bg-[#0c0d18e0] -translate-x-full"
+      id="container-menu">
+      <section class="w-full h-10 flex justify-between items-center px-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE"
+          class="ml-auto text-[#FFFFFF] w-8 h-8" id="hidden-menu" viewBox="0 0 16 16">
           <path fill-rule="evenodd"
             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
         </svg>
-            </section>
+      </section>
 
-            <section class="w-full h-20 flex justify-center items-center mt-5">
-                <div class="w-20 h-20 flex justify-center items-center rounded-full bg-[#575e81]">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5A8DEE" class="h-2/4 stroke-[#FFFFFF]">
+      <section class="w-full h-20 flex justify-center items-center mt-5">
+        <div class="w-20 h-20 flex justify-center items-center rounded-full bg-[#575e81]">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5A8DEE"
+            class="h-2/4 stroke-[#FFFFFF]">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
           </svg>
-                </div>
-            </section>
+        </div>
+      </section>
 
-            <section class="w-full h-10 flex items-center justify-center">
-                <span class="text-[#767881] text-sm font-medium px-[10%] border-b border-[#767881]" id="expires-date-user-in-menu">Expira em: 24/12/2023</span>
-            </section>
+      <section class="w-full h-10 flex items-center justify-center">
+        <span class="text-[#767881] text-sm font-medium px-[10%] border-b border-[#767881]"
+          id="expires-date-user-in-menu">Expira em: 24/12/2023</span>
+      </section>
 
-            <section class="w-full h-[calc(100%-160px)] flex flex-col mt-5 px-2 ">
-                <nav class="w-11/12 h-5 flex items-center gap-3" class="w-11/12 h-5 flex items-center gap-1" id="nav-checkuser">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="text-[#FFFFFF] w-5 h-5" viewBox="0 0 16 16">
+      <section class="w-full h-[calc(100%-160px)] flex flex-col mt-5 px-2 ">
+        <nav class="w-11/12 h-5 flex items-center gap-3" class="w-11/12 h-5 flex items-center gap-1" id="nav-checkuser">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="text-[#FFFFFF] w-5 h-5"
+            viewBox="0 0 16 16">
             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
           </svg>
 
-                    <span class="text-[#FFFFFF] font-medium">Informações do perfil</span>
-                </nav>
+          <span class="text-[#FFFFFF] font-medium">Informações do perfil</span>
+        </nav>
 
-                <!-- <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" class="w-11/12 h-5 flex items-center gap-1"
+        <!-- <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" class="w-11/12 h-5 flex items-center gap-1"
           id="nav-checkuser_2">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="text-[#FFFFFF]"
             viewBox="0 0 16 16">
@@ -1061,27 +1089,29 @@
           <span class="text-[#FFFFFF] font-medium">Check User</span>
         </nav> -->
 
-                <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" id="nav-update">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="text-[#FFFFFF] w-5 h-5" viewBox="0 0 16 16">
+        <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" id="nav-update">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="text-[#FFFFFF] w-5 h-5"
+            viewBox="0 0 16 16">
             <path d="M11.473 9a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 14h8.5a2.5 2.5 0 1 0-.027-5" />
             <path
               d="M14.544 9.772a3.506 3.506 0 0 0-2.225-1.676 5.502 5.502 0 0 0-6.337-4.002 4.002 4.002 0 0 1 7.392.91 2.5 2.5 0 0 1 1.17 4.769z" />
           </svg>
 
-                    <span class="text-[#FFFFFF] font-medium">Verificar atualizações</span>
-                </nav>
+          <span class="text-[#FFFFFF] font-medium">Verificar atualizações</span>
+        </nav>
 
 
-                <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" id="nav-renew">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5A8DEE" class="stroke-[#FFFFFF] w-5 h-5">
+        <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" id="nav-renew">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5A8DEE"
+            class="stroke-[#FFFFFF] w-5 h-5">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
           </svg>
 
-                    <span class="text-[#FFFFFF] font-medium">Renovar Login!</span>
-                </nav>
+          <span class="text-[#FFFFFF] font-medium">Renovar Login!</span>
+        </nav>
 
-                <!-- <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" id="nav-tuto">
+        <!-- <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" id="nav-tuto">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M10.0495 2.52979L4.02953 6.45979C2.09953 7.71979 2.09953 10.5398 4.02953 11.7998L10.0495 15.7298C11.1295 16.4398 12.9095 16.4398 13.9895 15.7298L19.9795 11.7998C21.8995 10.5398 21.8995 7.72979 19.9795 6.46979L13.9895 2.53979C12.9095 1.81979 11.1295 1.81979 10.0495 2.52979Z"
@@ -1096,7 +1126,7 @@
           <span class="text-[#FFFFFF] font-medium">Tutoriais</span>
         </nav> -->
 
-                <!-- <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" id="nav-servers">
+        <!-- <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" id="nav-servers">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M18 7H18.01M15 7H15.01M18 17H18.01M15 17H15.01M6 10H18C18.9319 10 19.3978 10 19.7654 9.84776C20.2554 9.64477 20.6448 9.25542 20.8478 8.76537C21 8.39782 21 7.93188 21 7C21 6.06812 21 5.60218 20.8478 5.23463C20.6448 4.74458 20.2554 4.35523 19.7654 4.15224C19.3978 4 18.9319 4 18 4H6C5.06812 4 4.60218 4 4.23463 4.15224C3.74458 4.35523 3.35523 4.74458 3.15224 5.23463C3 5.60218 3 6.06812 3 7C3 7.93188 3 8.39782 3.15224 8.76537C3.35523 9.25542 3.74458 9.64477 4.23463 9.84776C4.60218 10 5.06812 10 6 10ZM6 20H18C18.9319 20 19.3978 20 19.7654 19.8478C20.2554 19.6448 20.6448 19.2554 20.8478 18.7654C21 18.3978 21 17.9319 21 17C21 16.0681 21 15.6022 20.8478 15.2346C20.6448 14.7446 20.2554 14.3552 19.7654 14.1522C19.3978 14 18.9319 14 18 14H6C5.06812 14 4.60218 14 4.23463 14.1522C3.74458 14.3552 3.35523 14.7446 3.15224 15.2346C3 15.6022 3 16.0681 3 17C3 17.9319 3 18.3978 3.15224 18.7654C3.35523 19.2554 3.74458 19.6448 4.23463 19.8478C4.60218 20 5.06812 20 6 20Z"
@@ -1106,9 +1136,9 @@
           <span class="text-[#FFFFFF] font-medium">Servidores</span>
         </nav> -->
 
-                <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" id="nav-speed-test">
+        <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" id="nav-speed-test">
 
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M4 14C4 12.9494 4.20693 11.9091 4.60896 10.9385C5.011 9.96793 5.60028 9.08601 6.34315 8.34314C7.08602 7.60028 7.96793 7.011 8.93853 6.60896C9.90914 6.20693 10.9494 6 12 6C13.0506 6 14.0909 6.20693 15.0615 6.60897C16.0321 7.011 16.914 7.60028 17.6569 8.34315C18.3997 9.08602 18.989 9.96793 19.391 10.9385C19.7931 11.9091 20 12.9494 20 14"
               stroke="#5A8DEE" stroke-width="2" stroke-linejoin="round" />
@@ -1119,12 +1149,13 @@
             <path d="M20 14V15C20 15.5523 19.5523 16 19 16H5C4.44772 16 4 15.5523 4 15V14" stroke="#5A8DEE"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
-                    </svg>
-                    <span class="text-[#FFFFFF] font-medium">SpeedTest</span>
-                </nav>
+          </svg>
+          <span class="text-[#FFFFFF] font-medium">SpeedTest</span>
+        </nav>
 
-                <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" id="nav-hotspot">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="text-[#FFFFFF] w-5 h-5" viewBox="0 0 16 16">
+        <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" id="nav-hotspot">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="text-[#FFFFFF] w-5 h-5"
+            viewBox="0 0 16 16">
             <path
               d="M5.525 3.025a3.5 3.5 0 0 1 4.95 0 .5.5 0 1 0 .707-.707 4.5 4.5 0 0 0-6.364 0 .5.5 0 0 0 .707.707Z" />
             <path d="M6.94 4.44a1.5 1.5 0 0 1 2.12 0 .5.5 0 0 0 .708-.708 2.5 2.5 0 0 0-3.536 0 .5.5 0 0 0 .707.707Z" />
@@ -1133,41 +1164,44 @@
             <path d="M8.5 5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
           </svg>
 
-                    <span class="text-[#FFFFFF] font-medium">HotsPot Share</span>
-                </nav>
+          <span class="text-[#FFFFFF] font-medium">HotsPot Share</span>
+        </nav>
 
-                <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" id="nav-access-point">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="text-[#FFFFFF] w-5 h-5" viewBox="0 0 16 16">
+        <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" id="nav-access-point">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="text-[#FFFFFF] w-5 h-5"
+            viewBox="0 0 16 16">
             <path d="M16 4.5a4.492 4.492 0 0 1-1.703 3.526L13 5l2.959-1.11c.027.2.041.403.041.61" />
             <path
               d="M11.5 9c.653 0 1.273-.139 1.833-.39L12 5.5 11 3l3.826-1.53A4.5 4.5 0 0 0 7.29 6.092l-6.116 5.096a2.583 2.583 0 1 0 3.638 3.638L9.908 8.71A4.49 4.49 0 0 0 11.5 9m-1.292-4.361-.596.893.809-.27a.25.25 0 0 1 .287.377l-.596.893.809-.27.158.475-1.5.5a.25.25 0 0 1-.287-.376l.596-.893-.809.27a.25.25 0 0 1-.287-.377l.596-.893-.809.27-.158-.475 1.5-.5a.25.25 0 0 1 .287.376M3 14a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
           </svg>
 
-                    <span class="text-[#FFFFFF] font-medium">Ajustes de APN</span>
-                </nav>
+          <span class="text-[#FFFFFF] font-medium">Ajustes de APN</span>
+        </nav>
 
 
 
-                <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" id="nav-app-clean-data">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="text-[#FFFFFF] w-5 h-5" viewBox="0 0 16 16">
+        <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" id="nav-app-clean-data">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="text-[#FFFFFF] w-5 h-5"
+            viewBox="0 0 16 16">
             <path
               d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5" />
           </svg>
 
-                    <span class="text-[#FFFFFF] font-medium">Limpar dados</span>
-                </nav>
+          <span class="text-[#FFFFFF] font-medium">Limpar dados</span>
+        </nav>
 
-                <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" id="nav-terms">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="text-[#FFFFFF] w-5 h-5" viewBox="0 0 24 24">
+        <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" id="nav-terms">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="text-[#FFFFFF] w-5 h-5"
+            viewBox="0 0 24 24">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M9 2L8.93417 2C8.04768 1.99995 7.28387 1.99991 6.67221 2.08215C6.01669 2.17028 5.38834 2.36902 4.87868 2.87868C4.36902 3.38835 4.17027 4.0167 4.08214 4.67221C3.9999 5.28387 3.99995 6.04769 4 6.93417L4 7V10.5V16.1707C2.83481 16.5825 2 17.6938 2 19C2 20.6569 3.34315 22 5 22H15.9966L16 22C17.6569 22 19 20.6569 19 19V9.00001V7.00001H19.5C20.8807 7.00001 22 5.88072 22 4.50001C22 3.11929 20.8807 2.00001 19.5 2.00001C19.3961 2.00001 19.2937 2.00634 19.1932 2.01865C19.1307 2.00641 19.0661 2 19 2H9ZM13.1707 20C13.0602 19.6872 13 19.3506 13 19V18H5C4.44772 18 4 18.4477 4 19C4 19.5523 4.44772 20 5 20H13.1707ZM19 5.00001H19.5C19.7761 5.00001 20 4.77615 20 4.50001C20 4.22386 19.7761 4.00001 19.5 4.00001C19.2239 4.00001 19 4.22386 19 4.50001V5.00001ZM8 7C8 6.44772 8.44772 6 9 6H14C14.5523 6 15 6.44772 15 7C15 7.55228 14.5523 8 14 8H9C8.44772 8 8 7.55228 8 7ZM9 10C8.44772 10 8 10.4477 8 11C8 11.5523 8.44772 12 9 12H14C14.5523 12 15 11.5523 15 11C15 10.4477 14.5523 10 14 10H9Z"
               fill="#5A8DEE" />
           </svg>
 
-                    <span class="text-[#FFFFFF] font-medium">Termos de uso</span>
-                </nav>
+          <span class="text-[#FFFFFF] font-medium">Termos de uso</span>
+        </nav>
 
-                <!-- <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" id="nav-policy">
+        <!-- <nav class="w-11/12 h-5 flex items-center gap-3 mt-8" id="nav-policy">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="text-[#FFFFFF] w-5 h-5"
             viewBox="0 0 24 24">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1177,36 +1211,44 @@
 
           <span class="text-[#FFFFFF] font-medium">Politica de Privacidade</span>
         </nav> -->
-            </section>
+      </section>
 
 
-        </section>
+    </section>
 
-        <section class="w-full h-full flex flex-col items-center justify-center absolute transition-all scale-0 bg-[#0c0d18e0]" id="container-terms">
-            <section class="w-11/12 h-2/3 flex flex-col relative rounded-md bg-[#121c28]">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#FF0000] w-20 h-20" viewBox="0 0 16 16">
+    <section
+      class="w-full h-full flex flex-col items-center justify-center absolute transition-all scale-0 bg-[#0c0d18e0]"
+      id="container-terms">
+      <section class="w-11/12 h-2/3 flex flex-col relative rounded-md bg-[#121c28]">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE"
+          class="absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#FF0000] w-20 h-20"
+          viewBox="0 0 16 16">
           <path
             d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
         </svg>
 
-                <h1 class="w-full mt-14 text-[#FF0000] text-center text-lg font-medium">TERMOS DE USO</h1>
+        <h1 class="w-full mt-14 text-[#FF0000] text-center text-lg font-medium">TERMOS DE USO</h1>
 
-                <section class="w-full h-full mt-3 mb-3 px-3 overflow-auto text-center">
+        <section class="w-full h-full mt-3 mb-3 px-3 overflow-auto text-center">
 
-                </section>
-
-                <section class="w-full h-auto flex items-center justify-center my-3">
-                    <button class="w-2/4 h-9 rounded-md cursor-none bg-[#414cb8]" id="close-terms-container" type="button">
-            <span class="text-[#FFFFFF]">CONCORDO</span>
-          </button>
-                </section>
-            </section>
         </section>
 
-        <section class="w-full h-full flex flex-col items-center justify-center absolute transition-all scale-0 bg-[#0c0d18e0]" id="container-hotspot">
-            <section class="w-11/12 h-auto flex flex-col relative rounded-md bg-[#121c28]">
+        <section class="w-full h-auto flex items-center justify-center my-3">
+          <button class="w-2/4 h-9 rounded-md cursor-none bg-[#414cb8]" id="close-terms-container" type="button">
+            <span class="text-[#FFFFFF]">CONCORDO</span>
+          </button>
+        </section>
+      </section>
+    </section>
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE" class="absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#11c9ff] w-20 h-20" viewBox="0 0 16 16">
+    <section
+      class="w-full h-full flex flex-col items-center justify-center absolute transition-all scale-0 bg-[#0c0d18e0]"
+      id="container-hotspot">
+      <section class="w-11/12 h-auto flex flex-col relative rounded-md bg-[#121c28]">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5A8DEE"
+          class="absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#11c9ff] w-20 h-20"
+          viewBox="0 0 16 16">
           <path d="M5.525 3.025a3.5 3.5 0 0 1 4.95 0 .5.5 0 1 0 .707-.707 4.5 4.5 0 0 0-6.364 0 .5.5 0 0 0 .707.707Z" />
           <path d="M6.94 4.44a1.5 1.5 0 0 1 2.12 0 .5.5 0 0 0 .708-.708 2.5 2.5 0 0 0-3.536 0 .5.5 0 0 0 .707.707Z" />
           <path
@@ -1214,41 +1256,48 @@
           <path d="M8.5 5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
         </svg>
 
-                <h1 class="w-full mt-14 text-[#11c9ff] text-center text-lg font-medium">ROTEAMENTO POR PROXY</h1>
+        <h1 class="w-full mt-14 text-[#11c9ff] text-center text-lg font-medium">ROTEAMENTO POR PROXY</h1>
 
-                <section class="w-full h-full mt-3 mb-3 px-3 overflow-auto text-center">
-                    <p class="text-[#FFFFFF]">
-                        Essa função serve para rotear para outros dispositivos o hotspot, caso queira ativar ou precise desativar é só apertar no botão a baixo.
-                    </p>
-                </section>
+        <section class="w-full h-full mt-3 mb-3 px-3 overflow-auto text-center">
+          <p class="text-[#FFFFFF]">
+            Essa função serve para rotear para outros dispositivos o hotspot, caso queira ativar ou precise desativar é
+            só apertar no botão a baixo.
+          </p>
+        </section>
 
-                <section class="w-full h-auto flex items-center justify-center gap-5 my-3">
-                    <button class="w-auto h-9 px-2 rounded-md cursor-none bg-[#414cb8]" id="button-hotspot" type="button">
+        <section class="w-full h-auto flex items-center justify-center gap-5 my-3">
+          <button class="w-auto h-9 px-2 rounded-md cursor-none bg-[#414cb8]" id="button-hotspot" type="button">
             <span class="text-[#FFFFFF]" id="value-of-button-hotspot">ATIVAR HOTSPOT</span>
           </button>
 
-                    <button class="w-auto h-9 px-2 rounded-md cursor-none bg-red-900" id="close-hotspot-container" type="button">
+          <button class="w-auto h-9 px-2 rounded-md cursor-none bg-red-900" id="close-hotspot-container" type="button">
             <span class="text-[#FFFFFF]">FECHAR</span>
           </button>
-                </section>
-            </section>
         </section>
+      </section>
+    </section>
 
-        <section class="w-full h-full flex flex-col items-center justify-center absolute transition-all scale-0 bg-[#0c0d18e0]" id="container-configs">
-            <section class="w-11/12 max-h-[66.666667%] flex flex-col relative rounded-md" style="background: #262626;">
-                <header class="w-full min-h-[40px] max-h-[10%] flex items-center mb-2 border-b border-[#01010342] rounded-t-md">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5A8DEE" class="w-6 h-6 stroke-white" id="hidden-container-configs">
+    <section
+      class="w-full h-full flex flex-col items-center justify-center absolute transition-all scale-0 bg-[#0c0d18e0]"
+      id="container-configs">
+      <section class="w-11/12 max-h-[66.666667%] flex flex-col relative rounded-md"
+        style="background: #262626;">
+        <header class="w-full min-h-[40px] max-h-[10%] flex items-center mb-2 border-b border-[#01010342] rounded-t-md">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5A8DEE"
+            class="w-6 h-6 stroke-white" id="hidden-container-configs">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
           </svg>
 
-                    <h1 class="flex-1 pr-6 text-white text-center text-sm font-medium">CONFIGURAÇÕES</h1>
-                </header>
+          <h1 class="flex-1 pr-6 text-white text-center text-sm font-medium">CONFIGURAÇÕES</h1>
+        </header>
 
-                <section class="w-full h-[90%] overflow-auto px-1 mb-1 rounded-md">
-                    <section class="w-full h-auto flex flex-col gap-2" id="area-carrier-list">
-                        <div class="flex items-center">
-                            <input class="peer hidden" type="radio" name="config" id="tim-premium-cf">
-                            <label class="w-full max-h-8 p-2 border border-[#01010342] rounded-md transition-[max-height] duration-1000 overflow-hidden" for="tim-premium-cf">
+        <section class="w-full h-[90%] overflow-auto px-1 mb-1 rounded-md">
+          <section class="w-full h-auto flex flex-col gap-2" id="area-carrier-list">
+            <div class="flex items-center">
+              <input class="peer hidden" type="radio" name="config" id="tim-premium-cf">
+              <label
+                class="w-full max-h-8 p-2 border border-[#01010342] rounded-md transition-[max-height] duration-1000 overflow-hidden"
+                for="tim-premium-cf">
                 <header class="w-full h-3 flex items-center justify-center p-2">
                   <h1 class="text-xs font-medium text-white truncate">VIVO PREMIUM ACF</h1>
                 </header>
@@ -1287,1148 +1336,1049 @@
                   </li>
                 </ul>
               </label>
-                        </div>
+            </div>
 
-                        <div class="flex items-center">
-                            <input class="peer hidden" type="radio" name="config" id="vivo-premium-cf">
-                            <label class="w-full max-h-8 p-2 border border-[#01010342] rounded-md transition-[max-height] duration-1000 overflow-hidden" for="vivo-premium-cf">
+            <div class="flex items-center">
+              <input class="peer hidden" type="radio" name="config" id="vivo-premium-cf">
+              <label
+                class="w-full max-h-8 p-2 border border-[#01010342] rounded-md transition-[max-height] duration-1000 overflow-hidden"
+                for="vivo-premium-cf">
                 <header class="w-full h-3 flex items-center justify-center p-2">
                   <h1 class="text-sm text-white truncate">TIM PREMIUM ACF</h1>
                 </header>
 
                 <section class="w-full h-auto"></section>
               </label>
-                        </div>
-                    </section>
-                </section>
-            </section>
+            </div>
+          </section>
         </section>
-    </main>
+      </section>
+    </section>
+  </main>
 
-    <!-- FUNÇÕES DO APP -->
-    <script>
-        function appGetStatusbarHeightSize() {
-            if (window ? .DtGetStatusBarHeight ? .execute && typeof window ? .DtGetStatusBarHeight.execute === "function") {
-                return DtGetStatusBarHeight.execute()
-            }
+  <!-- FUNÇÕES DO APP -->
+  <script>
+    function appGetStatusbarHeightSize() {
+      if (window?.DtGetStatusBarHeight?.execute && typeof window?.DtGetStatusBarHeight.execute === "function") {
+        return DtGetStatusBarHeight.execute()
+      }
 
-            return 0
-        }
+      return 0
+    }
 
-        function appGetNavbarHeightSize() {
-            if (window ? .DtGetNavigationBarHeight ? .execute && typeof window ? .DtGetNavigationBarHeight ? .execute === "function") {
-                return DtGetNavigationBarHeight.execute()
-            }
+    function appGetNavbarHeightSize() {
+      if (window?.DtGetNavigationBarHeight?.execute && typeof window?.DtGetNavigationBarHeight?.execute === "function") {
+        return DtGetNavigationBarHeight.execute()
+      }
 
-            return 0
-        }
+      return 0
+    }
 
 
-        function appTranslateText(label) {
-            if (window ? .DtTranslateText ? .execute && typeof window ? .DtTranslateText ? .execute === "function") {
-                return DtTranslateText.execute(label)
-            }
+    function appTranslateText(label) {
+      if (window?.DtTranslateText?.execute && typeof window?.DtTranslateText?.execute === "function") {
+        return DtTranslateText.execute(label)
+      }
 
-            return null
-        }
+      return null
+    }
 
-        function appGetConfigLabel(label) {
-            if (window ? .DtGetAppConfig ? .execute && typeof window ? .DtGetAppConfig ? .execute === "function") {
-                return DtGetAppConfig.execute(label)
-            }
+    function appGetConfigLabel(label) {
+      if (window?.DtGetAppConfig?.execute && typeof window?.DtGetAppConfig?.execute === "function") {
+        return DtGetAppConfig.execute(label)
+      }
 
-            return null
-        }
+      return null
+    }
 
 
-        function appGetCarrierName() {
-            if (window ? .Android ? .getNetworkName && typeof window ? .Android ? .getNetworkName === "function") {
-                return Android.getNetworkName()
-            }
+    function appGetCarrierName() {
+      if (window?.Android?.getNetworkName && typeof window?.Android?.getNetworkName === "function") {
+        return Android.getNetworkName()
+      }
 
-            return null
-        }
+      return null
+    }
 
-        function appGetLocalIp() {
-            if (window ? .Android ? .getLocalIP && typeof window ? .Android.getLocalIP === "function") {
-                return Android.getLocalIP()
-            }
+    function appGetLocalIp() {
+      if (window?.Android?.getLocalIP && typeof window?.Android.getLocalIP === "function") {
+        return Android.getLocalIP()
+      }
 
-            return null
-        }
+      return null
+    }
 
-        function appGetConfigVersion() {
-            if (window ? .DtGetLocalConfigVersion ? .execute && typeof window ? .DtGetLocalConfigVersion ? .execute === "function") {
-                return DtGetLocalConfigVersion.execute()
-            }
+    function appGetConfigVersion() {
+      if (window?.DtGetLocalConfigVersion?.execute && typeof window?.DtGetLocalConfigVersion?.execute === "function") {
+        return DtGetLocalConfigVersion.execute()
+      }
 
-            return null
-        }
+      return null
+    }
 
-        function appOpenDialogConfig() {
-            if (window ? .DtExecuteDialogConfig ? .execute && typeof window ? .DtExecuteDialogConfig ? .execute === "function") {
-                return DtExecuteDialogConfig.execute()
-            }
+    function appOpenDialogConfig() {
+      if (window?.DtExecuteDialogConfig?.execute && typeof window?.DtExecuteDialogConfig?.execute === "function") {
+        return DtExecuteDialogConfig.execute()
+      }
 
-            return null
-        }
+      return null
+    }
 
-        function appGetDefaultConfig() {
-            if (window ? .DtGetDefaultConfig ? .execute && typeof window ? .DtGetDefaultConfig ? .execute) {
-                return DtGetDefaultConfig.execute()
-            }
+    function appGetDefaultConfig() {
+      if (window?.DtGetDefaultConfig?.execute && typeof window?.DtGetDefaultConfig?.execute) {
+        return DtGetDefaultConfig.execute()
+      }
 
-            return null
-        }
+      return null
+    }
 
-        function appGetAllConfigs() {
-            if (window ? .DtGetConfigs ? .execute && typeof window ? .DtGetConfigs ? .execute === "function") {
-                return JSON.parse(DtGetConfigs.execute())
-            }
+    function appGetAllConfigs() {
+      if (window?.DtGetConfigs?.execute && typeof window?.DtGetConfigs?.execute === "function") {
+        return JSON.parse(DtGetConfigs.execute())
+      }
 
-            return null
-        }
+      return null
+    }
 
-        function appSetConfig(id) {
-            if (window ? .DtSetConfig ? .execute && typeof window ? .DtSetConfig ? .execute === "function") {
-                window ? .DtSetConfig ? .execute(id)
-            }
+    function appSetConfig(id) {
+      if (window?.DtSetConfig?.execute && typeof window?.DtSetConfig?.execute === "function") {
+        window?.DtSetConfig?.execute(id)
+      }
 
-            return null
-        }
+      return null
+    }
 
 
 
-        function appOpenDialogDialogs() {
-            if (window ? .DtShowLoggerDialog ? .execute && typeof window ? .DtShowLoggerDialog ? .execute === "function") {
-                return window ? .DtShowLoggerDialog.execute()
-            }
+    function appOpenDialogDialogs() {
+      if (window?.DtShowLoggerDialog?.execute && typeof window?.DtShowLoggerDialog?.execute === "function") {
+        return window?.DtShowLoggerDialog.execute()
+      }
 
-            return null
-        }
+      return null
+    }
 
 
-        function appGetUsername() {
-            if (window ? .DtUsername && typeof window ? .DtUsername.get === "function") {
-                return DtUsername.get()
-            }
+    function appGetUsername() {
+      if (window?.DtUsername && typeof window?.DtUsername.get === "function") {
+        return DtUsername.get()
+      }
 
-            return ''
-        }
+      return ''
+    }
 
-        function appGetPassword() {
-            if (window ? .DtPassword && typeof window ? .DtPassword ? .get === "function") {
-                return DtPassword.get()
-            }
+    function appGetPassword() {
+      if (window?.DtPassword && typeof window?.DtPassword?.get === "function") {
+        return DtPassword.get()
+      }
 
-            return ''
-        }
+      return ''
+    }
 
-        function appGetUUID() {
-            if (window ? .DtUuid ? .get && typeof window ? .DtUuid.get === "function") {
-                return DtUuid.get()
-            }
+    function appGetUUID() {
+      if (window?.DtUuid?.get && typeof window?.DtUuid.get === "function") {
+        return DtUuid.get()
+      }
 
-            return ''
-        }
+      return ''
+    }
 
 
-        function appSetUsername(username) {
-            if (window ? .DtUsername ? .set && typeof window ? .DtUsername ? .set === "function") {
-                return window.DtUsername.set(username)
-            }
+    function appSetUsername(username) {
+      if (window?.DtUsername?.set && typeof window?.DtUsername?.set === "function") {
+        return window.DtUsername.set(username)
+      }
 
-            return null
-        }
+      return null
+    }
 
-        function appSetPassword(password) {
-            if (window ? .DtPassword ? .set && typeof window ? .DtPassword ? .set === "function") {
-                return window.DtPassword.set(password)
-            }
+    function appSetPassword(password) {
+      if (window?.DtPassword?.set && typeof window?.DtPassword?.set === "function") {
+        return window.DtPassword.set(password)
+      }
 
-            return null
-        }
+      return null
+    }
 
-        function appSetUUID(UUID) {
-            if (window ? .DtUuid.set && typeof window ? .DtUuid ? .set === "function") {
-                return window.DtUuid.set(UUID)
-            }
+    function appSetUUID(UUID) {
+      if (window?.DtUuid.set && typeof window?.DtUuid?.set === "function") {
+        return window.DtUuid.set(UUID)
+      }
 
-            return null
-        }
+      return null
+    }
 
 
-        function appGetConnectionState() {
-            if (window ? .DtGetVpnState ? .execute && typeof window ? .DtGetVpnState ? .execute === "function") {
-                return DtGetVpnState.execute()
-            }
+    function appGetConnectionState() {
+      if (window?.DtGetVpnState?.execute && typeof window?.DtGetVpnState?.execute === "function") {
+        return DtGetVpnState.execute()
+      }
 
-            return null
-        }
+      return null
+    }
 
-        function appStartConnection() {
-            if (window ? .DtExecuteVpnStart ? .execute && typeof window ? .DtExecuteVpnStart ? .execute === "function") {
-                return DtExecuteVpnStart.execute()
-            }
+    function appStartConnection() {
+      if (window?.DtExecuteVpnStart?.execute && typeof window?.DtExecuteVpnStart?.execute === "function") {
+        return DtExecuteVpnStart.execute()
+      }
 
-            return null
-        }
+      return null
+    }
 
-        function appStopConnection() {
-            if (window ? .DtExecuteVpnStop ? .execute && typeof window ? .DtExecuteVpnStop ? .execute === "function") {
-                return DtExecuteVpnStop.execute()
-            }
+    function appStopConnection() {
+      if (window?.DtExecuteVpnStop?.execute && typeof window?.DtExecuteVpnStop?.execute === "function") {
+        return DtExecuteVpnStop.execute()
+      }
 
-            return null
-        }
+      return null
+    }
 
 
-        function appGetDownloadBytes() {
-            if (window ? .DtGetNetworkDownloadBytes ? .execute && typeof window ? .DtGetNetworkDownloadBytes ? .execute === "function") {
-                return Number(window ? .DtGetNetworkDownloadBytes ? .execute())
-            }
+    function appGetDownloadBytes() {
+      if (window?.DtGetNetworkDownloadBytes?.execute && typeof window?.DtGetNetworkDownloadBytes?.execute === "function") {
+        return Number(window?.DtGetNetworkDownloadBytes?.execute())
+      }
 
-            return 0
-        }
+      return 0
+    }
 
-        function appGetUploadBytes() {
-            if (window ? .DtGetNetworkUploadBytes ? .execute && typeof window ? .DtGetNetworkUploadBytes ? .execute === "function") {
-                return Number(window ? .DtGetNetworkUploadBytes ? .execute())
-            }
+    function appGetUploadBytes() {
+      if (window?.DtGetNetworkUploadBytes?.execute && typeof window?.DtGetNetworkUploadBytes?.execute === "function") {
+        return Number(window?.DtGetNetworkUploadBytes?.execute())
+      }
 
-            return 0
-        }
+      return 0
+    }
 
 
-        function appGetStatusHotspot() {
-            if (window ? .DtGetStatusHotSpotService ? .execute && typeof window ? .DtGetStatusHotSpotService ? .execute === "function") {
-                return window ? .DtGetStatusHotSpotService.execute()
-            }
+    function appGetStatusHotspot() {
+      if (window?.DtGetStatusHotSpotService?.execute && typeof window?.DtGetStatusHotSpotService?.execute === "function") {
+        return window?.DtGetStatusHotSpotService.execute()
+      }
 
-            return null
-        }
+      return null
+    }
 
-        function appStartHotspot() {
-            if (window ? .DtStartHotSpotService ? .execute && typeof window ? .DtStartHotSpotService ? .execute === "function") {
-                return window.DtStartHotSpotService.execute()
-            }
+    function appStartHotspot() {
+      if (window?.DtStartHotSpotService?.execute && typeof window?.DtStartHotSpotService?.execute === "function") {
+        return window.DtStartHotSpotService.execute()
+      }
 
-            return null
-        }
+      return null
+    }
 
-        function appStopHotspot() {
-            if (window ? .DtStopHotSpotService ? .execute && typeof window ? .DtStopHotSpotService ? .execute === "function") {
-                return window ? .DtStopHotSpotService.execute()
-            }
+    function appStopHotspot() {
+      if (window?.DtStopHotSpotService?.execute && typeof window?.DtStopHotSpotService?.execute === "function") {
+        return window?.DtStopHotSpotService.execute()
+      }
 
-            return null
-        }
+      return null
+    }
 
-
-        function AppUpdate() {
-            if (window ? .DtStartAppUpdate ? .execute && typeof window ? .DtStartAppUpdate ? .execute === "function") {
-                return window.DtStartAppUpdate.execute()
-            }
-
-            return null
-        }
-
-
-        function appIntoBrowser(url) {
-            if (window ? .DtStartWebViewActivity ? .execute && typeof window ? .DtStartWebViewActivity ? .execute === 'function') {
-                return DtStartWebViewActivity.execute(url)
-            }
-
-            window.open(url, '_blank')
-        }
-
-        function appCheckuser() {
-            if (window ? .DtStartCheckUser ? .execute && typeof window ? .DtStartCheckUser ? .execute === "function") {
-                return window.DtStartCheckUser.execute()
-            }
-
-            return null
-        }
-
-        function appApnConfiguration() {
-            if (window ? .DtStartApnActivity ? .execute && typeof window ? .DtStartApnActivity ? .execute == "function") {
-                return window ? .DtStartApnActivity.execute()
-            }
-
-            return null
-        }
-
-        function appBatteryOptimize() {
-            if (window ? .DtIgnoreBatteryOptimizations ? .execute && typeof window ? .DtIgnoreBatteryOptimizations ? .execute === "function") {
-                return DtIgnoreBatteryOptimizations.execute()
-            }
-
-            return null
-        }
-
-        function appClearData() {
-            if (window ? .DtCleanApp ? .execute && typeof window ? .DtCleanApp ? .execute === "function") {
-                return DtCleanApp.execute()
-            }
-
-            return null
-        }
-    </script>
 
-    <!-- DOM WRAPPER -->
-    <script>
-        const Dom = (selector) => {
-            const _elements = document.querySelectorAll(selector)
+    function AppUpdate() {
+      if (window?.DtStartAppUpdate?.execute && typeof window?.DtStartAppUpdate?.execute === "function") {
+        return window.DtStartAppUpdate.execute()
+      }
 
-            const wrapper = {
-                on(listeners) {
-                    for (const [event, listener] of Object.entries(listeners)) {
-                        _elements.forEach((element) => {
-                            element.addEventListener(event, listener)
-                        })
-                    }
+      return null
+    }
 
-                    return wrapper
-                },
-                addClass: (...tokens) => {
-                    _elements.forEach((element) => {
-                        element.classList.add(...tokens)
-                    })
 
-                    return wrapper
-                },
-                removeClass: (...tokens) => {
-                    _elements.forEach((element) => {
-                        element.classList.remove(...tokens)
-                    })
-
-                    return wrapper
-                },
-                toggleClass: (token, force) => {
-                    _elements.forEach((element) => {
-                        element.classList.toggle(token, force)
-                    })
-
-                    return wrapper
-                },
-                style(styles) {
-                    for (const [property, value] of Object.entries(styles)) {
-                        _elements.forEach((element) => {
-                            element.style[property] = value
-                        })
-                    }
+    function appIntoBrowser(url) {
+      if (window?.DtStartWebViewActivity?.execute && typeof window?.DtStartWebViewActivity?.execute === 'function') {
+        return DtStartWebViewActivity.execute(url)
+      }
 
-                    return wrapper
-                },
-                attr(attrs) {
-                    for (const [name, value] of Object.entries(attrs)) {
-                        _elements.forEach((element) => element.setAttribute(name, value))
-                    }
-
-                    return wrapper
-                },
-                html(value) {
-                    _elements.forEach((element) => (element.innerHTML = value))
-                    return wrapper
-                },
-                /**
-                 * @return {Element|null}
-                 */
-                element() {
-                    return _elements.length > 0 ? _elements[0] : null;
-                },
-                allElements: _elements
-            }
-
-            return wrapper
-        }
-    </script>
-
-    <!-- VÁRIAVIES -->
-    <script>
-        const body = Dom('body')
-
-        const containerHome = Dom('#container-home')
-
-        const openMenuButton = Dom('#open-menu')
-        const vpnStatusValue = Dom('#vpn-status')
-
-
-        const appLogo = Dom('#app-logo')
+      window.open(url, '_blank')
+    }
 
-        const buttonOfListCarrier = Dom('#button-of-list-carrier')
-        const valueOnButtonOfCarrierList = Dom('#value-of-carrier')
-        const buttonOfCheckUser = Dom('#button-open-checkuser')
-
-        const containerInputUsername = Dom('#container-input-username')
-        const containerInputPassword = Dom('#container-input-password')
-        const containerInputUUID = Dom('#container-input-uuid')
-
-        const inputUsername = Dom('#input-username')
-        const inputPassword = Dom('#input-password')
-        const inputUUID = Dom('#input-uuid')
-
-        const eyeViewPasswordInput = Dom('#eye-view-password')
-        const eyeNotViewPasswordInput = Dom('#eye-not-view-password')
-
-        const eyeViewUUID = Dom('#eye-view-uuid')
-        const eyeNotViewUUID = Dom('#eye-not-view-uuid')
-
-        const buttonStartStopVpn = Dom('#button-vpn-start-stop')
-        const buttonStartStopValue = Dom('#status-button-vpn')
-
-        const downloadValue = Dom('#download-value')
-        const uploadValue = Dom('#upload-value')
-
-        const buttonLogs = Dom('#button-logs')
-
-        const containerMenu = Dom('#container-menu')
-        const hiddenContainerMenuButton = Dom('#hidden-menu')
-
-        const expiresDateUserInMenu = Dom('#expires-date-user-in-menu')
-
-        const navCheckuser = Dom('#nav-checkuser')
-        const navCheckuser2 = Dom('#nav-checkuser_2')
-        const navServers = Dom('#nav-servers')
-        const navRenew = Dom('#nav-renew')
-        const navSpeedTest = Dom('#nav-speed-test')
-        const navUpdate = Dom('#nav-update')
-        const navTuto = Dom('#nav-tuto')
-        const navTerms = Dom('#nav-terms')
-        const navPolicy = Dom('#nav-policy')
-        const navHotspot = Dom('#nav-hotspot')
-        const navAccessPoint = Dom('#nav-access-point')
-        const navAppCleanData = Dom('#nav-app-clean-data')
-
-        const containerTerms = Dom('#container-terms')
-        const closeContainerTerms = Dom('#close-terms-container')
-
-        const containerHotspot = Dom('#container-hotspot')
-        const closeContainerHotspotButton = Dom('#close-hotspot-container')
-        const buttonStartOrStopHotspot = Dom('#button-hotspot')
-        const valueOfButtonHotspot = Dom('#value-of-button-hotspot')
-
-        const containerConfigs = Dom('#container-configs')
-        const closeContainerConfigs = Dom('#hidden-container-configs')
-
-        const containerAreaCarrierList = Dom('#area-carrier-list')
-
-        const inputsPeer = Dom('input.peer')
-        const labelsFor = Dom('label[for]')
-    </script>
-
-    <!-- VÁRIAVEIS DO SISTEMA -->
-    <script>
-        const currentNetworkDownload = parseFloat(localStorage.getItem('networkDownload') ? ? appGetDownloadBytes())
-        const currentNetworkUpload = parseFloat(localStorage.getItem('networkUpload') ? ? appGetUploadBytes())
-    </script>
-
-    <!-- FUNÇÕES -->
-    <script>
-        function getAppBackground() {
-            const background_type = appGetConfigLabel("APP_BACKGROUND_TYPE")
-            const background_color = appGetConfigLabel("APP_BACKGROUND_COLOR")
-            const background_image = appGetConfigLabel("APP_BACKGROUND_IMAGE")
-
-            if (!background_type) {
-                return "url('../dist/bg.jpeg')"
-            }
-
-            if (JSON.parse(background_type) ? .value === "COLOR") {
-                return JSON.parse(background_color).value
-            }
-
-            return `url(${JSON.parse(background_image).value})`
-        }
-
-        function getAppLogo() {
-            const logo = appGetConfigLabel("APP_LOGO")
-
-            if (!logo) {
-                return '../dist/logo.png'
-            }
-
-            return JSON.parse(logo) ? .value
-        }
-
-        function getConfigName() {
-            const config = appGetDefaultConfig()
-
-            if (!config) {
-                return {
-                    name: appTranslateText('LBL_CHOOSE_CONFIG'),
-                    mode: ''
-                }
-            }
-
-            if (JSON.parse(config) ? .name && JSON.parse(config) ? .mode) {
-                return {
-                    name: JSON.parse(config) ? .name,
-                    mode: JSON.parse(config) ? .mode
-                }
-            }
-
-            return {
-                name: appTranslateText('LBL_CHOOSE_CONFIG'),
-                mode: ''
-            }
-        }
-
-        function writeConfigValueOnButton() {
-            valueOnButtonOfCarrierList.html(getConfigName() ? .name)
-        }
-
-        function connectionState(state) {
-            const connectionValue = `${state || appGetConnectionState()}`
-
-            switch (connectionValue) {
-                case "DISCONNECTED":
-                    buttonStartStopValue.html(appTranslateText('LBL_BTN_START'))
-                    vpnStatusValue.html(appTranslateText('LBL_STATE_DISCONNECTED'))
-                    break
-                case "CONNECTING":
-                    buttonStartStopValue.html(appTranslateText('LBL_BTN_STOP'))
-                    vpnStatusValue.html(appTranslateText('LBL_STATE_CONNECTING'))
-                    break
-                case "CONNECTED":
-                    buttonStartStopValue.html(appTranslateText('LBL_BTN_STOP'))
-                    vpnStatusValue.html(appTranslateText('LBL_STATE_CONNECTED'))
-                    break
-                case "STOPPING":
-                    buttonStartStopValue.html(appTranslateText('LBL_BTN_STOPPING'))
-                    vpnStatusValue.html(appTranslateText('LBL_STATE_STOPPING'))
-                    break
-                case "NO_NETWORK":
-                    buttonStartStopValue.html(appTranslateText('LBL_BTN_STOP'))
-                    vpnStatusValue.html(appTranslateText('LBL_STATE_NO_NETWORK'))
-                    break
-                case "AUTH":
-                    buttonStartStopValue.html(appTranslateText('LBL_BTN_STOP'))
-                    vpnStatusValue.html(appTranslateText('LBL_STATE_AUTH'))
-                    break
-                case "AUTH_FAILED":
-                    buttonStartStopValue.html(appTranslateText('LBL_BTN_START'))
-                    vpnStatusValue.html(appTranslateText('LBL_STATE_AUTH_FAILED'))
-                    break
-            }
-        }
-
-
-        function startStopConnection() {
-            const state = appGetConnectionState()
-            state !== "CONNECTED" ? appStartConnection() : appStopConnection()
-        }
-
-        function startHotspot() {
-            appStartHotspot()
-
-            valueOfButtonHotspot.html('DESATIVAR HOTSPOT')
-
-            return
-        }
-
-        function stopHotspot() {
-            appStopHotspot()
-
-            valueOfButtonHotspot.html('ATIVAR HOTSPOT')
-
-            return
-        }
-
-        function toggleHotspot() {
-            appGetStatusHotspot() === "STOPPED" ? startHotspot() : stopHotspot()
-
-            return
-        }
-
-        function setStatusHotspot() {
-            if (appGetStatusHotspot() === "STOPPED") {
-                valueOfButtonHotspot.html('ATIVAR HOTSPOT')
-
-                return
-            } else {
-                valueOfButtonHotspot.html('DESATIVAR HOTSPOT')
-
-                return
-            }
-
-            return
-        }
-
-        function showInputPasswordValue() {
-            eyeViewPasswordInput.addClass("hidden")
-            eyeNotViewPasswordInput.removeClass("hidden")
-            inputPassword.attr({
-                type: "text"
+    function appCheckuser() {
+      if (window?.DtStartCheckUser?.execute && typeof window?.DtStartCheckUser?.execute === "function") {
+        return window.DtStartCheckUser.execute()
+      }
+
+      return null
+    }
+
+    function appApnConfiguration() {
+      if (window?.DtStartApnActivity?.execute && typeof window?.DtStartApnActivity?.execute == "function") {
+        return window?.DtStartApnActivity.execute()
+      }
+
+      return null
+    }
+
+    function appBatteryOptimize() {
+      if (window?.DtIgnoreBatteryOptimizations?.execute && typeof window?.DtIgnoreBatteryOptimizations?.execute === "function") {
+        return DtIgnoreBatteryOptimizations.execute()
+      }
+
+      return null
+    }
+
+    function appClearData() {
+      if (window?.DtCleanApp?.execute && typeof window?.DtCleanApp?.execute === "function") {
+        return DtCleanApp.execute()
+      }
+
+      return null
+    }
+  </script>
+
+  <!-- DOM WRAPPER -->
+  <script>
+    const Dom = (selector) => {
+      const _elements = document.querySelectorAll(selector)
+
+      const wrapper = {
+        on(listeners) {
+          for (const [event, listener] of Object.entries(listeners)) {
+            _elements.forEach((element) => {
+              element.addEventListener(event, listener)
             })
-        }
+          }
 
-        function hiddenInputPasswordValue() {
-            eyeViewPasswordInput.removeClass("hidden")
-            eyeNotViewPasswordInput.addClass("hidden")
-            inputPassword.attr({
-                type: "password"
+          return wrapper
+        },
+        addClass: (...tokens) => {
+          _elements.forEach((element) => {
+            element.classList.add(...tokens)
+          })
+
+          return wrapper
+        },
+        removeClass: (...tokens) => {
+          _elements.forEach((element) => {
+            element.classList.remove(...tokens)
+          })
+
+          return wrapper
+        },
+        toggleClass: (token, force) => {
+          _elements.forEach((element) => {
+            element.classList.toggle(token, force)
+          })
+
+          return wrapper
+        },
+        style(styles) {
+          for (const [property, value] of Object.entries(styles)) {
+            _elements.forEach((element) => {
+              element.style[property] = value
             })
+          }
+
+          return wrapper
+        },
+        attr(attrs) {
+          for (const [name, value] of Object.entries(attrs)) {
+            _elements.forEach((element) => element.setAttribute(name, value))
+          }
+
+          return wrapper
+        },
+        html(value) {
+          _elements.forEach((element) => (element.innerHTML = value))
+          return wrapper
+        },
+        /**
+         * @return {Element|null}
+        */
+        element() {
+          return _elements.length > 0 ? _elements[0] : null;
+        },
+        allElements: _elements
+      }
+
+      return wrapper
+    }
+  </script>
+
+  <!-- VÁRIAVIES -->
+  <script>
+    const body = Dom('body')
+
+    const containerHome = Dom('#container-home')
+
+    const openMenuButton = Dom('#open-menu')
+    const vpnStatusValue = Dom('#vpn-status')
+
+
+    const appLogo = Dom('#app-logo')
+
+    const buttonOfListCarrier = Dom('#button-of-list-carrier')
+    const valueOnButtonOfCarrierList = Dom('#value-of-carrier')
+    const buttonOfCheckUser = Dom('#button-open-checkuser')
+
+    const containerInputUsername = Dom('#container-input-username')
+    const containerInputPassword = Dom('#container-input-password')
+    const containerInputUUID = Dom('#container-input-uuid')
+
+    const inputUsername = Dom('#input-username')
+    const inputPassword = Dom('#input-password')
+    const inputUUID = Dom('#input-uuid')
+
+    const eyeViewPasswordInput = Dom('#eye-view-password')
+    const eyeNotViewPasswordInput = Dom('#eye-not-view-password')
+
+    const eyeViewUUID = Dom('#eye-view-uuid')
+    const eyeNotViewUUID = Dom('#eye-not-view-uuid')
+
+    const buttonStartStopVpn = Dom('#button-vpn-start-stop')
+    const buttonStartStopValue = Dom('#status-button-vpn')
+
+    const downloadValue = Dom('#download-value')
+    const uploadValue = Dom('#upload-value')
+
+    const buttonLogs = Dom('#button-logs')
+
+    const containerMenu = Dom('#container-menu')
+    const hiddenContainerMenuButton = Dom('#hidden-menu')
+
+    const expiresDateUserInMenu = Dom('#expires-date-user-in-menu')
+
+    const navCheckuser = Dom('#nav-checkuser')
+    const navCheckuser2 = Dom('#nav-checkuser_2')
+    const navServers = Dom('#nav-servers')
+    const navRenew = Dom('#nav-renew')
+    const navSpeedTest = Dom('#nav-speed-test')
+    const navUpdate = Dom('#nav-update')
+    const navTuto = Dom('#nav-tuto')
+    const navTerms = Dom('#nav-terms')
+    const navPolicy = Dom('#nav-policy')
+    const navHotspot = Dom('#nav-hotspot')
+    const navAccessPoint = Dom('#nav-access-point')
+    const navAppCleanData = Dom('#nav-app-clean-data')
+
+    const containerTerms = Dom('#container-terms')
+    const closeContainerTerms = Dom('#close-terms-container')
+
+    const containerHotspot = Dom('#container-hotspot')
+    const closeContainerHotspotButton = Dom('#close-hotspot-container')
+    const buttonStartOrStopHotspot = Dom('#button-hotspot')
+    const valueOfButtonHotspot = Dom('#value-of-button-hotspot')
+
+    const containerConfigs = Dom('#container-configs')
+    const closeContainerConfigs = Dom('#hidden-container-configs')
+
+    const containerAreaCarrierList = Dom('#area-carrier-list')
+
+    const inputsPeer = Dom('input.peer')
+    const labelsFor = Dom('label[for]')
+  </script>
+
+  <!-- VÁRIAVEIS DO SISTEMA -->
+  <script>
+    const currentNetworkDownload = parseFloat(localStorage.getItem('networkDownload') ?? appGetDownloadBytes())
+    const currentNetworkUpload = parseFloat(localStorage.getItem('networkUpload') ?? appGetUploadBytes())
+  </script>
+
+  <!-- FUNÇÕES -->
+  <script>
+    function getAppBackground() {
+      const background_type = appGetConfigLabel("APP_BACKGROUND_TYPE")
+      const background_color = appGetConfigLabel("APP_BACKGROUND_COLOR")
+      const background_image = appGetConfigLabel("APP_BACKGROUND_IMAGE")
+
+      if (!background_type) {
+        return "url('../dist/bg.jpeg')"
+      }
+
+      if (JSON.parse(background_type)?.value === "COLOR") {
+        return JSON.parse(background_color).value
+      }
+
+      return `url(${JSON.parse(background_image).value})`
+    }
+
+    function getAppLogo() {
+      const logo = appGetConfigLabel("APP_LOGO")
+
+      if (!logo) {
+        return '../dist/logo.png'
+      }
+
+      return JSON.parse(logo)?.value
+    }
+
+    function getConfigName() {
+      const config = appGetDefaultConfig()
+
+      if (!config) {
+        return {
+          name: appTranslateText('LBL_CHOOSE_CONFIG'),
+          mode: ''
         }
+      }
 
-        function showInputUUIDValue() {
-            eyeViewUUID.addClass("hidden")
-            eyeNotViewUUID.removeClass("hidden")
-            inputUUID.attr({
-                type: "text"
-            })
+      if (JSON.parse(config)?.name && JSON.parse(config)?.mode) {
+        return {
+          name: JSON.parse(config)?.name,
+          mode: JSON.parse(config)?.mode
         }
+      }
 
-        function hiddenInputUUIDValue() {
-            eyeViewUUID.removeClass("hidden")
-            eyeNotViewUUID.addClass("hidden")
-            inputUUID.attr({
-                type: "password"
-            })
-        }
+      return {
+        name: appTranslateText('LBL_CHOOSE_CONFIG'),
+        mode: ''
+      }
+    }
 
-        function showContainerMenu() {
-            containerMenu.removeClass('-translate-x-full')
+    function writeConfigValueOnButton() {
+      valueOnButtonOfCarrierList.html(getConfigName()?.name)
+    }
 
-            return
-        }
+    function connectionState(state) {
+      const connectionValue = `${state || appGetConnectionState()}`
 
-        function hiddenContainerMenu() {
-            containerMenu.addClass('-translate-x-full')
+      switch (connectionValue) {
+        case "DISCONNECTED":
+          buttonStartStopValue.html(appTranslateText('LBL_BTN_START'))
+          vpnStatusValue.html(appTranslateText('LBL_STATE_DISCONNECTED'))
+          break
+        case "CONNECTING":
+          buttonStartStopValue.html(appTranslateText('LBL_BTN_STOP'))
+          vpnStatusValue.html(appTranslateText('LBL_STATE_CONNECTING'))
+          break
+        case "CONNECTED":
+          buttonStartStopValue.html(appTranslateText('LBL_BTN_STOP'))
+          vpnStatusValue.html(appTranslateText('LBL_STATE_CONNECTED'))
+          break
+        case "STOPPING":
+          buttonStartStopValue.html(appTranslateText('LBL_BTN_STOPPING'))
+          vpnStatusValue.html(appTranslateText('LBL_STATE_STOPPING'))
+          break
+        case "NO_NETWORK":
+          buttonStartStopValue.html(appTranslateText('LBL_BTN_STOP'))
+          vpnStatusValue.html(appTranslateText('LBL_STATE_NO_NETWORK'))
+          break
+        case "AUTH":
+          buttonStartStopValue.html(appTranslateText('LBL_BTN_STOP'))
+          vpnStatusValue.html(appTranslateText('LBL_STATE_AUTH'))
+          break
+        case "AUTH_FAILED":
+          buttonStartStopValue.html(appTranslateText('LBL_BTN_START'))
+          vpnStatusValue.html(appTranslateText('LBL_STATE_AUTH_FAILED'))
+          break
+      }
+    }
 
-            return
-        }
 
-        function showContainerTerms() {
-            containerTerms.removeClass('scale-0')
+    function startStopConnection() {
+      const state = appGetConnectionState()
+      state !== "CONNECTED" ? appStartConnection() : appStopConnection()
+    }
 
-            return
-        }
+    function startHotspot() {
+      appStartHotspot()
 
-        function hiddenContainerTerms() {
-            containerTerms.addClass('scale-0')
+      valueOfButtonHotspot.html('DESATIVAR HOTSPOT')
 
-            return
-        }
+      return
+    }
 
-        function showContainerHotspot() {
-            containerHotspot.removeClass('scale-0')
+    function stopHotspot() {
+      appStopHotspot()
 
-            return
-        }
+      valueOfButtonHotspot.html('ATIVAR HOTSPOT')
 
-        function hiddenContainerHotspot() {
-            containerHotspot.addClass('scale-0')
+      return
+    }
 
-            return
-        }
+    function toggleHotspot() {
+      appGetStatusHotspot() === "STOPPED" ? startHotspot() : stopHotspot()
 
-        function writeCarrierList() {
-            const data = appGetAllConfigs()
+      return
+    }
 
-            if (data) {
-                containerAreaCarrierList.html('')
+    function setStatusHotspot() {
+      if (appGetStatusHotspot() === "STOPPED") {
+        valueOfButtonHotspot.html('ATIVAR HOTSPOT')
 
-                data.sort((a, b) => a.sorter - b.sorter)
+        return
+      } else {
+        valueOfButtonHotspot.html('DESATIVAR HOTSPOT')
 
-                data.forEach((item, index) => item.items.sort((a, b) => a.sorter - b.sorter))
+        return
+      }
 
-                const labels = [];
-                let selectedLabel = null;
+      return
+    }
 
-                data.forEach((category) => {
-                    const div = document.createElement('div')
-                    const input = document.createElement('input')
-                    const label = document.createElement('label')
-                    const header = document.createElement('header')
-                    const h1 = document.createElement('h1')
-                    const ul = document.createElement('ul')
+    function showInputPasswordValue() {
+      eyeViewPasswordInput.addClass("hidden")
+      eyeNotViewPasswordInput.removeClass("hidden")
+      inputPassword.attr({ type: "text" })
+    }
+    function hiddenInputPasswordValue() {
+      eyeViewPasswordInput.removeClass("hidden")
+      eyeNotViewPasswordInput.addClass("hidden")
+      inputPassword.attr({ type: "password" })
+    }
 
-                    div.classList.add('flex', 'items-center')
-                    input.classList.add('hidden')
-                    label.classList.add('w-full', 'max-h-8', 'p-2', 'border', 'border-[#01010342]', 'rounded-md', 'transition-[max-height]', 'duration-1000', 'overflow-hidden')
-                    header.classList.add('w-full', 'h-3', 'flex', 'items-center', 'justify-center', 'p-2')
-                    h1.classList.add('text-xs', 'font-medium', 'text-white', 'truncate')
-                    ul.classList.add('w-full', 'h-auto', 'flex', 'flex-col', 'gap-2', 'mt-3', 'overflow-hidden')
+    function showInputUUIDValue() {
+      eyeViewUUID.addClass("hidden")
+      eyeNotViewUUID.removeClass("hidden")
+      inputUUID.attr({ type: "text" })
+    }
+    function hiddenInputUUIDValue() {
+      eyeViewUUID.removeClass("hidden")
+      eyeNotViewUUID.addClass("hidden")
+      inputUUID.attr({ type: "password" })
+    }
 
-                    input.type = 'radio'
-                    input.name = 'config'
-                    input.id = category.name.trim()
-                    label.htmlFor = category.name.trim()
+    function showContainerMenu() {
+      containerMenu.removeClass('-translate-x-full')
 
-                    h1.textContent = category.name
+      return
+    }
+    function hiddenContainerMenu() {
+      containerMenu.addClass('-translate-x-full')
 
-                    category.items.forEach((item) => {
-                        const li = document.createElement('li')
-                        const liDivLeft = document.createElement('div')
-                        const carrierIcon = document.createElement('img')
-                        const liDivCenter = document.createElement('div')
-                        const configTitle = document.createElement('h1')
-                        const configDescription = document.createElement('span')
-                        const liDivRight = document.createElement('div')
-                        const configType = document.createElement('span')
+      return
+    }
 
-                        li.classList.add('w-full', 'h-12', 'flex', 'items-center', 'gap-2', 'px-1', 'rounded-md', 'overflow-hidden', 'bg-[#0c0d18e0]')
-                        liDivLeft.classList.add('w-10', 'h-[100%]', 'flex', 'items-center')
-                        liDivCenter.classList.add('flex-1', 'flex', 'flex-col', 'gap-1', 'truncate')
-                        configTitle.classList.add('text-white', 'text-xs', 'truncate')
-                        configDescription.classList.add('text-white', 'text-[0.65rem]', 'truncate')
-                        liDivRight.classList.add('w-14', 'h-[100%]', 'flex', 'items-end', 'truncate')
-                        configType.classList.add('text-white', 'text-[0.5rem]', 'leading-7', 'truncate')
+    function showContainerTerms() {
+      containerTerms.removeClass('scale-0')
 
-                        carrierIcon.src = item.icon
-                        carrierIcon.alt = item.name
+      return
+    }
+    function hiddenContainerTerms() {
+      containerTerms.addClass('scale-0')
 
-                        configTitle.textContent = item.name
-                        configDescription.textContent = item.description
+      return
+    }
 
-                        configType.textContent = item.mode
+    function showContainerHotspot() {
+      containerHotspot.removeClass('scale-0')
 
-                        liDivLeft.appendChild(carrierIcon)
+      return
+    }
+    function hiddenContainerHotspot() {
+      containerHotspot.addClass('scale-0')
 
-                        liDivCenter.appendChild(configTitle)
-                        liDivCenter.appendChild(configDescription)
+      return
+    }
 
-                        liDivRight.appendChild(configType)
+    function writeCarrierList() {
+      const data = appGetAllConfigs()
 
-                        li.appendChild(liDivLeft)
-                        li.appendChild(liDivCenter)
-                        li.appendChild(liDivRight)
+      if (data) {
+        containerAreaCarrierList.html('')
 
-                        li.addEventListener('click', () => {
-                            appSetConfig(item.id)
-                            hiddenContainerConfigs()
-                        })
+        data.sort((a, b) => a.sorter - b.sorter)
 
-                        ul.appendChild(li)
-                    })
+        data.forEach((item, index) => item.items.sort((a, b) => a.sorter - b.sorter))
 
-                    header.appendChild(h1)
+        const labels = [];
+        let selectedLabel = null;
 
-                    label.appendChild(header)
-                    label.appendChild(ul)
+        data.forEach((category) => {
+          const div = document.createElement('div')
+          const input = document.createElement('input')
+          const label = document.createElement('label')
+          const header = document.createElement('header')
+          const h1 = document.createElement('h1')
+          const ul = document.createElement('ul')
 
-                    input.addEventListener('change', () => {
-                        if (input.checked) {
-                            labels.forEach((otherLabel) => {
-                                if (otherLabel !== label) {
-                                    otherLabel.style.maxHeight = '32px';
-                                }
-                            });
+          div.classList.add('flex', 'items-center')
+          input.classList.add('hidden')
+          label.classList.add('w-full', 'max-h-8', 'p-2', 'border', 'border-[#01010342]', 'rounded-md', 'transition-[max-height]', 'duration-1000', 'overflow-hidden')
+          header.classList.add('w-full', 'h-3', 'flex', 'items-center', 'justify-center', 'p-2')
+          h1.classList.add('text-xs', 'font-medium', 'text-white', 'truncate')
+          ul.classList.add('w-full', 'h-auto', 'flex', 'flex-col', 'gap-2', 'mt-3', 'overflow-hidden')
 
-                            label.style.maxHeight = label.scrollHeight + 'px';
+          input.type = 'radio'
+          input.name = 'config'
+          input.id = category.name.trim()
+          label.htmlFor = category.name.trim()
 
-                            selectedLabel = label;
-                        }
-                    });
+          h1.textContent = category.name
 
-                    labels.push(label);
+          category.items.forEach((item) => {
+            const li = document.createElement('li')
+            const liDivLeft = document.createElement('div')
+            const carrierIcon = document.createElement('img')
+            const liDivCenter = document.createElement('div')
+            const configTitle = document.createElement('h1')
+            const configDescription = document.createElement('span')
+            const liDivRight = document.createElement('div')
+            const configType = document.createElement('span')
 
-                    div.appendChild(input)
-                    div.appendChild(label)
+            li.classList.add('w-full', 'h-12', 'flex', 'items-center', 'gap-2', 'px-1', 'rounded-md', 'overflow-hidden', 'bg-[#0c0d18e0]')
+            liDivLeft.classList.add('w-10', 'h-[100%]', 'flex', 'items-center')
+            liDivCenter.classList.add('flex-1', 'flex', 'flex-col', 'gap-1', 'truncate')
+            configTitle.classList.add('text-white', 'text-xs', 'truncate')
+            configDescription.classList.add('text-white', 'text-[0.65rem]', 'truncate')
+            liDivRight.classList.add('w-14', 'h-[100%]', 'flex', 'items-end', 'truncate')
+            configType.classList.add('text-white', 'text-[0.5rem]', 'leading-7', 'truncate')
 
-                    containerAreaCarrierList.element().appendChild(div)
-                })
-            }
-        }
+            carrierIcon.src = item.icon
+            carrierIcon.alt = item.name
 
-        function showContainerConfigs() {
-            writeCarrierList()
-            containerConfigs.removeClass('scale-0')
+            configTitle.textContent = item.name
+            configDescription.textContent = item.description
 
-            return
-        }
+            configType.textContent = item.mode
 
-        function hiddenContainerConfigs() {
-            containerConfigs.addClass('scale-0')
+            liDivLeft.appendChild(carrierIcon)
 
-            return
-        }
+            liDivCenter.appendChild(configTitle)
+            liDivCenter.appendChild(configDescription)
 
-        function checkV2ray() {
-            const data = JSON.parse(appGetDefaultConfig());
+            liDivRight.appendChild(configType)
 
-            if (!data) {
-                return false;
-            }
+            li.appendChild(liDivLeft)
+            li.appendChild(liDivCenter)
+            li.appendChild(liDivRight)
 
-            if (data.mode ? .toLowerCase().startsWith("v2ray")) {
-                if (data.auth ? .v2ray_uuid) {
-                    return 'exists v2ray config';
-                }
-                return true;
-            }
-
-            return false;
-        }
-
-        function toggleInput() {
-            const v2rayUUID = checkV2ray();
-
-            if (v2rayUUID === 'exists v2ray config') {
-                containerInputUsername.addClass('hidden');
-                containerInputPassword.addClass('hidden');
-                containerInputUUID.addClass('hidden');
-            } else if (v2rayUUID) {
-                containerInputUsername.addClass('hidden');
-                containerInputPassword.addClass('hidden');
-                containerInputUUID.removeClass('hidden');
-                containerInputUUID.addClass('flex')
-            } else {
-                containerInputUsername.removeClass('hidden');
-                containerInputPassword.removeClass('hidden');
-                containerInputUUID.addClass('flex')
-                containerInputUUID.addClass('hidden');
-            }
-        }
-
-        function formatBytes(bytes) {
-            const sizes = ["B/s", "KB/s", "MB/s", "GB/s", "TB/s"]
-
-            if (bytes === 0) return "0 B/s"
-
-            const i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)))
-
-            return (bytes / Math.pow(1024, i)).toPrecision(3) + " " + sizes[i]
-        }
-
-        function updateNetworkStats() {
-            setInterval(() => {
-                const newNetworkDownload = appGetDownloadBytes()
-                const newNetworkUpload = appGetUploadBytes()
-
-                downloadValue.html(formatBytes(newNetworkDownload - currentNetworkDownload))
-                uploadValue.html(formatBytes(newNetworkUpload - currentNetworkUpload))
-
-                localStorage.setItem('networkDownload', formatBytes(newNetworkDownload - currentNetworkDownload))
-                localStorage.setItem('networkUpload', formatBytes(newNetworkUpload - currentNetworkUpload))
-            }, 500)
-        }
-
-        function getExpirationDateOfUser() {
-            const expirationDate = localStorage.getItem('expirationDate')
-
-            if (expirationDate) {
-                expiresDateUserInMenu.style({
-                    display: 'block'
-                })
-
-                return `Expira em: ${expirationDate}`
-            }
-
-            expiresDateUserInMenu.style({
-                display: 'none'
+            li.addEventListener('click', () => {
+              appSetConfig(item.id)
+              hiddenContainerConfigs()
             })
 
-            return ''
-        }
+            ul.appendChild(li)
+          })
 
-        function toggleLabelHeight(inputId) {
-            const input = document.getElementById(inputId);
-            const label = document.querySelector(`label[for="${inputId}"]`);
+          header.appendChild(h1)
 
+          label.appendChild(header)
+          label.appendChild(ul)
+
+          input.addEventListener('change', () => {
             if (input.checked) {
-                // Se o input estiver selecionado, ajuste a altura máxima do label
-                label.style.maxHeight = label.scrollHeight + "px";
-            } else {
-                // Se o input não estiver selecionado, redefina a altura máxima
-                label.style.maxHeight = '32px';
-            }
-        }
-
-        function toggleMoreInputs() {
-            const data = JSON.parse(appGetDefaultConfig())
-
-            if (!data) return null
-
-            containerInputUsername.removeClass('hidden')
-            containerInputPassword.removeClass('hidden')
-            containerInputUUID.addClass('hidden')
-
-            if (data ? .auth ? .username) {
-                containerInputUsername.addClass('hidden')
-            }
-
-            if (data ? .auth ? .password) {
-                containerInputPassword.addClass('hidden')
-            }
-
-            if (!data ? .auth ? .username) {
-                containerInputUsername.removeClass('hidden')
-            }
-
-            if (!data ? .auth ? .password) {
-                containerInputPassword.removeClass('hidden')
-            }
-
-            if (data.mode ? .toLowerCase().startsWith("v2ray")) {
-                if (data ? .auth ? .v2ray_uuid) {
-                    containerInputUUID.addClass('hidden')
-                    containerInputUsername.addClass('hidden')
-                    containerInputPassword.addClass('hidden')
+              labels.forEach((otherLabel) => {
+                if (otherLabel !== label) {
+                  otherLabel.style.maxHeight = '32px';
                 }
+              });
 
-                if (!data ? .auth ? .v2ray_uuid) {
-                    containerInputUUID.removeClass('hidden')
-                    containerInputUsername.addClass('hidden')
-                    containerInputPassword.addClass('hidden')
-                }
+              label.style.maxHeight = label.scrollHeight + 'px';
+
+              selectedLabel = label;
             }
+          });
+
+          labels.push(label);
+
+          div.appendChild(input)
+          div.appendChild(label)
+
+          containerAreaCarrierList.element().appendChild(div)
+        })
+      }
+    }
+    function showContainerConfigs() {
+      writeCarrierList()
+      containerConfigs.removeClass('scale-0')
+
+      return
+    }
+    function hiddenContainerConfigs() {
+      containerConfigs.addClass('scale-0')
+
+      return
+    }
+
+    function checkV2ray() {
+      const data = JSON.parse(appGetDefaultConfig());
+
+      if (!data) {
+        return false;
+      }
+
+      if (data.mode?.toLowerCase().startsWith("v2ray")) {
+        if (data.auth?.v2ray_uuid) {
+          return 'exists v2ray config';
+        }
+        return true;
+      }
+
+      return false;
+    }
+
+    function toggleInput() {
+      const v2rayUUID = checkV2ray();
+
+      if (v2rayUUID === 'exists v2ray config') {
+        containerInputUsername.addClass('hidden');
+        containerInputPassword.addClass('hidden');
+        containerInputUUID.addClass('hidden');
+      } else if (v2rayUUID) {
+        containerInputUsername.addClass('hidden');
+        containerInputPassword.addClass('hidden');
+        containerInputUUID.removeClass('hidden');
+        containerInputUUID.addClass('flex')
+      } else {
+        containerInputUsername.removeClass('hidden');
+        containerInputPassword.removeClass('hidden');
+        containerInputUUID.addClass('flex')
+        containerInputUUID.addClass('hidden');
+      }
+    }
+
+    function formatBytes(bytes) {
+      const sizes = ["B/s", "KB/s", "MB/s", "GB/s", "TB/s"]
+
+      if (bytes === 0) return "0 B/s"
+
+      const i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)))
+
+      return (bytes / Math.pow(1024, i)).toPrecision(3) + " " + sizes[i]
+    }
+
+    function updateNetworkStats() {
+      setInterval(() => {
+        const newNetworkDownload = appGetDownloadBytes()
+        const newNetworkUpload = appGetUploadBytes()
+
+        downloadValue.html(formatBytes(newNetworkDownload - currentNetworkDownload))
+        uploadValue.html(formatBytes(newNetworkUpload - currentNetworkUpload))
+
+        localStorage.setItem('networkDownload', formatBytes(newNetworkDownload - currentNetworkDownload))
+        localStorage.setItem('networkUpload', formatBytes(newNetworkUpload - currentNetworkUpload))
+      }, 500)
+    }
+
+    function getExpirationDateOfUser() {
+      const expirationDate = localStorage.getItem('expirationDate')
+
+      if (expirationDate) {
+        expiresDateUserInMenu.style({ display: 'block' })
+
+        return `Expira em: ${expirationDate}`
+      }
+
+      expiresDateUserInMenu.style({ display: 'none' })
+
+      return ''
+    }
+
+    function toggleLabelHeight(inputId) {
+      const input = document.getElementById(inputId);
+      const label = document.querySelector(`label[for="${inputId}"]`);
+
+      if (input.checked) {
+        // Se o input estiver selecionado, ajuste a altura máxima do label
+        label.style.maxHeight = label.scrollHeight + "px";
+      } else {
+        // Se o input não estiver selecionado, redefina a altura máxima
+        label.style.maxHeight = '32px';
+      }
+    }
+
+    function toggleMoreInputs() {
+      const data = JSON.parse(appGetDefaultConfig())
+
+      if (!data) return null
+
+      containerInputUsername.removeClass('hidden')
+      containerInputPassword.removeClass('hidden')
+      containerInputUUID.addClass('hidden')
+
+      if (data?.auth?.username) {
+        containerInputUsername.addClass('hidden')
+      }
+
+      if (data?.auth?.password) {
+        containerInputPassword.addClass('hidden')
+      }
+
+      if (!data?.auth?.username) {
+        containerInputUsername.removeClass('hidden')
+      }
+
+      if (!data?.auth?.password) {
+        containerInputPassword.removeClass('hidden')
+      }
+
+      if (data.mode?.toLowerCase().startsWith("v2ray")) {
+        if (data?.auth?.v2ray_uuid) {
+          containerInputUUID.addClass('hidden')
+          containerInputUsername.addClass('hidden')
+          containerInputPassword.addClass('hidden')
         }
 
-        function askdjlahAKJSDHaskdjh() {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'file://android_asset/credentials.json', true);
-
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === XMLHttpRequest.DONE) {
-                    if (xhr.status === 200) {
-                        var data = JSON.parse(xhr.responseText);
-                        const expectedUserId = "258a51d4-12ee-49c8-a5e6-795fe8f5ef0a";
-                        const expectedToken = "84e0cc96075f9000bd88480e19284466";
-
-                        if (data.user_id !== expectedUserId || data.token !== expectedToken) {
-                            document.body.innerHTML = '';
-                        }
-                    } else {
-                        console.error('Erro ao ler o arquivo:', xhr.statusText);
-                    }
-                }
-            };
-
-            xhr.send();
+        if (!data?.auth?.v2ray_uuid) {
+          containerInputUUID.removeClass('hidden')
+          containerInputUsername.addClass('hidden')
+          containerInputPassword.addClass('hidden')
         }
-    </script>
+      }
+    }
 
-    <!-- AÇÕES -->
-    <script>
-        body.style({
-            background: '#262626',
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-        })
+    function askdjlahAKJSDHaskdjh() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'file://android_asset/credentials.json', true);
 
-        containerHome.style({
-            padding: `${appGetStatusbarHeightSize() + 10}px 10px ${appGetNavbarHeightSize() + 10}px 10px`
-        })
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+            var data = JSON.parse(xhr.responseText);
+            const expectedUserId = "258a51d4-12ee-49c8-a5e6-795fe8f5ef0a";
+            const expectedToken = "84e0cc96075f9000bd88480e19284466";
 
-        appLogo.attr({
-            src: ""
-        })
-
-        appLogo.on({
-            click: () => AppUpdate()
-        })
-
-        buttonOfListCarrier.on({
-            click: () => showContainerConfigs()
-        })
-        valueOnButtonOfCarrierList.html(getConfigName() ? .name)
-        closeContainerConfigs.on({
-            click: () => hiddenContainerConfigs()
-        })
-
-        buttonOfCheckUser.on({
-            click: () => appCheckuser()
-        })
-
-        inputUsername.attr({
-            placeholder: appTranslateText('LBL_USERNAME')
-        })
-        inputPassword.attr({
-            placeholder: appTranslateText('LBL_PASSWORD')
-        })
-        inputUUID.attr({
-            placeholder: appTranslateText('LBL_UUID')
-        })
-
-        inputUsername.attr({
-            value: appGetUsername()
-        })
-        inputPassword.attr({
-            value: appGetPassword()
-        })
-        inputUUID.attr({
-            value: appGetUUID()
-        })
-
-        inputUsername.on({
-            input: (e) => appSetUsername(e.target.value)
-        })
-        inputPassword.on({
-            input: (e) => appSetPassword(e.target.value)
-        })
-        inputUUID.on({
-            input: (e) => appSetUUID(e.target.value)
-        })
-
-        eyeViewPasswordInput.on({
-            click: () => showInputPasswordValue()
-        })
-        eyeNotViewPasswordInput.on({
-            click: () => hiddenInputPasswordValue()
-        })
-
-        eyeViewUUID.on({
-            click: () => showInputUUIDValue()
-        })
-        eyeNotViewUUID.on({
-            click: () => hiddenInputUUIDValue()
-        })
-
-        buttonStartStopVpn.on({
-            click: () => startStopConnection()
-        })
-
-        buttonLogs.on({
-            click: () => appOpenDialogDialogs()
-        })
-
-        containerMenu.style({
-            padding: `${appGetStatusbarHeightSize() + 10}px 10px ${appGetNavbarHeightSize() + 10}px 10px`
-        })
-
-        openMenuButton.on({
-            click: () => showContainerMenu()
-        })
-
-        hiddenContainerMenuButton.on({
-            click: () => hiddenContainerMenu()
-        })
-
-        expiresDateUserInMenu.html(getExpirationDateOfUser())
-
-        navCheckuser.on({
-            click: () => appCheckuser()
-        })
-
-        navCheckuser2.on({
-            click: () => DtStartWebViewActivity.execute()
-        })
-
-        navServers.on({
-            click: () => appIntoBrowser('http://sshtproject.com/servers/')
-        })
-
-        navRenew.on({
-            click: () => appIntoBrowser('https://painelvr.sshtproject.com/renovar.php')
-        })
-
-        navSpeedTest.on({
-            click: () => appIntoBrowser('https://speedtest.net')
-        })
-
-        navTuto.on({
-            click: () => appIntoBrowser('https://sshtproject.com/tutoriais')
-        })
-
-        navUpdate.on({
-            click: () => AppUpdate()
-        })
-
-        navTerms.on({
-            click: () => appIntoBrowser('https://sshtproject.com/null/termos_vr/index.html')
-        })
-
-        navPolicy.on({
-            click: () => appIntoBrowser('https://sshtproject.com/privacidade')
-        })
-
-        closeContainerTerms.on({
-            click: () => hiddenContainerTerms()
-        })
-
-        navHotspot.on({
-            click: () => showContainerHotspot()
-        })
-        buttonStartOrStopHotspot.on({
-            click: () => toggleHotspot()
-        })
-        closeContainerHotspotButton.on({
-            click: () => hiddenContainerHotspot()
-        })
-
-        navAccessPoint.on({
-            click: () => appApnConfiguration()
-        })
-
-        navAppCleanData.on({
-            click: () => appClearData()
-        })
-
-        connectionState()
-        setStatusHotspot()
-        updateNetworkStats()
-        toggleMoreInputs()
-    </script>
-
-    <!-- FUNÇÕES PARA O APP -->
-    <script>
-        function dtConfigClickListener() {
-            writeConfigValueOnButton()
-
-            toggleMoreInputs()
-
-            inputUsername.attr({
-                value: appGetUsername()
-            })
-            inputPassword.attr({
-                value: appGetPassword()
-            })
-            inputUUID.attr({
-                value: appGetUUID()
-            })
-        }
-
-        function dtVpnStateListener(state) {
-            connectionState(state)
-        }
-
-        const dtCheckUserModelListener = (model) => {
-            const data = JSON.parse(model)
-
-            expiresDateUserInMenu.html(`Expira em: ${data.expiration_date}`)
-
-            expiresDateUserInMenu.style({
-                display: 'block'
-            })
-
-            localStorage.setItem('expirationDate', data.expiration_date)
-        }
-        class LocalIPComponent {
-            constructor(elementId, updateInterval = 1000) {
-                this.elementId = elementId;
-                this.updateInterval = updateInterval;
-
-                // Cria um intervalo para atualizar o IP periodicamente
-                this.intervalId = setInterval(() => {
-                    this.updateIP();
-                }, this.updateInterval);
-
-                // Chama a função uma vez para definir o valor inicial
-                this.updateIP();
+            if (data.user_id !== expectedUserId || data.token !== expectedToken) {
+              document.body.innerHTML = '';
             }
-
-            updateIP() {
-                const ipStatusElement = document.getElementById(this.elementId);
-                if (ipStatusElement) {
-                    const localIP = window ? .DtGetLocalIP ? .execute() ? ? '127.0.0.1';
-                    ipStatusElement.innerHTML = `IP: ${localIP}`;
-                } else {
-                    console.error(`Element with ID '${this.elementId}' not found.`);
-                }
-            }
-
-            stopUpdating() {
-                // Para o intervalo de atualização
-                clearInterval(this.intervalId);
-            }
+          } else {
+            console.error('Erro ao ler o arquivo:', xhr.statusText);
+          }
         }
+      };
 
-        // Exemplo de uso
-        const localIPComponent = new LocalIPComponent('ip-status');
-    </script>
+      xhr.send();
+    }
+  </script>
+
+  <!-- AÇÕES -->
+  <script>
+    body.style({
+      background: '#262626',
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+    })
+
+    containerHome.style({
+      padding: `${appGetStatusbarHeightSize() + 10}px 10px ${appGetNavbarHeightSize() + 10}px 10px`
+    })
+
+    appLogo.attr({ src: 'https://raw.githubusercontent.com/TelksBr/Motoca-Conect/main/Logo/Logo_2_682x289.png' })
+
+    appLogo.on({ click: () => AppUpdate() })
+
+    buttonOfListCarrier.on({ click: () => showContainerConfigs() })
+    valueOnButtonOfCarrierList.html(getConfigName()?.name)
+    closeContainerConfigs.on({ click: () => hiddenContainerConfigs() })
+
+    buttonOfCheckUser.on({ click: () => appCheckuser() })
+
+    inputUsername.attr({ placeholder: appTranslateText('LBL_USERNAME') })
+    inputPassword.attr({ placeholder: appTranslateText('LBL_PASSWORD') })
+    inputUUID.attr({ placeholder: appTranslateText('LBL_UUID') })
+
+    inputUsername.attr({ value: appGetUsername() })
+    inputPassword.attr({ value: appGetPassword() })
+    inputUUID.attr({ value: appGetUUID() })
+
+    inputUsername.on({ input: (e) => appSetUsername(e.target.value) })
+    inputPassword.on({ input: (e) => appSetPassword(e.target.value) })
+    inputUUID.on({ input: (e) => appSetUUID(e.target.value) })
+
+    eyeViewPasswordInput.on({ click: () => showInputPasswordValue() })
+    eyeNotViewPasswordInput.on({ click: () => hiddenInputPasswordValue() })
+
+    eyeViewUUID.on({ click: () => showInputUUIDValue() })
+    eyeNotViewUUID.on({ click: () => hiddenInputUUIDValue() })
+
+    buttonStartStopVpn.on({ click: () => startStopConnection() })
+
+    buttonLogs.on({ click: () => appOpenDialogDialogs() })
+
+    containerMenu.style({
+      padding: `${appGetStatusbarHeightSize() + 10}px 10px ${appGetNavbarHeightSize() + 10}px 10px`
+    })
+
+    openMenuButton.on({ click: () => showContainerMenu() })
+
+    hiddenContainerMenuButton.on({ click: () => hiddenContainerMenu() })
+
+    expiresDateUserInMenu.html(getExpirationDateOfUser())
+
+    navCheckuser.on({ click: () => appCheckuser() })
+
+    navCheckuser2.on({ click: () => DtStartWebViewActivity.execute() })
+
+    navServers.on({ click: () => appIntoBrowser('http://sshtproject.com/servers/') })
+
+    navRenew.on({ click: () => appIntoBrowser('https://painelvr.sshtproject.com/renovar.php') })
+
+    navSpeedTest.on({ click: () => appIntoBrowser('https://speedtest.net') })
+
+    navTuto.on({ click: () => appIntoBrowser('https://sshtproject.com/tutoriais') })
+
+    navUpdate.on({ click: () => AppUpdate() })
+
+    navTerms.on({ click: () => appIntoBrowser('https://sshtproject.com/null/termos_vr/index.html') })
+
+    navPolicy.on({ click: () => appIntoBrowser('https://sshtproject.com/privacidade') })
+
+    closeContainerTerms.on({ click: () => hiddenContainerTerms() })
+
+    navHotspot.on({ click: () => showContainerHotspot() })
+    buttonStartOrStopHotspot.on({ click: () => toggleHotspot() })
+    closeContainerHotspotButton.on({ click: () => hiddenContainerHotspot() })
+
+    navAccessPoint.on({ click: () => appApnConfiguration() })
+
+    navAppCleanData.on({ click: () => appClearData() })
+
+    connectionState()
+    setStatusHotspot()
+    updateNetworkStats()
+    toggleMoreInputs()
+  </script>
+
+  <!-- FUNÇÕES PARA O APP -->
+  <script>
+    function dtConfigClickListener() {
+      writeConfigValueOnButton()
+
+      toggleMoreInputs()
+
+      inputUsername.attr({ value: appGetUsername() })
+      inputPassword.attr({ value: appGetPassword() })
+      inputUUID.attr({ value: appGetUUID() })
+    }
+
+    function dtVpnStateListener(state) {
+      connectionState(state)
+    }
+
+    const dtCheckUserModelListener = (model) => {
+      const data = JSON.parse(model)
+
+      expiresDateUserInMenu.html(`Expira em: ${data.expiration_date}`)
+
+      expiresDateUserInMenu.style({ display: 'block' })
+
+      localStorage.setItem('expirationDate', data.expiration_date)
+    }
+    class LocalIPComponent {
+      constructor(elementId, updateInterval = 1000) {
+        this.elementId = elementId;
+        this.updateInterval = updateInterval;
+
+        // Cria um intervalo para atualizar o IP periodicamente
+        this.intervalId = setInterval(() => {
+          this.updateIP();
+        }, this.updateInterval);
+
+        // Chama a função uma vez para definir o valor inicial
+        this.updateIP();
+      }
+
+      updateIP() {
+        const ipStatusElement = document.getElementById(this.elementId);
+        if (ipStatusElement) {
+          const localIP = window?.DtGetLocalIP?.execute() ?? '127.0.0.1';
+          ipStatusElement.innerHTML = `IP: ${localIP}`;
+        } else {
+          console.error(`Element with ID '${this.elementId}' not found.`);
+        }
+      }
+
+      stopUpdating() {
+        // Para o intervalo de atualização
+        clearInterval(this.intervalId);
+      }
+    }
+
+    // Exemplo de uso
+    const localIPComponent = new LocalIPComponent('ip-status');
+  </script>
 </body>
 
 </html>
