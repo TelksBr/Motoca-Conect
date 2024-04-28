@@ -1,0 +1,3390 @@
+<!DOCTYPE html>
+<html class="w-full h-full" lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LopesNet DT Clean</title>
+
+    <style>
+        *,
+        :after,
+        :before {
+            box-sizing: border-box;
+            border: 0 solid #e5e7eb;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        :after,
+        :before {
+            --tw-content: ""
+        }
+
+        html {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            -moz-tab-size: 4;
+            -o-tab-size: 4;
+            tab-size: 4;
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-feature-settings: normal;
+            font-variation-settings: normal
+        }
+
+        body {
+            margin: 0;
+            line-height: inherit;
+        }
+
+        hr {
+            height: 0;
+            color: inherit;
+            border-top-width: 1px
+        }
+
+        abbr:where([title]) {
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: inherit
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit
+        }
+
+        b,
+        strong {
+            font-weight: bolder
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+            font-size: 1em
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: initial
+        }
+
+        sub {
+            bottom: -.25em
+        }
+
+        sup {
+            top: -.5em
+        }
+
+        table {
+            text-indent: 0;
+            border-color: inherit;
+            border-collapse: collapse
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            font-feature-settings: inherit;
+            font-variation-settings: inherit;
+            font-size: 100%;
+            font-weight: inherit;
+            line-height: inherit;
+            color: inherit;
+            margin: 0;
+            padding: 0
+        }
+
+        button,
+        select {
+            text-transform: none
+        }
+
+        [type=button],
+        [type=reset],
+        [type=submit],
+        button {
+            background-color: initial;
+            background-image: none
+        }
+
+        :-moz-focusring {
+            outline: auto
+        }
+
+        :-moz-ui-invalid {
+            box-shadow: none
+        }
+
+        progress {
+            vertical-align: initial
+        }
+
+        ::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+            height: auto
+        }
+
+        [type=search] {
+            outline-offset: -2px
+        }
+
+        ::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit
+        }
+
+        summary {
+            display: list-item
+        }
+
+        blockquote,
+        dd,
+        dl,
+        figure,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        p,
+        pre {
+            margin: 0
+        }
+
+        fieldset {
+            margin: 0
+        }
+
+        fieldset,
+        legend {
+            padding: 0
+        }
+
+        menu,
+        ol,
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+        dialog {
+            padding: 0
+        }
+
+        textarea {
+            resize: vertical
+        }
+
+        input::-moz-placeholder,
+        textarea::-moz-placeholder {
+            opacity: 1;
+            color: #9ca3af
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            opacity: 1;
+            color: #9ca3af
+        }
+
+        [role=button],
+        button {
+            cursor: pointer
+        }
+
+        :disabled {
+            cursor: default
+        }
+
+        audio,
+        canvas,
+        embed,
+        iframe,
+        img,
+        object,
+        svg,
+        video {
+            display: block;
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto
+        }
+
+        [hidden] {
+            display: none
+        }
+
+        *,
+        ::backdrop,
+        :after,
+        :before {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: #3b82f680;
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia:
+        }
+
+        .absolute {
+            position: absolute
+        }
+
+        .relative {
+            position: relative
+        }
+
+        .bottom-1 {
+            bottom: .25rem
+        }
+
+        .left-1\/2 {
+            left: 50%
+        }
+
+        .right-1 {
+            right: 0.7rem;
+        }
+
+        .top-1 {
+            top: .25rem
+        }
+
+        .top-1\/2 {
+            top: 50%
+        }
+
+        .my-3 {
+            margin-top: .75rem;
+            margin-bottom: .75rem
+        }
+
+        .mb-1 {
+            margin-bottom: .25rem
+        }
+
+        .mb-2 {
+            margin-bottom: .5rem
+        }
+
+        .mb-3 {
+            margin-bottom: .75rem
+        }
+
+        .ml-auto {
+            margin-left: auto
+        }
+
+        .mt-14 {
+            margin-top: 3.5rem
+        }
+
+        .mt-2 {
+            margin-top: .5rem
+        }
+
+        .mt-2\.5 {
+            margin-top: .625rem
+        }
+
+        .mt-3 {
+            margin-top: .75rem
+        }
+
+        .mt-5 {
+            margin-top: 1.25rem
+        }
+
+        .mt-8 {
+            margin-top: 2rem
+        }
+
+        .mt-auto {
+            margin-top: auto
+        }
+
+        .block {
+            display: block
+        }
+
+        .flex {
+            display: flex
+        }
+
+        .grid {
+            display: grid
+        }
+
+        .hidden {
+            display: none
+        }
+
+        .h-1\/5 {
+            height: 20%
+        }
+
+        .h-10 {
+            height: 2.5rem
+        }
+
+        .h-12 {
+            height: 3rem
+        }
+
+        .h-2\/3 {
+            height: 66.666667%
+        }
+
+        .h-2\/4 {
+            height: 50%
+        }
+
+        .h-20 {
+            height: 5rem
+        }
+
+        .h-3 {
+            height: .75rem
+        }
+
+        .h-4 {
+            height: 1rem
+        }
+
+        .h-5 {
+            height: 1.25rem
+        }
+
+        .h-6 {
+            height: 1.5rem
+        }
+
+        .h-8 {
+            height: 2rem
+        }
+
+        .h-9 {
+            height: 2.25rem
+        }
+
+        .h-\[100\%\] {
+            height: 100%
+        }
+
+        .h-\[40px\] {
+            height: 40px
+        }
+
+        .h-\[90\%\] {
+            height: 90%
+        }
+
+        .h-\[calc\(100\%-160px\)\] {
+            height: calc(100% - 160px)
+        }
+
+        .h-auto {
+            height: auto
+        }
+
+        .h-full {
+            height: 100%
+        }
+
+        .max-h-8 {
+            max-height: 2rem
+        }
+
+        .max-h-\[10\%\] {
+            max-height: 10%
+        }
+
+        .max-h-\[66\.666667\%\] {
+            max-height: 66.666667%
+        }
+
+        .min-h-\[40px\] {
+            min-height: 40px
+        }
+
+        .w-10 {
+            width: 2.5rem
+        }
+
+        .w-11\/12 {
+            width: 91.666667%
+        }
+
+        .w-14 {
+            width: 3.5rem
+        }
+
+        .w-2\/4 {
+            width: 50%
+        }
+
+        .w-20 {
+            width: 5rem
+        }
+
+        .w-4 {
+            width: 1rem
+        }
+
+        .w-4\/5 {
+            width: 80%
+        }
+
+        .w-5 {
+            width: 1.25rem
+        }
+
+        .w-5\/6 {
+            width: 83.333333%
+        }
+
+        .w-6 {
+            width: 1.5rem
+        }
+
+        .w-8 {
+            width: 2rem
+        }
+
+        .w-\[40px\] {
+            width: 40px
+        }
+
+        .w-\[calc\(100\%-30px\)\] {
+            width: calc(100% - 30px)
+        }
+
+        .w-\[calc\(100\%-40px\)\] {
+            width: calc(100% - 0px)
+        }
+
+        .w-auto {
+            width: auto
+        }
+
+        .w-full {
+            width: 100%
+        }
+
+        .flex-1 {
+            flex: 1 1 0%
+        }
+
+        .-translate-x-1\/2 {
+            --tw-translate-x: -50%
+        }
+
+        .-translate-x-1\/2,
+        .-translate-x-full {
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+        }
+
+        .-translate-x-full {
+            --tw-translate-x: -100%
+        }
+
+        .-translate-y-1\/2 {
+            --tw-translate-y: -50%
+        }
+
+        .-translate-y-1\/2,
+        .scale-0 {
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+        }
+
+        .scale-0 {
+            --tw-scale-x: 0;
+            --tw-scale-y: 0
+        }
+
+        .transform {
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+        }
+
+        .cursor-none {
+            cursor: none
+        }
+
+        .grid-cols-2 {
+            grid-template-columns: repeat(2, minmax(0, 1fr))
+        }
+
+        .flex-col {
+            flex-direction: column
+        }
+
+        .items-end {
+            align-items: flex-end
+        }
+
+        .items-center {
+            align-items: center
+        }
+
+        .justify-center {
+            justify-content: center
+        }
+
+        .justify-between {
+            justify-content: space-between
+        }
+
+        .justify-items-center {
+            justify-items: center
+        }
+
+        .gap-1 {
+            gap: .25rem
+        }
+
+        .gap-2 {
+            gap: .5rem
+        }
+
+        .gap-3 {
+            gap: .75rem
+        }
+
+        .gap-5 {
+            gap: 1.25rem
+        }
+
+        .overflow-auto {
+            overflow: auto
+        }
+
+        .overflow-hidden,
+        .truncate {
+            overflow: hidden
+        }
+
+        .truncate {
+            text-overflow: ellipsis;
+            white-space: nowrap
+        }
+
+        .rounded-full {
+            border-radius: 9999px
+        }
+
+        .rounded-md {
+            border-radius: .375rem
+        }
+
+        .rounded-t-md {
+            border-top-left-radius: .375rem;
+            border-top-right-radius: .375rem
+        }
+
+        .border {
+            border-width: 1px
+        }
+
+        .border-b {
+            border-bottom-width: 1px
+        }
+
+        .border-\[\#01010342\] {
+            border-color: #01010342
+        }
+
+        .border-\[\#767881\] {
+            --tw-border-opacity: 1;
+            border-color: rgb(118 120 129/var(--tw-border-opacity))
+        }
+
+        .bg-buttons {
+            --tw-bg-opacity: 1;
+            background-color: #232429;
+            border-radius: 20px;
+        }
+
+        #container-configs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            transition: all 0.3s ease;
+            padding: 10px;
+        }
+
+        #container-configs>section {
+            width: 100%;
+            max-height: 100%;
+            overflow: auto;
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        #container-configs h1 {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        #container-configs p {
+            font-size: 12px;
+            color: #555;
+        }
+
+        #area-carrier-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #area-carrier-list label {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #area-carrier-list label:hover {
+            background-color: #f0f0f0;
+        }
+
+        #area-carrier-list label img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .loader {
+            max-width: 15rem;
+            width: 50%;
+            height: auto;
+            stroke-linecap: round;
+            margin: auto;
+            margin-top: -70px;
+        }
+
+        circle {
+            fill: none;
+            stroke-width: 3.5;
+            animation-name: preloader;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            transform-origin: 170px 170px;
+            will-change: transform;
+
+            &:nth-of-type(1) {
+                stroke-dasharray: 350px;
+            }
+
+            &:nth-of-type(2) {
+                stroke-dasharray: 300px;
+            }
+
+            &:nth-of-type(3) {
+                stroke-dasharray: 250px;
+            }
+
+            &:nth-of-type(4) {
+                stroke-dasharray: 100px;
+            }
+        }
+
+        @keyframes preloader {
+            50% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .connection-img {
+            width: 100%;
+            margin-top: -70px;
+        }
+
+        .help-bottom {
+            position: absolute;
+            background: #232429;
+            border-radius: 20px;
+            padding: 4px 15px 4px 15px;
+            color: #ffffff;
+            font-size: 13px;
+            margin-left: 15px;
+            cursor: pointer;
+            right: 16px;
+        }
+
+        p {
+            line-height: 1.2 !important;
+        }
+
+        .page-title {
+            background: #ffffff !important;
+            border: 1px solid #e2e4e6;
+            padding: 5px 15px 10px 15px;
+            border-radius: 15px;
+            margin-top: 10px;
+            box-shadow: 1.171px 9.607px 15px 0px rgba(71, 95, 123, 0.2);
+        }
+
+        .title-default {
+            font-size: 17px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .title-sessions {
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .text-default {
+            font-size: 15px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .text-default-black {
+            color: #000000;
+            font-weight: 700;
+            font-size: 15px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .svg-sessions {
+            width: 150px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .button-black {
+            background: #373737;
+            border-radius: 20px;
+        }
+
+        .menu-btn {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px !important;
+            padding: 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            max-width: 90%;
+            margin: 0 auto;
+            border-radius: 20px;
+        }
+
+        .menu-btn:hover {
+            background-color: #eee;
+        }
+
+        .icon-menu {
+            margin-right: 10px;
+            font-size: 40px;
+        }
+
+        .text-menu {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title-menu {
+            font-weight: bold;
+            line-height: 1.1;
+        }
+
+        .subtitle-menu {
+            color: #777;
+            line-height: 1.1;
+            font-size: 13px;
+        }
+
+        .menu-mobile {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .bg-pop-up-menu {
+            --tw-bg-opacity: 1;
+            background-color: #ffffff;
+            margin: auto;
+            border-radius: 20px;
+            height: auto;
+            padding: 10px 0px 20px 0px;
+        }
+
+        .acessos-section {
+            margin-top: 10px;
+            margin-left: 10px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #373737;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px !important;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            max-width: 90%;
+            margin: 0 auto;
+            border-radius: 20px;
+        }
+
+
+        .dark-mode {
+            background-color: #272a32 !important;
+            color: #ffffff;
+        }
+
+        .dark-mode .bg-input {
+            background-color: #212529 !important;
+            border: 1px solid #343a40;
+            box-shadow: none;
+        }
+
+        .dark-mode .page-title {
+            background-color: #212529 !important;
+            border: 1px solid #343a40;
+        }
+
+        .dark-mode .bg-conect {
+            background-color: #272a32;
+            border: 1px solid #343a40;
+            border-radius: 20px;
+        }
+
+        .dark-mode .bg-pop-up-menu {
+            --tw-bg-opacity: 1;
+            background-color: #343a40;
+            margin: auto;
+            border-radius: 20px;
+            height: auto;
+            padding: 10px 0px 20px 0px;
+        }
+
+        .dark-mode .text-\[\#7d7f81\] {
+            --tw-text-opacity: 1;
+            color: #ffffff;
+        }
+
+        .dark-mode .menu-btn {
+            display: flex;
+            align-items: center;
+            background-color: #272a32;
+            border: 1px solid #343a40;
+            margin-bottom: 10px !important;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            max-width: 90%;
+            margin: 0 auto;
+            border-radius: 20px;
+        }
+
+        .dark-mode .bg-pop-up {
+            --tw-bg-opacity: 1;
+            background-color: #282d31;
+            border: 1px solid #343a40;
+            border-radius: 20px;
+            margin: auto;
+        }
+
+        .dark-mode .text-black {
+            --tw-text-opacity: 1;
+            color: #ffffff;
+        }
+
+        .dark-mode .container-config {
+            --tw-bg-opacity: 1;
+            background-color: #272a32;
+            border-radius: 20px;
+            border: 1px solid #343a40;
+        }
+
+        .dark-mode .text-white {
+            --tw-text-opacity: 1;
+            color: #cfcfcf;
+        }
+
+        .dark-mode .normal-button {
+            flex: 1;
+            background: #212529;
+            border: 1px solid #343a40;
+            color: white;
+            padding: 5px;
+            font-size: 14px;
+            margin-right: 10px;
+            margin-top: 10px;
+            border-radius: 20px;
+        }
+
+        .dark-mode #container-configs>section {
+            width: 100%;
+            max-height: 100%;
+            overflow: auto;
+            background-color: #212529;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .dark-mode .from-input {
+            background-color: #272a32;
+            border-radius: 20px;
+            width: 100%;
+        }
+
+        .dark-mode .acessos-section {
+            margin-top: 10px;
+            margin-left: 10px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .dark-mode .text-\[\#767881\] {
+            --tw-text-opacity: 1;
+            color: #e2e4e6;
+        }
+
+        .dark-mode .menu {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px !important;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            max-width: 90%;
+            margin: 0 auto;
+            border-radius: 20px;
+        }
+
+        .dark-mode .subtitle-menu {
+            color: #bdbdbd;
+            line-height: 1.1;
+            font-size: 13px;
+        }
+
+        .dark-mode .help-bottom {
+            background: #212529;
+            border: 1px solid #343a40;
+            border-radius: 20px;
+            padding: 4px 15px 4px 15px;
+            color: #ffffff;
+            font-size: 13px;
+        }
+
+        .black-section {
+            background-color: #000000;
+        }
+
+        @media (min-height: 240px) {
+            .black-section {
+                height: 18px;
+            }
+        }
+
+        @media (min-height: 320px) {
+            .black-section {
+                height: 24px;
+            }
+        }
+
+        @media (min-height: 480px) {
+            .black-section {
+                height: 28px;
+            }
+        }
+
+        @media (min-height: 720px) {
+            .black-section {
+                height: 34px;
+            }
+        }
+
+        @media (min-height: 1080px) {
+            .black-section {
+                height: 36px;
+            }
+        }
+
+
+        .home-container {
+            padding: 10px 15px 30px !important;
+        }
+
+        .dark-mode .button-black {
+            background-color: #272a32;
+            border: 1px solid #343a40;
+            border-radius: 20px;
+        }
+
+        .dark-mode .text-\[\#FF0000\] {
+            --tw-text-opacity: 1;
+            color: #ffffff;
+        }
+
+
+        .toggle-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle-label {
+            margin-right: 10px;
+        }
+
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+            background-color: #ccc;
+            border-radius: 20px;
+        }
+
+        .toggle-switch .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #e5e7eb;
+            border-radius: 20px;
+            transition: 0.4s;
+        }
+
+        .toggle-switch .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 2px;
+            bottom: 2px;
+            background-color: #ccc;
+            border-radius: 50%;
+            transition: 0.4s;
+        }
+
+        .toggle-switch input:checked+.slider {
+            background-color: #7d7f81;
+        }
+
+        .toggle-switch input:checked+.slider:before {
+            transform: translateX(20px);
+        }
+
+        .icon-toggle {
+            margin-right: 5px !important;
+            width: 16px;
+            height: 16px;
+            color: #e2e4e6;
+        }
+
+        .container-config {
+            --tw-bg-opacity: 1;
+            background-color: #ffffff;
+            border-radius: 20px;
+            border: 1px solid #01010342;
+        }
+
+        .bg-conect {
+            background-color: #232429;
+            border-radius: 20px;
+        }
+
+        .bg-black {
+            background-color: #00000042;
+            backdrop-filter: blur(10px);
+            height: 100%;
+        }
+
+        .bg-pop-up {
+            --tw-bg-opacity: 1;
+            background-color: #ffffff;
+            margin: auto;
+            border-radius: 20px;
+        }
+
+        .bg-input {
+            background-color: #ffffff !important;
+            border: 1px solid #e2e4e6;
+            border-radius: 20px;
+            box-shadow: 1.171px 9.607px 15px 0px rgba(71, 95, 123, 0.2);
+        }
+
+        .bg-\[\#414cb8\] {
+            --tw-bg-opacity: 1;
+            background-color: rgb(65 76 184/var(--tw-bg-opacity))
+        }
+
+        .bg-\[\#575e81\] {
+            --tw-bg-opacity: 1;
+            background-color: rgb(87 94 129/var(--tw-bg-opacity))
+        }
+
+        .bg-red-900 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(127 29 29/var(--tw-bg-opacity))
+        }
+
+        .bg-red {
+            --tw-bg-opacity: 1;
+            background-color: #535353;
+            border-radius: 20px;
+        }
+
+        .dark-mode .bg-red {
+            --tw-bg-opacity: 1;
+            background-color: #535353;
+            border-radius: 20px;
+        }
+
+        .bg-transparent {
+            background-color: initial
+        }
+
+        .bg-gradient-to-r {
+            background-image: linear-gradient(to right, var(--tw-gradient-stops))
+        }
+
+        .from-input {
+            background-color: #ffffff;
+            border-radius: 20px;
+            width: 100%;
+        }
+
+        .to-transparent {
+            --tw-gradient-to: #0000 var(--tw-gradient-to-position)
+        }
+
+        .stroke-\[\#FFFFFF\],
+        .stroke-white {
+            stroke: #000000;
+        }
+
+        .p-2 {
+            padding: .5rem
+        }
+
+        .px-1 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .px-2 {
+            padding-left: .5rem;
+            padding-right: .5rem
+        }
+
+        .px-3 {
+            padding-left: .75rem;
+            padding-right: .75rem
+        }
+
+        .px-\[10\%\] {
+            padding-left: 10%;
+            padding-right: 10%
+        }
+
+        .px-\[10px\] {
+            padding-left: 10px;
+            padding-right: 10px
+        }
+
+        .py-2 {
+            padding-top: .5rem;
+            padding-bottom: .5rem
+        }
+
+        .py-2\.5 {
+            padding-top: 0.5rem;
+            padding-bottom: 1.1rem
+        }
+
+        .pb-\[30px\] {
+            padding-bottom: 30px
+        }
+
+        .pl-1 {
+            padding-left: 0.8rem;
+        }
+
+        .pr-6 {
+            padding-right: 1.5rem
+        }
+
+        .pt-\[10px\] {
+            padding-top: 10px
+        }
+
+        .text-center {
+            text-align: center
+        }
+
+        .text-\[0\.5rem\] {
+            font-size: .5rem
+        }
+
+        .text-\[0\.65rem\] {
+            font-size: .65rem
+        }
+
+        .text-\[0\.6rem\] {
+            font-size: .6rem
+        }
+
+        .text-lg {
+            font-size: 1.125rem;
+            line-height: 1;
+        }
+
+        .text-sm {
+            font-size: .775rem;
+            line-height: 1rem
+        }
+
+        .text-xs {
+            font-size: .75rem;
+            line-height: 1rem
+        }
+
+        .font-medium {
+            font-weight: 500
+        }
+
+        .leading-7 {
+            line-height: 1.75rem
+        }
+
+        .text-\[\#11c9ff\] {
+            --tw-text-opacity: 1;
+            color: rgb(17 201 255/var(--tw-text-opacity))
+        }
+
+        .text-\[\#767881\] {
+            --tw-text-opacity: 1;
+            color: rgb(118 120 129/var(--tw-text-opacity))
+        }
+
+        .text-\[\#7d7f81\] {
+            --tw-text-opacity: 1;
+            color: rgb(125 127 129/var(--tw-text-opacity))
+        }
+
+        .text-\[\#FF0000\] {
+            --tw-text-opacity: 1;
+            color: rgb(255 0 0/var(--tw-text-opacity))
+        }
+
+        .text-white {
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255/var(--tw-text-opacity))
+        }
+
+        .text-black {
+            --tw-text-opacity: 1;
+            color: rgb(0 0 0/var(--tw-text-opacity))
+        }
+
+        .shadow-\[0px_0px_10px_0px_rgba\(18\2c 22\2c 34\2c 1\)\] {
+            --tw-shadow: 0px 0px 10px 0px #121622;
+            --tw-shadow-colored: 0px 0px 10px 0px var(--tw-shadow-color);
+        }
+
+        .outline-none {
+            outline: 2px solid #0000;
+            outline-offset: 2px
+        }
+
+        .transition-\[max-height\] {
+            transition-property: max-height;
+            transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+            transition-duration: .15s
+        }
+
+        .transition-all {
+            transition-property: all;
+            transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+            transition-duration: .15s
+        }
+
+        .duration-1000 {
+            transition-duration: 1s
+        }
+
+        @media (max-width:300px) {
+            .max-\[300px\]\:text-sm {
+                font-size: .775rem;
+                line-height: 1rem
+            }
+        }
+
+        @media (min-width:280px) {
+            .min-\[280px\]\:text-sm {
+                font-size: .875rem;
+                line-height: 1.25rem
+            }
+
+            .min-\[280px\]\:text-xs {
+                font-size: .75rem;
+                line-height: 1rem
+            }
+        }
+
+        .button-container {
+            display: flex;
+        }
+
+        .normal-button {
+            flex: 1;
+            background: #232429;
+            color: white;
+            border: none;
+            padding: 5px;
+            font-size: 14px;
+            margin-right: 10px;
+            margin-top: 10px;
+            border-radius: 20px;
+        }
+
+        .normal-button:last-child {
+            margin-right: 0;
+        }
+
+        .normal-button:hover {
+            background-color: #FF0000;
+        }
+
+        .container-credentails-and-corrier {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 92%;
+        }
+
+
+        .icon {
+            margin-right: 10px;
+            color: red;
+        }
+
+        @media (min-width: 768px) {
+            .w-11\/12 {
+                width: 92%;
+            }
+        }
+
+        .w-9\/9 {
+            width: 40%;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .mt-13 {
+            margin-top: 15px;
+        }
+
+        .button-container-connect {
+            display: flex;
+            align-items: center;
+            width: 91%;
+        }
+
+        .round-button {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background-color: #272a32;
+            border: 1px solid #343a40;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin-left: 10px;
+            /* Adiciona um espaçamento entre os botões */
+        }
+
+        .round-button svg {
+            fill: #fff;
+            width: 100%;
+            height: 100%;
+            margin-top: 7px;
+            margin-left: 8px;
+        }
+
+        .main-button {
+            flex: 1;
+            height: 35px;
+            border-radius: 20px;
+            background-color: #272a32;
+            border: 1px solid #343a40;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: none;
+        }
+
+        .main-button span {
+            font-size: 14px;
+            font-weight: medium;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body class="w-full h-full">
+    <main class="w-full h-full flex flex-col relative">
+        <section class="black-section"></section>
+        <section class="w-full h-full flex flex-col home-container" id="container-home">
+            <section class="flex justify-between items-center relative">
+                <div id="svg-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="open-menu" viewBox="0 0 24 24" width="20" height="20"
+                        fill="currentColor">
+                        <path
+                            d="M7,0H4A4,4,0,0,0,0,4V7a4,4,0,0,0,4,4H7a4,4,0,0,0,4-4V4A4,4,0,0,0,7,0ZM9,7A2,2,0,0,1,7,9H4A2,2,0,0,1,2,7V4A2,2,0,0,1,4,2H7A2,2,0,0,1,9,4Z" />
+                        <path
+                            d="M20,0H17a4,4,0,0,0-4,4V7a4,4,0,0,0,4,4h3a4,4,0,0,0,4-4V4A4,4,0,0,0,20,0Zm2,7a2,2,0,0,1-2,2H17a2,2,0,0,1-2-2V4a2,2,0,0,1,2-2h3a2,2,0,0,1,2,2Z" />
+                        <path
+                            d="M7,13H4a4,4,0,0,0-4,4v3a4,4,0,0,0,4,4H7a4,4,0,0,0,4-4V17A4,4,0,0,0,7,13Zm2,7a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V17a2,2,0,0,1,2-2H7a2,2,0,0,1,2,2Z" />
+                        <path
+                            d="M20,13H17a4,4,0,0,0-4,4v3a4,4,0,0,0,4,4h3a4,4,0,0,0,4-4V17A4,4,0,0,0,20,13Zm2,7a2,2,0,0,1-2,2H17a2,2,0,0,1-2-2V17a2,2,0,0,1,2-2h3a2,2,0,0,1,2,2Z" />
+                    </svg>
+                </div>
+                <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <span class="text-black min-[280px]:text-sm text-sm title-default"></span>
+                </div>
+
+                <div class="toggle-container">
+                    <svg class="icon-toggle" id="moonIcon" xmlns="http://www.w3.org/2000/svg" id="Layer_1"
+                        data-name="Layer 1" viewBox="0 0 24 24" width="20" height="20">
+                        <path
+                            d="M12.009,24A12.067,12.067,0,0,1,.075,10.725,12.121,12.121,0,0,1,10.1.152a13,13,0,0,1,5.03.206,2.5,2.5,0,0,1,1.8,1.8,2.47,2.47,0,0,1-.7,2.425c-4.559,4.168-4.165,10.645.807,14.412h0a2.5,2.5,0,0,1-.7,4.319A13.875,13.875,0,0,1,12.009,24ZM20.5,12a1,1,0,0,1-.97-.757l-.358-1.43L17.74,9.428a1,1,0,0,1,.035-1.94l1.4-.325.351-1.406a1,1,0,0,1,1.94,0l.355,1.418,1.418.355a1,1,0,0,1,0,1.94l-1.418.355-.355,1.418A1,1,0,0,1,20.5,12ZM23,17.015a1,1,0,0,0,0,2A1,1,0,0,0,23,17.015Zm-6-4a1,1,0,0,0,0,2A1,1,0,0,0,17,13.015Z" />
+                    </svg>
+
+                    <svg class="icon-toggle" id="sunIcon" xmlns="http://www.w3.org/2000/svg" id="Layer_1"
+                        data-name="Layer 1" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path
+                            d="M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5,5-2.24,5-5-2.24-5-5-5Zm0,7c-1.1,0-2-.9-2-2s.9-2,2-2,2,.9,2,2-.9,2-2,2Zm4.95-6.95c-.59-.59-.59-1.54,0-2.12l1.41-1.41c.59-.59,1.54-.59,2.12,0,.59,.59,.59,1.54,0,2.12l-1.41,1.41c-.29,.29-.68,.44-1.06,.44s-.77-.15-1.06-.44ZM7.05,16.95c.59,.59,.59,1.54,0,2.12l-1.41,1.41c-.29,.29-.68,.44-1.06,.44s-.77-.15-1.06-.44c-.59-.59-.59-1.54,0-2.12l1.41-1.41c.59-.59,1.54-.59,2.12,0ZM3.51,5.64c-.59-.59-.59-1.54,0-2.12,.59-.59,1.54-.59,2.12,0l1.41,1.41c.59,.59,.59,1.54,0,2.12-.29,.29-.68,.44-1.06,.44s-.77-.15-1.06-.44l-1.41-1.41Zm16.97,12.73c.59,.59,.59,1.54,0,2.12-.29,.29-.68,.44-1.06,.44s-.77-.15-1.06-.44l-1.41-1.41c-.59-.59-.59-1.54,0-2.12,.59-.59,1.54-.59,2.12,0l1.41,1.41Zm3.51-6.36c0,.83-.67,1.5-1.5,1.5h-2c-.83,0-1.5-.67-1.5-1.5s.67-1.5,1.5-1.5h2c.83,0,1.5,.67,1.5,1.5ZM3.5,13.5H1.5c-.83,0-1.5-.67-1.5-1.5s.67-1.5,1.5-1.5H3.5c.83,0,1.5,.67,1.5,1.5s-.67,1.5-1.5,1.5ZM10.5,3.5V1.5c0-.83,.67-1.5,1.5-1.5s1.5,.67,1.5,1.5V3.5c0,.83-.67,1.5-1.5,1.5s-1.5-.67-1.5-1.5Zm3,17v2c0,.83-.67,1.5-1.5,1.5s-1.5-.67-1.5-1.5v-2c0-.83,.67-1.5,1.5-1.5s1.5,.67,1.5,1.5Z" />
+                    </svg>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="darkModeToggle" style="margin-left: 5px;">
+                        <span class="slider"></span>
+                    </label>
+
+
+                </div>
+            </section>
+
+            <div class="page-title">
+                <div class="subtitle">
+                    <p>
+                        <span class="font-semibold text-sm mr-2" style="font-weight: 700;">IP Local: </span>
+                        <span class="font-semibold text-xs" id="local-ip">Sem sinal</span>
+                        <span class="font-semibold text-sm mr-2" style="font-weight: 700;"> -
+                            Status: <span class="text-[#767881] text-sm font-medium"
+                                id="vpn-status">Desconectado</span></span>
+                    </p>
+                    </p>
+                </div>
+            </div>
+
+
+            <section class="w-full h-1/5 flex justify-center" style="margin-top:10px;">
+                <img class="w-full" id="app-logo" style="border-radius: 20px;"
+                    src="" alt="" />
+            </section>
+
+            <section class="w-full h-auto flex flex-col items-center gap-3 mt-2.5 py-2.5 bg-input rounded-md">
+                <h1 class="text-lg font-medium"></h1>
+                <section class="container-credentails-and-corrier h-[40px] flex justify-between items-center gap-2"
+                    id="container-credentails-and-corrier">
+                    <button
+                        class="w-[calc(100%-40px)] h-full flex items-center justify-between gap-1 px-1 rounded-md cursor-none outline-none container-config"
+                        id="button-of-list-carrier" type="button" title="Selecionar Configuração">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="w-6 h-6 text-black" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                        </svg>
+
+                        <span class="w-full text-black text-sm truncate" id="value-of-carrier">ESCOLHA UMA
+                            CONFIGURAÇÃO</span>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="text-black w-5 h-5" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </button>
+                </section>
+
+                <div class="flex gap-2 items-center" style="width: 92%;">
+                    <div class="w-1/2 h-9 overflow-hidden border border-[#01010342] rounded-md bg-gradient-to-r from-input to-transparent"
+                        id="container-input-username">
+                        <input class="w-full h-full pl-1 outline-none text-black bg-transparent" id="input-username"
+                            type="text" placeholder="Usuário" />
+                    </div>
+
+                    <div class="w-1/2 h-9 flex items-center relative overflow-hidden border border-[#01010342] rounded-md bg-gradient-to-r from-input to-transparent"
+                        id="container-input-password">
+                        <input class="w-full h-full pl-1 outline-none black-white bg-transparent" id="input-password"
+                            type="password" placeholder="Senha" />
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="w-5 h-5 absolute right-1 text-black" id="eye-view-password" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                            <path
+                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="w-5 h-5 absolute right-1 text-black hidden" id="eye-not-view-password"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486z" />
+                            <path
+                                d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829" />
+                            <path
+                                d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708" />
+                        </svg>
+                    </div>
+
+                    <div class="w-full h-9 hidden items-center relative overflow-hidden border border-[#01010342] rounded-md bg-gradient-to-r from-input to-transparent"
+                        id="container-input-uuid">
+                        <input class="w-full h-full pl-1 outline-none text-black bg-transparent" id="input-uuid"
+                            type="password" placeholder="UUID" />
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="w-5 h-5 absolute right-1 text-white" id="eye-view-uuid" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                            <path
+                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="w-5 h-5 absolute right-1 text-white hidden" id="eye-not-view-uuid"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486z" />
+                            <path
+                                d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829" />
+                            <path
+                                d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div id="spinner" style="display: none;">
+                    <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
+                        <circle cx="170" cy="170" r="160" stroke="#0074ba" />
+                        <circle cx="170" cy="170" r="135" stroke="#00d26a" />
+                        <circle cx="170" cy="170" r="110" stroke="#0074ba" />
+                        <circle cx="170" cy="170" r="85" stroke="#00d26a" />
+                    </svg>
+                    <p style="text-align: center;">Conectando...</p>
+                </div>
+
+                <div class="connection-img" id="connected-img" style="display: none;">
+                    <img style="width: 35% !important; margin: auto;"
+                        src="https://images.emojiterra.com/google/noto-emoji/unicode-15/animated/1f30d.gif" />
+                    <p style="text-align: center;">Conectado com sucesso ✅</p>
+                </div>
+
+                <div class="button-container-connect">
+                    <button class="main-button" id="button-vpn-start-stop" type="button"
+                        title="conectar ou desconectar vpn">
+                        <span id="status-button-vpn">Conectar</span>
+                    </button>
+
+                    <button class="round-button" id="sync" onclick="DtStartAppUpdate.execute()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z" />
+                            <path
+                                d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9" />
+                        </svg>
+                    </button>
+                </div>
+            </section>
+            <div>
+                <section class="button-container">
+                    <!-- <button class="normal-button" id="sync" onclick="DtStartAppUpdate.execute()">Atualizar</button> -->
+                    <button class="normal-button" id="button-logs"><span class="icon-buttons">Registros</button>
+                    <!-- <button class="normal-button" id="nav-perfil"><span class="icon-buttons">Perfil</button> -->
+                </section>
+
+                <!-- <section class="promo-section" style="text-align: center; margin-top: 10px;">Mantenha seu aplicativo
+                    sempre
+                    atualizado e evite a interrupção dos serviços.
+                </section> -->
+
+                <section class="w-full h-10 flex items-center justify-center gap-2 mt-auto rounded-md bg-buttons"
+                    id="nav-help" style="display: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="text-white w-4 h-4" viewBox="0 0 16 16">
+                        <path
+                            d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5" />
+                        <path
+                            d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                    </svg>
+
+                    <span class="text-white text-sm font-medium">PRECISO DE AJUDA</span>
+                </section>
+        </section>
+
+        <section class="w-full h-full flex flex-col items-center absolute transition-all bg-black -translate-x-full"
+            id="container-menu">
+            <section class="w-11/12 h-2/3 flex flex-col relative rounded-md bg-pop-up-menu">
+                <section class="w-full h-10 flex justify-between items-center px-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="ml-auto text-black w-8 h-8" id="hidden-menu" viewBox="0 0 24 24">
+                        <path
+                            d="M19,2H5C2.243,2,0,4.243,0,7v10c0,2.757,2.243,5,5,5h14c2.757,0,5-2.243,5-5V7c0-2.757-2.243-5-5-5Zm3,15c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V7c0-1.654,1.346-3,3-3h14c1.654,0,3,1.346,3,3v10Zm-5.793-7.793l-2.793,2.793,2.793,2.793c.391,.391,.391,1.023,0,1.414-.195,.195-.451,.293-.707,.293s-.512-.098-.707-.293l-2.793-2.793-2.793,2.793c-.195,.195-.451,.293-.707,.293s-.512-.098-.707-.293c-.391-.391-.391-1.023,0-1.414l2.793-2.793-2.793-2.793c-.391-.391-.391-1.023,0-1.414s1.023-.391,1.414,0l2.793,2.793,2.793-2.793c.391-.391,1.023-.391,1.414,0s.391,1.023,0,1.414Z" />
+                    </svg>
+                </section>
+
+                <section class="menu-mobile">
+                    <div class="menu">
+
+                        <div class="text-menu">
+                            <div class="title-menu">CONFIGURAÇÕES</div>
+                            <div class="subtitle-menu">Configure o seu aplicativo e faça ajustes do seu chip de forma
+                                totalmente ilimitada.</div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+
+                <section class="menu-mobile">
+                    <div class="menu-btn" id="nav-terms">
+                        <div class="icon-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M22.775,9.792c-.778-.649-1.8-.917-2.795-.737l-5.897,1.072c-.795,.145-1.507,.499-2.083,1-.576-.501-1.288-.855-2.083-1l-5.898-1.073c-.997-.179-2.015,.087-2.794,.737-.778,.649-1.225,1.604-1.225,2.617v9.433l12,2.182,12-2.182V12.41c0-1.014-.446-1.967-1.225-2.617Zm-12.275,10.91l-7.5-1.364v-6.929c0-.167,.092-.268,.147-.314,.055-.046,.169-.117,.335-.089l5.898,1.072c.648,.118,1.12,.683,1.12,1.342v6.281Zm10.5-1.364l-7.5,1.364v-6.281c0-.66,.471-1.224,1.12-1.342l5.897-1.072c.166-.033,.28,.042,.335,.088,.056,.046,.147,.147,.147,.314v6.929ZM7.5,4.5C7.5,2.015,9.515,0,12,0s4.5,2.015,4.5,4.5-2.015,4.5-4.5,4.5-4.5-2.015-4.5-4.5Z" />
+                            </svg>
+                        </div>
+                        <div class="text-menu">
+                            <div class="title-menu">Termos de uso do aplicativo</div>
+                            <div class="subtitle-menu">Leia cuidadosamente nossos termos antes de usar o aplicativo.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="menu-mobile">
+                    <div class="menu-btn" id="nav-hotspot">
+                        <div class="icon-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="m20,15h-4v-4c0-.552-.447-1-1-1s-1,.448-1,1v4H4c-2.206,0-4,1.794-4,4v1c0,2.206,1.794,4,4,4h16c2.206,0,4-1.794,4-4v-1c0-2.206-1.794-4-4-4Zm-15.5,6c-.828,0-1.5-.672-1.5-1.5s.672-1.5,1.5-1.5,1.5.672,1.5,1.5-.672,1.5-1.5,1.5Zm5,0c-.828,0-1.5-.672-1.5-1.5s.672-1.5,1.5-1.5,1.5.672,1.5,1.5-.672,1.5-1.5,1.5ZM15,5c1.817,0,3.526.708,4.812,1.993.391.391.391,1.024,0,1.414-.195.195-.451.293-.707.293s-.512-.098-.707-.293c-.907-.908-2.114-1.407-3.397-1.407s-2.49.5-3.397,1.407c-.39.391-1.023.391-1.414,0-.391-.39-.391-1.023,0-1.414,1.285-1.285,2.994-1.993,4.811-1.993Zm-8.778-1.182C8.485,1.392,11.684,0,15,0s6.516,1.392,8.778,3.818c.377.404.354,1.037-.05,1.414-.192.18-.438.269-.682.269-.268,0-.534-.107-.731-.318-1.886-2.022-4.552-3.182-7.315-3.182s-5.43,1.16-7.315,3.182c-.378.404-1.01.425-1.414.049-.404-.377-.426-1.01-.049-1.414Z" />
+                            </svg>
+                        </div>
+                        <div class="text-menu">
+                            <div class="title-menu">Roteador Wi-fi (Proxy)</div>
+                            <div class="subtitle-menu">Compartilhe sua internet com outras pessoas.</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="menu-mobile">
+                    <div class="menu-btn" id="nav-apn">
+                        <div class="icon-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="m17,0h-4.757c-1.068,0-2.072.416-2.829,1.172l-2.242,2.242c-.745.744-1.172,1.774-1.172,2.828v8.758c0,2.757,2.243,5,5,5h6c2.757,0,5-2.243,5-5V5c0-2.757-2.243-5-5-5Zm3,15c0,1.654-1.346,3-3,3h-6c-1.654,0-3-1.346-3-3V6.242c0-.526.213-1.042.586-1.414l2.242-2.242c.378-.378.881-.586,1.415-.586h4.757c1.654,0,3,1.346,3,3v10Zm-3,8c0,.553-.447,1-1,1h-5c-4.962,0-9-4.037-9-9v-7c0-.553.448-1,1-1s1,.447,1,1v7c0,3.859,3.14,7,7,7h5c.553,0,1,.447,1,1Zm-3-11h-4v-1.5c0-.828.672-1.5,1.5-1.5h2.5v3Zm4-1.5v1.5h-3v-3h1.5c.828,0,1.5.672,1.5,1.5Zm-8,2.5h3v3h-1.5c-.828,0-1.5-.672-1.5-1.5v-1.5Zm4,0h4v1.5c0,.828-.672,1.5-1.5,1.5h-2.5v-3Z" />
+                            </svg>
+                        </div>
+                        <div class="text-menu">
+                            <div class="title-menu">Configurações de APN</div>
+                            <div class="subtitle-menu">Ajuste seu chip para conseguir navegar corretamente.</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="menu-mobile">
+                    <div class="menu-btn" id="nav-cache">
+                        <div class="icon-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M23.715,2.285a1.013,1.013,0,0,0-1.43,0L17.521,7.049l-.32-.313a5.008,5.008,0,0,0-6.429-.479A16.618,16.618,0,0,1,6.224,8.685L4.15,9.293a5.036,5.036,0,0,0-3.113,2.635A4.973,4.973,0,0,0,.9,15.947a12.95,12.95,0,0,0,12.112,8.064h.924a1.011,1.011,0,0,0,.578-.182A15.288,15.288,0,0,0,21.224,13.62a5.029,5.029,0,0,0-1.453-4.374l-.8-.784,4.747-4.747A1.013,1.013,0,0,0,23.715,2.285Zm-10.107,19.7h-.6A11.3,11.3,0,0,1,8.7,21.138l.011-.006a11.546,11.546,0,0,0,4.351-3.8l.518-.761a1.01,1.01,0,0,0-1.67-1.138l-.518.761A9.535,9.535,0,0,1,7.8,19.327l-1.251.63a10.757,10.757,0,0,1-2.583-2.57,11.625,11.625,0,0,0,4.377-2.664,1.011,1.011,0,0,0-1.414-1.446,9.617,9.617,0,0,1-3.98,2.32c-.061-.135-.127-.267-.182-.406a2.906,2.906,0,0,1,.085-2.381,3.023,3.023,0,0,1,1.864-1.578l2.073-.608a15.364,15.364,0,0,0,3.426-1.588l7.915,7.712A14.192,14.192,0,0,1,13.608,21.989Zm5.62-8.683a12.421,12.421,0,0,1-.309,1.387L11.948,7.9l0,0a3.011,3.011,0,0,1,1.755-.566,2.973,2.973,0,0,1,2.084.849l2.569,2.509A3.01,3.01,0,0,1,19.228,13.306Z" />
+                            </svg>
+                        </div>
+                        <div class="text-menu">
+                            <div class="title-menu">Restauração do aplicativo</div>
+                            <div class="subtitle-menu">Elimine resíduos de versões antigas restaurando seu aplicativo.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="menu-mobile" style="margin-bottom:10px;">
+                    <div class="menu-btn" id="nav-battery">
+                        <div class="icon-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M7,18.5c0,.829-.671,1.5-1.5,1.5-3.033,0-5.5-2.467-5.5-5.5v-5c0-3.033,2.467-5.5,5.5-5.5,.829,0,1.5,.671,1.5,1.5s-.671,1.5-1.5,1.5c-1.378,0-2.5,1.122-2.5,2.5v5c0,1.378,1.122,2.5,2.5,2.5,.829,0,1.5,.671,1.5,1.5Zm5.593-8h-2.142l2.331-4.283c.396-.728,.126-1.639-.601-2.035-.727-.396-1.638-.127-2.035,.601,0,0-3.012,5.559-3.042,5.657-.22,.728-.091,1.489,.354,2.089,.451,.608,1.186,.971,1.964,.971h2.235l-2.149,4.333c-.368,.742-.065,1.642,.677,2.01,.214,.106,.441,.157,.666,.157,.552,0,1.083-.306,1.345-.834l2.463-4.966c.438-.733,.456-1.65,.043-2.421-.424-.79-1.231-1.28-2.109-1.28Zm10.407-2.5h-1.208c-.655-2.306-2.78-4-5.292-4-.828,0-1.5,.671-1.5,1.5s.672,1.5,1.5,1.5c1.379,0,2.5,1.122,2.5,2.5v5c0,1.378-1.121,2.5-2.5,2.5-.828,0-1.5,.671-1.5,1.5s.672,1.5,1.5,1.5c2.513,0,4.637-1.694,5.292-4h1.208c.552,0,1-.448,1-1v-6c0-.552-.448-1-1-1Z" />
+                            </svg>
+                        </div>
+                        <div class="text-menu">
+                            <div class="title-menu">Otimizar bateria</div>
+                            <div class="subtitle-menu">Obtenha um desempenho melhor do seu aparelho otimizando sua
+                                bateria.</div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+        <section
+            class="w-full h-full flex flex-col items-center justify-center absolute transition-all scale-0 bg-black"
+            id="container-terms">
+            <section class="w-11/12 h-2/3 flex flex-col relative rounded-md bg-pop-up">
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg-sessions" id="termos" data-name="termos"
+                    viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M22.775,9.792c-.778-.649-1.8-.917-2.795-.737l-5.897,1.072c-.795,.145-1.507,.499-2.083,1-.576-.501-1.288-.855-2.083-1l-5.898-1.073c-.997-.179-2.015,.087-2.794,.737-.778,.649-1.225,1.604-1.225,2.617v9.433l12,2.182,12-2.182V12.41c0-1.014-.446-1.967-1.225-2.617Zm-12.275,10.91l-7.5-1.364v-6.929c0-.167,.092-.268,.147-.314,.055-.046,.169-.117,.335-.089l5.898,1.072c.648,.118,1.12,.683,1.12,1.342v6.281Zm10.5-1.364l-7.5,1.364v-6.281c0-.66,.471-1.224,1.12-1.342l5.897-1.072c.166-.033,.28,.042,.335,.088,.056,.046,.147,.147,.147,.314v6.929ZM7.5,4.5C7.5,2.015,9.515,0,12,0s4.5,2.015,4.5,4.5-2.015,4.5-4.5,4.5-4.5-2.015-4.5-4.5Z" />
+                </svg>
+                <h1 class="w-full mt-13 text-[#FF0000] title-sessions">Termos de uso do aplicativo</h1>
+                <section class="w-full h-full mt-3 mb-3 px-3 overflow-auto text-center">
+                    <p class="text-black text-default">1º - Suporte é direcionado apenas para (Clientes e revendedores)
+                        que estejam com todos os requisitos necessários para utilização do nosso aplicativo.</p>
+
+                    <p class="text-black text-default">2º - Não assumimos responsabilidade pela abrangência do sinal das
+                        operadoras, tampouco por eventuais bloqueios ou interrupções de conexão, quer sejam atribuíveis
+                        a problemas técnicos da rede ou condições climáticas.</p>
+
+                    <p class="text-black text-default">3º - A conectividade à internet pode ser restrita para
+                        determinados sites que implementam bloqueios ao uso de redes privadas virtuais (VPNs), tais como
+                        Bet365, Spotify, entre outros...</p>
+
+                    <p class="text-black text-default">4º - O uso de programas como uTorrent ou aplicativos P2P, que
+                        podem resultar em danos aos nossos servidores, é extremamente proibido. O descumprimento dessa
+                        norma pode acarretar em banimento permanente, sem a possibilidade de reembolso.</p>
+
+                    <p class="text-black text-default">5º - O cliente tem o direito de requerer o reembolso no período
+                        de até 7 dias corridos a partir da data de assinatura do plano. Em caso de aprovação do
+                        reembolso, o valor correspondente será estornado ao solicitante no prazo máximo de 15 dias.</p>
+                </section>
+                <section class="w-full h-auto flex items-center justify-center my-3">
+                    <button class="w-2/4 h-9 rounded-md cursor-none button-black" id="close-terms-container"
+                        type="button">
+                        <span class="text-white">CONCORDO</span>
+                    </button>
+                </section>
+            </section>
+        </section>
+
+
+        <section
+            class="w-full h-full flex flex-col items-center justify-center absolute transition-all scale-0 bg-black"
+            id="container-help">
+            <section class="w-11/12 h-2/3 flex flex-col relative rounded-md bg-pop-up">
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg-sessions" id="central-de-ajuda"
+                    data-name="central-de-ajuda" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="m22,9v-3c0-1.654-1.346-3-3-3h-6V0h-2v3h-6c-1.654,0-3,1.346-3,3v3H0v6h2v6h12.697l3.963,2.642c.36.24.775.361,1.191.361.348,0,.696-.084,1.015-.255.699-.375,1.134-1.1,1.134-1.894v-6.855h2v-6h-2Zm-2,12.855c0,.022,0,.089-.078.13-.08.043-.136.004-.152-.007l-4.467-2.978H4V6c0-.551.448-1,1-1h14c.552,0,1,.449,1,1v15.855ZM7,9.5c0-.828.672-1.5,1.5-1.5s1.5.672,1.5,1.5-.672,1.5-1.5,1.5-1.5-.672-1.5-1.5Zm7,0c0-.828.672-1.5,1.5-1.5s1.5.672,1.5,1.5-.672,1.5-1.5,1.5-1.5-.672-1.5-1.5Zm2.336,3.752l1.33,1.493c-.103.092-2.559,2.254-5.666,2.254s-5.563-2.162-5.666-2.254l1.33-1.493c.02.018,2.005,1.748,4.336,1.748s4.316-1.73,4.336-1.748Z" />
+                </svg>
+                <h1 class="w-full mt-13 text-[#FF0000] title-sessions">Central de ajuda</h1>
+                <section class="w-full h-full mt-3 mb-3 px-3 overflow-auto text-center">
+                    <p class="text-black text-default-black">Estou conectado, mas o aplicativo não está funcionando a
+                        internet, o que fazer?</p>
+
+                    <p class="text-black text-default">Geralmente esse problema está relacionado ao protolo de APN, caso
+                        o IP da sua operadora seja: 192.0.0.2 ou 192.0.0.4 é necessário alterar o protolo de APN, você
+                        pode fazer isso clicando no menu e em seguida > Configurações de APN.</p>
+
+                    <p class="text-black text-default-black">Se eu usar a (VPN) em meu dispositivo, isso irá consumir os
+                        dados da minha franquia fornecida pela operadora de celular?</p>
+
+                    <p class="text-black text-default">Sim, o uso da VPN irá consumir a sua franquia de dados. Quando se
+                        tem uma franquia de dados, o aplicativo faz uma conexão direta, e passa a funcionar somente como
+                        um protetor de dados e localização;</p>
+
+                    <p class="text-black text-default-black">Fiz um plano e agora quero saber se é possível rotear a
+                        internet?</p>
+
+                    <p class="text-black text-default">Sim, é possível rotear através do roteamento via proxy, você pode
+                        fazer isso clicando no Menu e em seguida > Roteamento via proxy, vale ressaltar que o processo é
+                        complexo e por isso não damos assistência ao roteamento.</p>
+                </section>
+                <section class="w-full h-auto flex items-center justify-center my-3">
+                    <button class="w-2/4 h-9 rounded-md cursor-none button-black" id="close-help-container"
+                        type="button">
+                        <span class="text-white">Fechar</span>
+                    </button>
+                </section>
+            </section>
+        </section>
+
+        <section
+            class="w-full h-full flex flex-col items-center justify-center absolute transition-all scale-0 bg-black"
+            id="container-hotspot">
+            <section class="w-11/12 h-2/3 flex flex-col relative rounded-md bg-pop-up">
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg-sessions" id="roteamento" data-name="roteamento"
+                    viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="m20,15h-4v-4c0-.552-.447-1-1-1s-1,.448-1,1v4H4c-2.206,0-4,1.794-4,4v1c0,2.206,1.794,4,4,4h16c2.206,0,4-1.794,4-4v-1c0-2.206-1.794-4-4-4Zm-15.5,6c-.828,0-1.5-.672-1.5-1.5s.672-1.5,1.5-1.5,1.5.672,1.5,1.5-.672,1.5-1.5,1.5Zm5,0c-.828,0-1.5-.672-1.5-1.5s.672-1.5,1.5-1.5,1.5.672,1.5,1.5-.672,1.5-1.5,1.5ZM15,5c1.817,0,3.526.708,4.812,1.993.391.391.391,1.024,0,1.414-.195.195-.451.293-.707.293s-.512-.098-.707-.293c-.907-.908-2.114-1.407-3.397-1.407s-2.49.5-3.397,1.407c-.39.391-1.023.391-1.414,0-.391-.39-.391-1.023,0-1.414,1.285-1.285,2.994-1.993,4.811-1.993Zm-8.778-1.182C8.485,1.392,11.684,0,15,0s6.516,1.392,8.778,3.818c.377.404.354,1.037-.05,1.414-.192.18-.438.269-.682.269-.268,0-.534-.107-.731-.318-1.886-2.022-4.552-3.182-7.315-3.182s-5.43,1.16-7.315,3.182c-.378.404-1.01.425-1.414.049-.404-.377-.426-1.01-.049-1.414Z" />
+                </svg>
+                <h1 class="w-full mt-13 text-[#FF0000] title-sessions">Roteamento por Proxy</h1>
+                <section class="w-full h-full mt-3 mb-3 px-3 overflow-auto text-center">
+                    <p class="text-black text-default">Essa função possibilita você de compartilhar a sua internet VPN
+                        com outros dispositivos, através do roteamento via proxy.</p>
+                    <p class="text-black text-default">Quando ativada, ela habilita uma notificação na statusbar do
+                        android com os "IPS" disponíveis para conexão.</p>
+                    <p class="text-black text-default">Para mais informações, entre em contato com seu revendedor
+                        autorizado.</p>
+                </section>
+                <section class="w-full h-auto flex items-center justify-center my-3">
+                    <button class="w-9/9 h-9 rounded-md cursor-none button-black" id="button-hotspot" type="button">
+                        <span class="text-white" id="value-of-button-hotspot">ATIVAR</span>
+                    </button>
+                    <button class="w-9/9 h-9 rounded-md cursor-none bg-red" id="close-hotspot-container" type="button">
+                        <span class="text-white">FECHAR</span>
+                    </button>
+                </section>
+            </section>
+        </section>
+
+        <section
+            class="w-full h-full flex flex-col items-center justify-center absolute transition-all scale-0 bg-black"
+            id="container-perfil">
+            <section class="w-11/12 h-2/3 flex flex-col relative rounded-md bg-pop-up">
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg-sessions" id="Minha-Conta" data-name="Minha-Conta"
+                    viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="m18,12c-3.314,0-6,2.686-6,6s2.686,6,6,6,6-2.686,6-6-2.686-6-6-6Zm0,2c1.105,0,2,.895,2,2s-.895,2-2,2-2-.895-2-2,.895-2,2-2Zm3,6.64s-.007.011-.011.015c-.68.766-1.652,1.273-2.753,1.338-1.282.076-2.449-.476-3.236-1.375v-.119c0-.828.672-1.5,1.5-1.5h3c.828,0,1.5.672,1.5,1.5v.14Zm3-13.14v2.5c0,.828-.672,1.5-1.5,1.5s-1.5-.672-1.5-1.5H3v8.5c0,1.381,1.119,2.5,2.5,2.5h4c.828,0,1.5.672,1.5,1.5s-.672,1.5-1.5,1.5h-4c-3.038,0-5.5-2.462-5.5-5.5V7.5C0,4.462,2.462,2,5.5,2h.5v-.5c0-.828.672-1.5,1.5-1.5s1.5.672,1.5,1.5v.5h6v-.493c0-.833.675-1.507,1.507-1.507h.038c.804,0,1.455.652,1.455,1.455v.545s.5,0,.5,0c3.038,0,5.5,2.462,5.5,5.5Z" />
+                </svg>
+                <h1 class="w-full mt-13 text-[#FF0000] title-sessions">Minha conta</h1>
+                <section class="w-full h-full mt-3 mb-3 px-3 overflow-auto text-center">
+                    <p class="text-black text-default">Aqui está algumas informações básicas sobre o seu plano.</p>
+                    <p class="text-black text-default">O seu nome de usuário é
+                        <span class="text-black text-default-black" id="username-container">Conecte para obter os
+                            dados)</span>,o seu plano irá vencer no dia
+                        <span class="text-black text-default-black" id="expires-date-user-in-menu">conecte para
+                            verificar a validade</span>, até agora você utilizou
+                        <span class="text-black text-default-black" id="download-value">Conecte para obter os
+                            dados)</span> do seu plano ilimitado.
+                    </p>
+                    <p class="text-black text-default">Fique atento a validade do seu plano e renove sempre antes de
+                        vencer para evitar a interrupção do serviço.</p>
+                    <p class="text-black text-default">Você pode renovar o seu plano de forma automática clicando no
+                        link abaixo.</p>
+                </section>
+                <section class="w-full h-auto flex items-center justify-center my-3">
+                    <button class="w-9/9 h-9 rounded-md cursor-none button-black" id="nav-renew" type="button">
+                        <span class="text-white">Renovar</span>
+                    </button>
+                    <button class="w-9/9 h-9 rounded-md cursor-none bg-red" id="close-perfil-container" type="button">
+                        <span class="text-white">Fechar</span>
+                    </button>
+                </section>
+            </section>
+        </section>
+
+        <section
+            class="w-full h-full flex flex-col items-center justify-center absolute transition-all scale-0 bg-black"
+            id="container-battery">
+            <section class="w-11/12 h-2/3 flex flex-col relative rounded-md bg-pop-up">
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg-sessions" id="Battery" data-name="Battery"
+                    viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M7,18.5c0,.829-.671,1.5-1.5,1.5-3.033,0-5.5-2.467-5.5-5.5v-5c0-3.033,2.467-5.5,5.5-5.5,.829,0,1.5,.671,1.5,1.5s-.671,1.5-1.5,1.5c-1.378,0-2.5,1.122-2.5,2.5v5c0,1.378,1.122,2.5,2.5,2.5,.829,0,1.5,.671,1.5,1.5Zm5.593-8h-2.142l2.331-4.283c.396-.728,.126-1.639-.601-2.035-.727-.396-1.638-.127-2.035,.601,0,0-3.012,5.559-3.042,5.657-.22,.728-.091,1.489,.354,2.089,.451,.608,1.186,.971,1.964,.971h2.235l-2.149,4.333c-.368,.742-.065,1.642,.677,2.01,.214,.106,.441,.157,.666,.157,.552,0,1.083-.306,1.345-.834l2.463-4.966c.438-.733,.456-1.65,.043-2.421-.424-.79-1.231-1.28-2.109-1.28Zm10.407-2.5h-1.208c-.655-2.306-2.78-4-5.292-4-.828,0-1.5,.671-1.5,1.5s.672,1.5,1.5,1.5c1.379,0,2.5,1.122,2.5,2.5v5c0,1.378-1.121,2.5-2.5,2.5-.828,0-1.5,.671-1.5,1.5s.672,1.5,1.5,1.5c2.513,0,4.637-1.694,5.292-4h1.208c.552,0,1-.448,1-1v-6c0-.552-.448-1-1-1Z" />
+                </svg>
+                <h1 class="w-full mt-13 text-[#FF0000] title-sessions">Otimizar Bateria</h1>
+                <section class="w-full h-full mt-3 mb-3 px-3 overflow-auto text-center">
+                    <p class="text-black text-default">Essa opção permite a execução contínua do aplicativo em segundo
+                        plano ou seja o aplicativo continuará executando as tarefas e processos mesmo quando não está
+                        sendo ativamente utilizado, vale ressaltar que essa ação poderá reduzir a duração da sua
+                        bateria.</p>
+                    <p class="text-black text-default">Esse processo evita que o aplicativo fique desconectando ou sendo
+                        finalizado quando está em outros aplicativos.</p>
+                    <p class="text-black text-default">Uma vez que ativado pelo aqui pelo aplicativo, só será possível
+                        reverter a situação pelas configurações do seu aparelho.</p>
+                </section>
+                <section class="w-full h-auto flex items-center justify-center my-3">
+                    <button class="w-9/9 h-9 rounded-md cursor-none button-black"
+                        onclick="DtIgnoreBatteryOptimizations.execute()" type="button">
+                        <span class="text-white">Otimizar</span>
+                    </button>
+                    <button class="w-9/9 h-9 rounded-md cursor-none bg-red" id="close-battery-container" type="button">
+                        <span class="text-white">Fechar</span>
+                    </button>
+                </section>
+            </section>
+        </section>
+
+        <section
+            class="w-full h-full flex flex-col items-center justify-center absolute transition-all scale-0 bg-black"
+            id="container-apn">
+            <section class="w-11/12 h-2/3 flex flex-col relative rounded-md bg-pop-up">
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg-sessions" id="alterando-apn"
+                    data-name="alterando-apn" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="m17,0h-4.757c-1.068,0-2.072.416-2.829,1.172l-2.242,2.242c-.745.744-1.172,1.774-1.172,2.828v8.758c0,2.757,2.243,5,5,5h6c2.757,0,5-2.243,5-5V5c0-2.757-2.243-5-5-5Zm3,15c0,1.654-1.346,3-3,3h-6c-1.654,0-3-1.346-3-3V6.242c0-.526.213-1.042.586-1.414l2.242-2.242c.378-.378.881-.586,1.415-.586h4.757c1.654,0,3,1.346,3,3v10Zm-3,8c0,.553-.447,1-1,1h-5c-4.962,0-9-4.037-9-9v-7c0-.553.448-1,1-1s1,.447,1,1v7c0,3.859,3.14,7,7,7h5c.553,0,1,.447,1,1Zm-3-11h-4v-1.5c0-.828.672-1.5,1.5-1.5h2.5v3Zm4-1.5v1.5h-3v-3h1.5c.828,0,1.5.672,1.5,1.5Zm-8,2.5h3v3h-1.5c-.828,0-1.5-.672-1.5-1.5v-1.5Zm4,0h4v1.5c0,.828-.672,1.5-1.5,1.5h-2.5v-3Z" />
+                </svg>
+                <h1 class="w-full mt-13 text-[#FF0000] title-sessions">Alterando sua APN</h1>
+                <section class="w-full h-full mt-3 mb-3 px-3 overflow-auto text-center">
+                    <p class="text-black text-default">O seu aplicativo não está conectando ou conecta e não gera dados?
+                        Faça o passo a passo a seguir e solucione seu problema.</p>
+                    <p class="text-black text-default">1º - Selecione a opção de APN ao qual ja está marcada e deslize a
+                        tela até encontrar as opções, Protocolo APN e Protocolo de roaming APN.</p>
+                    <p class="text-black text-default">2º - Após encontrar as opções realize o seguinte passo.</p>
+                    <p class="text-black text-default">3º - No campo Protocolo APN, marque IPV4.</p>
+                    <p class="text-black text-default">4º - No campo Protocolo de roaming APN, marque IPV4.</p>
+                    <p class="text-black text-default">5º - Após selecionado os protolos IPV4, vá até os simbolo de
+                        opções no canto direito na parte superior da sua tela (ou na parte inferior do aparelho
+                        dependendo da sua versão do android) e clique em Salvar.</p>
+                    <p class="text-black text-default">6º - Após salvar, volte para tela inicial do aplicativo e ligue o
+                        modo avião por 5 segundos.</p>
+                    <p class="text-black text-default">Pronto, caso o problema for apenas de não gerar dados, você
+                        conseguirá conectar normalmente e usar nosso aplicativo.</p>
+                </section>
+                <section class="w-full h-auto flex items-center justify-center my-3">
+                    <button class="w-9/9 h-9 rounded-md cursor-none button-black" onclick="DtStartApnActivity.execute()"
+                        type="button">
+                        <span class="text-white">Alterar APN</span>
+                    </button>
+                    <button class="w-9/9 h-9 rounded-md cursor-none bg-red" id="close-apn-container" type="button">
+                        <span class="text-white">Fechar</span>
+                    </button>
+                </section>
+            </section>
+        </section>
+
+        <section
+            class="w-full h-full flex flex-col items-center justify-center absolute transition-all scale-0 bg-black"
+            id="container-cache">
+            <section class="w-11/12 h-auto flex flex-col relative rounded-md bg-pop-up">
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg-sessions" id="restaurando-aplicativo"
+                    data-name="restaurando-aplicativo" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M23.715,2.285a1.013,1.013,0,0,0-1.43,0L17.521,7.049l-.32-.313a5.008,5.008,0,0,0-6.429-.479A16.618,16.618,0,0,1,6.224,8.685L4.15,9.293a5.036,5.036,0,0,0-3.113,2.635A4.973,4.973,0,0,0,.9,15.947a12.95,12.95,0,0,0,12.112,8.064h.924a1.011,1.011,0,0,0,.578-.182A15.288,15.288,0,0,0,21.224,13.62a5.029,5.029,0,0,0-1.453-4.374l-.8-.784,4.747-4.747A1.013,1.013,0,0,0,23.715,2.285Zm-10.107,19.7h-.6A11.3,11.3,0,0,1,8.7,21.138l.011-.006a11.546,11.546,0,0,0,4.351-3.8l.518-.761a1.01,1.01,0,0,0-1.67-1.138l-.518.761A9.535,9.535,0,0,1,7.8,19.327l-1.251.63a10.757,10.757,0,0,1-2.583-2.57,11.625,11.625,0,0,0,4.377-2.664,1.011,1.011,0,0,0-1.414-1.446,9.617,9.617,0,0,1-3.98,2.32c-.061-.135-.127-.267-.182-.406a2.906,2.906,0,0,1,.085-2.381,3.023,3.023,0,0,1,1.864-1.578l2.073-.608a15.364,15.364,0,0,0,3.426-1.588l7.915,7.712A14.192,14.192,0,0,1,13.608,21.989Zm5.62-8.683a12.421,12.421,0,0,1-.309,1.387L11.948,7.9l0,0a3.011,3.011,0,0,1,1.755-.566,2.973,2.973,0,0,1,2.084.849l2.569,2.509A3.01,3.01,0,0,1,19.228,13.306Z" />
+                </svg>
+                <h1 class="w-full mt-13 text-[#FF0000] title-sessions">Restaurar aplicativo</h1>
+                <section class="w-full h-full mt-3 mb-3 px-3 overflow-auto text-center">
+                    <p class="text-black text-default">Se um aplicativo da LopesNet está ficando lento ou apresentando
+                        problemas, execute a limpeza do aplicativo.</p>
+                    <p class="text-black text-default">Para realizar a limpezado do aplicativo é muito fácil, é só
+                        clicar no botão "Limpar cachê" no canto inferior da tela, o aplicativo será restaurado ao modo
+                        de fabrica, todos os dados e cachê do aplicativo serão apagados.</p>
+                    <p class="text-black text-default">Certifique-se de ter acesso a internet para atualizar o seu
+                        aplicativo para a ultima versão e não ter seus serviços interrompidos.</p>
+                </section>
+                <section class="w-full h-auto flex items-center justify-center my-3">
+                    <button class="w-9/9 h-9 rounded-md cursor-none button-black" onclick="DtCleanApp.execute()"
+                        type="button">
+                        <span class="text-white">Restaurar</span>
+                    </button>
+                    <button class="w-9/9 h-9 rounded-md cursor-none bg-red" id="close-cache-container" type="button">
+                        <span class="text-white">Fechar</span>
+                    </button>
+                </section>
+            </section>
+        </section>
+
+        <section
+            class="w-full h-full flex flex-col items-center justify-center absolute transition-all scale-0 bg-black"
+            id="container-configs">
+            <section class="w-11/12 max-h-[66.666667%] flex flex-col relative rounded-md bg-pop-up">
+                <header
+                    class="w-full min-h-[40px] max-h-[10%] flex items-center mb-2 border-b border-[#01010342] rounded-t-md">
+
+                    <h1 class="flex-1 pr-6 text-black text-center text-sm font-medium">CONFIGURAÇÕES</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 stroke-white"
+                        id="hidden-container-configs" fill="currentColor">
+                        <path
+                            d="m19,0H5C2.243,0,0,2.243,0,5v14c0,2.757,2.243,5,5,5h14c2.757,0,5-2.243,5-5V5c0-2.757-2.243-5-5-5Zm3,19c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V5c0-1.654,1.346-3,3-3h14c1.654,0,3,1.346,3,3v14Zm-4.231-12.359l-4.466,5.359,4.466,5.359c.354.425.296,1.056-.128,1.409-.188.155-.414.231-.64.231-.287,0-.571-.122-.77-.359l-4.231-5.078-4.231,5.078c-.198.237-.482.359-.77.359-.226,0-.452-.076-.64-.231-.424-.354-.481-.984-.128-1.409l4.466-5.359-4.466-5.359c-.354-.425-.296-1.056.128-1.409.426-.353,1.056-.296,1.409.128l4.231,5.078,4.231-5.078c.354-.424.983-.48,1.409-.128.424.354.481.984.128,1.409Z" />
+                    </svg>
+                </header>
+                <section class="w-full h-[90%] overflow-auto mb-1 rounded-md">
+                    <section class="w-full h-auto flex flex-col gap-2" id="area-carrier-list">
+                        <div class="flex items-center">
+                            <input class="peer hidden" type="radio" name="config" id="tim-premium-cf" />
+                            <label
+                                class="w-full max-h-8 p-2 border border-[#01010342] rounded-md transition-[max-height] duration-1000 overflow-hidden"
+                                for="tim-premium-cf">
+                                <header class="w-full h-3 flex items-center justify-center p-2">
+                                    <h1 class="text-xs font-medium text-black truncate">VIVO PREMIUM ACF</h1>
+                                </header>
+                                <ul class="w-full h-auto flex flex-col gap-2 mt-3 overflow-hidden">
+                                    <li
+                                        class="w-full h-12 flex items-center gap-2 px-1 rounded-md overflow-hidden bg-black">
+                                        <div class="w-10 h-[100%] flex items-center">
+                                            <img src="https://cdn-icons-png.flaticon.com/512/3686/3686811.png"
+                                                width="40" height="40" />
+                                        </div>
+                                        <div class="flex flex-col truncate">
+                                            <h1 class="text-white text-xs truncate">TIM 1 ➜ CONFIG 1 ➜ SV01.OCI (COPY)
+                                            </h1>
+                                            <span class="text-white text-[0.65rem] truncate">SERVIDOR: 🇧🇷 ➜ LATÊNCIA
+                                                BAIXA </span>
+                                            <span
+                                                class="text-white text-[0.5rem] leading-7 truncate">OVPN_SSL_PROXY</span>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="w-full h-12 flex items-center gap-2 px-1 rounded-md overflow-hidden bg-black">
+                                        <div class="w-10 h-[100%] flex items-center">
+                                            <img src="https://cdn-icons-png.flaticon.com/512/3686/3686811.png"
+                                                width="40" height="40" />
+                                        </div>
+                                        <div class="flex flex-col truncate">
+                                            <h1 class="text-white text-xs truncate">TIM 1 ➜ CONFIG 1 ➜ SV01.OCI (COPY)
+                                            </h1>
+                                            <span class="text-white text-[0.65rem] truncate">SERVIDOR: 🇧🇷 ➜ LATÊNCIA
+                                                BAIXA </span>
+                                            <span
+                                                class="text-white text-[0.4rem] truncate absolute bottom-1 right-1">SSH_PROXY</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div class="flex items-center">
+                            <input class="peer hidden" type="radio" name="config" id="vivo-premium-cf" />
+                            <label
+                                class="w-full max-h-8 p-2 border border-[#01010342] rounded-md transition-[max-height]"
+                                for="vivo-premium-cf">
+                                <header class="w-full h-3 flex items-center justify-center p-2">
+                                    <h1 class="text-sm text-black truncate">TIM PREMIUM ACF</h1>
+                                </header>
+                                <section class="w-full h-auto"></section>
+                            </label>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <!-- FUNÇÕES DO APP -->
+    <script>
+        function appGetStatusbarHeightSize() {
+            if (window?.DtGetStatusBarHeight?.execute && typeof window?.DtGetStatusBarHeight.execute === "function") {
+                return DtGetStatusBarHeight.execute();
+            }
+
+            return 0;
+        }
+
+        function appGetNavbarHeightSize() {
+            if (window?.DtGetNavigationBarHeight?.execute && typeof window?.DtGetNavigationBarHeight?.execute === "function") {
+                return DtGetNavigationBarHeight.execute();
+            }
+
+            return 0;
+        }
+
+        function appTranslateText(label) {
+            if (window?.DtTranslateText?.execute && typeof window?.DtTranslateText?.execute === "function") {
+                return DtTranslateText.execute(label);
+            }
+
+            return null;
+        }
+
+        function appGetConfigLabel(label) {
+            if (window?.DtGetAppConfig?.execute && typeof window?.DtGetAppConfig?.execute === "function") {
+                return DtGetAppConfig.execute(label);
+            }
+
+            return null;
+        }
+
+        function appGetCarrierName() {
+            if (window?.DtGetNetworkName?.execute && typeof window?.DtGetNetworkName?.execute === "function") {
+                return DtGetNetworkName.execute();
+            }
+
+            return null;
+        }
+
+        function appGetConfigVersion() {
+            if (window?.DtGetLocalConfigVersion?.execute && typeof window?.DtGetLocalConfigVersion?.execute === "function") {
+                return DtGetLocalConfigVersion.execute();
+            }
+
+            return null;
+        }
+
+        function appOpenDialogConfig() {
+            if (window?.DtExecuteDialogConfig?.execute && typeof window?.DtExecuteDialogConfig?.execute === "function") {
+                return DtExecuteDialogConfig.execute();
+            }
+
+            return null;
+        }
+
+        function appGetDefaultConfig() {
+            if (window?.DtGetDefaultConfig?.execute && typeof window?.DtGetDefaultConfig?.execute) {
+                return DtGetDefaultConfig.execute();
+            }
+
+            return null;
+        }
+
+        function appGetAllConfigs() {
+            if (window?.DtGetConfigs?.execute && typeof window?.DtGetConfigs?.execute === "function") {
+                return JSON.parse(DtGetConfigs.execute());
+            }
+
+            return [
+                {
+                    "id": 1000,
+                    "name": "Categoria 01",
+                    "sorter": 1,
+                    "color": "#FFFFFF",
+                    "items": [
+                        {
+                            "id": 1000,
+                            "name": "Configuração 01",
+                            "description": "Descricão da configuração",
+                            "mode": "SSH_DIRECT",
+                            "sorter": 1,
+                            "icon": "https://cdn-icons-png.flaticon.com/512/7517/7517373.png"
+                        },
+                        {
+                            "id": 1001,
+                            "name": "Configuração 02",
+                            "description": "Descricão da configuração",
+                            "mode": "SSH_DIRECT",
+                            "sorter": 2,
+                            "icon": "https://cdn-icons-png.flaticon.com/512/7517/7517373.png"
+                        },
+                    ]
+                }
+            ]
+        }
+
+        function appSetConfig(id) {
+            if (window?.DtSetConfig?.execute && typeof window?.DtSetConfig?.execute === "function") {
+                window?.DtSetConfig?.execute(id);
+            }
+
+            return null;
+        }
+
+        function appOpenDialogDialogs() {
+            if (window?.DtShowLoggerDialog?.execute && typeof window?.DtShowLoggerDialog?.execute === "function") {
+                return window?.DtShowLoggerDialog.execute();
+            }
+
+            return null;
+        }
+
+        function appGetUsername() {
+            if (window?.DtUsername && typeof window?.DtUsername.get === "function") {
+                return DtUsername.get();
+            }
+
+            return "";
+        }
+
+        function appGetPassword() {
+            if (window?.DtPassword && typeof window?.DtPassword?.get === "function") {
+                return DtPassword.get();
+            }
+
+            return "";
+        }
+
+        function appGetUUID() {
+            if (window?.DtUuid?.get && typeof window?.DtUuid.get === "function") {
+                return DtUuid.get();
+            }
+
+            return "";
+        }
+
+        function appSetUsername(username) {
+            if (window?.DtUsername?.set && typeof window?.DtUsername?.set === "function") {
+                return window.DtUsername.set(username);
+            }
+
+            return null;
+        }
+
+        function appSetPassword(password) {
+            if (window?.DtPassword?.set && typeof window?.DtPassword?.set === "function") {
+                return window.DtPassword.set(password);
+            }
+
+            return null;
+        }
+
+        function appSetUUID(UUID) {
+            if (window?.DtUuid.set && typeof window?.DtUuid?.set === "function") {
+                return window.DtUuid.set(UUID);
+            }
+
+            return null;
+        }
+
+        function appGetConnectionState() {
+            if (window?.DtGetVpnState?.execute && typeof window?.DtGetVpnState?.execute === "function") {
+                return DtGetVpnState.execute();
+            }
+
+            return null;
+        }
+
+        function appStartConnection() {
+            if (window?.DtExecuteVpnStart?.execute && typeof window?.DtExecuteVpnStart?.execute === "function") {
+                return DtExecuteVpnStart.execute();
+            }
+
+            return null;
+        }
+
+        function appStopConnection() {
+            if (window?.DtExecuteVpnStop?.execute && typeof window?.DtExecuteVpnStop?.execute === "function") {
+                return DtExecuteVpnStop.execute();
+            }
+
+            return null;
+        }
+
+        function appGetDownloadBytes() {
+            if (window?.DtGetNetworkDownloadBytes?.execute && typeof window?.DtGetNetworkDownloadBytes?.execute === "function") {
+                return window?.DtGetNetworkDownloadBytes?.execute();
+            }
+
+            return "0 B/s";
+        }
+
+        function appGetStatusHotspot() {
+            if (window?.DtGetStatusHotSpotService?.execute && typeof window?.DtGetStatusHotSpotService?.execute === "function") {
+                return window?.DtGetStatusHotSpotService.execute();
+            }
+
+            return null;
+        }
+
+        function appStartHotspot() {
+            if (window?.DtStartHotSpotService?.execute && typeof window?.DtStartHotSpotService?.execute === "function") {
+                return window.DtStartHotSpotService.execute();
+            }
+
+            return null;
+        }
+
+        function appStopHotspot() {
+            if (window?.DtStopHotSpotService?.execute && typeof window?.DtStopHotSpotService?.execute === "function") {
+                return window?.DtStopHotSpotService.execute();
+            }
+
+            return null;
+        }
+
+        function AppUpdate() {
+            if (window?.DtStartAppUpdate?.execute && typeof window?.DtStartAppUpdate?.execute === "function") {
+                return window.DtStartAppUpdate.execute();
+            }
+
+            return null;
+        }
+
+
+        function appIntoBrowser(url) {
+            if (window?.DtStartWebViewActivity?.execute && typeof window?.DtStartWebViewActivity?.execute === "function") {
+                return DtStartWebViewActivity.execute(url);
+            }
+
+            window.open(url, "_blank");
+        }
+
+        function appCheckuser() {
+            if (window?.DtStartCheckUser?.execute && typeof window?.DtStartCheckUser?.execute === "function") {
+                return window.DtStartCheckUser.execute();
+            }
+
+            return null;
+        }
+
+        function appApnConfiguration() {
+            if (window?.DtStartApnActivity?.execute && typeof window?.DtStartApnActivity?.execute == "function") {
+                return window?.DtStartApnActivity.execute();
+            }
+
+            return null;
+        }
+
+        function appBatteryOptimize() {
+            if (window?.DtIgnoreBatteryOptimizations?.execute && typeof window?.DtIgnoreBatteryOptimizations?.execute === "function") {
+                return DtIgnoreBatteryOptimizations.execute();
+            }
+
+            return null;
+        }
+
+        function appClearData() {
+            if (window?.DtCleanApp?.execute && typeof window?.DtCleanApp?.execute === "function") {
+                return DtCleanApp.execute();
+            }
+
+            return null;
+        }
+    </script>
+
+    <!-- DOM WRAPPER -->
+    <script>
+        const Dom = (selector) => {
+            const _elements = document.querySelectorAll(selector);
+
+            const wrapper = {
+                on(listeners) {
+                    for (const [event, listener] of Object.entries(listeners)) {
+                        _elements.forEach((element) => {
+                            element.addEventListener(event, listener);
+                        });
+                    }
+
+                    return wrapper;
+                },
+                addClass: (...tokens) => {
+                    _elements.forEach((element) => {
+                        element.classList.add(...tokens);
+                    });
+
+                    return wrapper;
+                },
+                removeClass: (...tokens) => {
+                    _elements.forEach((element) => {
+                        element.classList.remove(...tokens);
+                    });
+
+                    return wrapper;
+                },
+                toggleClass: (token, force) => {
+                    _elements.forEach((element) => {
+                        element.classList.toggle(token, force);
+                    });
+
+                    return wrapper;
+                },
+                style(styles) {
+                    for (const [property, value] of Object.entries(styles)) {
+                        _elements.forEach((element) => {
+                            element.style[property] = value;
+                        });
+                    }
+
+                    return wrapper;
+                },
+                attr(attrs) {
+                    for (const [name, value] of Object.entries(attrs)) {
+                        _elements.forEach((element) => element.setAttribute(name, value));
+                    }
+
+                    return wrapper;
+                },
+                html(value) {
+                    _elements.forEach((element) => (element.innerHTML = value));
+                    return wrapper;
+                },
+                /**
+                * @return {Element|null}
+                */
+                element() {
+                    return _elements.length > 0 ? _elements[0] : null;
+                },
+                allElements: _elements,
+            };
+
+            return wrapper;
+        };
+    </script>
+
+    <!-- VÁRIAVIES -->
+    <script>
+        const body = Dom("body");
+
+        const containerHome = Dom("#container-home");
+        const containerLocalIp = Dom("section.bottom div.container-local-ip")
+        const localIp = Dom("#local-ip")
+        const configVersion = Dom("#version")
+        const openMenuButton = Dom("#open-menu");
+        const vpnStatusValue = Dom("#vpn-status");
+
+        const appLogo = Dom("#app-logo");
+
+        const buttonOfListCarrier = Dom("#button-of-list-carrier");
+        const valueOnButtonOfCarrierList = Dom("#value-of-carrier");
+
+        const containerInputUsername = Dom("#container-input-username");
+        const containerInputPassword = Dom("#container-input-password");
+        const containerInputUUID = Dom("#container-input-uuid");
+
+
+        const inputUsername = Dom("#input-username");
+        const inputPassword = Dom("#input-password");
+        const inputUUID = Dom("#input-uuid");
+
+        const eyeViewPasswordInput = Dom("#eye-view-password");
+        const eyeNotViewPasswordInput = Dom("#eye-not-view-password");
+
+        const eyeViewUUID = Dom("#eye-view-uuid");
+        const eyeNotViewUUID = Dom("#eye-not-view-uuid");
+
+        const buttonStartStopVpn = Dom("#button-vpn-start-stop");
+        const buttonStartStopValue = Dom("#status-button-vpn");
+
+        const downloadValue = Dom("#download-value");
+
+        const buttonLogs = Dom("#button-logs");
+
+        const containerMenu = Dom("#container-menu");
+        const hiddenContainerMenuButton = Dom("#hidden-menu");
+
+        const expiresDateUserInMenu = Dom("#expires-date-user-in-menu");
+
+        const pingValue = Dom("#ping-value");
+
+        const navRenew = Dom("#nav-renew");
+        const navUpdate = Dom("#nav-update");
+        const navTerms = Dom("#nav-terms");
+        const navPerfil = Dom("#nav-perfil");
+        const navBattery = Dom("#nav-battery");
+        const navHelp = Dom("#nav-help");
+        const navCache = Dom("#nav-cache");
+        const navAPN = Dom("#nav-apn");
+        const navHotspot = Dom("#nav-hotspot");
+        const navAccessPoint = Dom("#nav-access-point");
+        const navAppCleanData = Dom("#nav-app-clean-data");
+
+        const containerTerms = Dom("#container-terms");
+        const closeContainerTerms = Dom("#close-terms-container");
+
+        const containerPerfil = Dom("#container-perfil");
+        const closeContainerPerfil = Dom("#close-perfil-container");
+
+        const containerBattery = Dom("#container-battery");
+        const closeContainerBattery = Dom("#close-battery-container");
+
+        const containerHelp = Dom("#container-help");
+        const closeContainerHelp = Dom("#close-help-container");
+
+        const containerCache = Dom("#container-cache");
+        const closeContainerCache = Dom("#close-cache-container");
+
+        const containerAPN = Dom("#container-apn");
+        const closeContainerAPN = Dom("#close-apn-container");
+
+        const containerHotspot = Dom("#container-hotspot");
+        const closeContainerHotspotButton = Dom("#close-hotspot-container");
+        const buttonStartOrStopHotspot = Dom("#button-hotspot");
+        const valueOfButtonHotspot = Dom("#value-of-button-hotspot");
+
+        const containerConfigs = Dom("#container-configs");
+        const closeContainerConfigs = Dom("#hidden-container-configs");
+
+        const containerAreaCarrierList = Dom("#area-carrier-list");
+
+        const inputsPeer = Dom("input.peer");
+        const labelsFor = Dom("label[for]");
+    </script>
+
+    <!-- VÁRIAVEIS DO SISTEMA -->
+    <script>
+        const currentNetworkDownload = parseFloat(localStorage.getItem("networkDownload") ?? appGetDownloadBytes());
+    </script>
+
+    <!-- FUNÇÕES -->
+    <script>
+        function getAppBackground() {
+            const background_type = appGetConfigLabel("APP_BACKGROUND_TYPE");
+            const background_color = appGetConfigLabel("APP_BACKGROUND_COLOR");
+            const background_image = appGetConfigLabel("APP_BACKGROUND_IMAGE");
+
+            if (!background_type) {
+                return "url('../dist/bg.jpeg')";
+            }
+
+            if (JSON.parse(background_type)?.value === "COLOR") {
+                return JSON.parse(background_color).value;
+            }
+
+            return `url(${JSON.parse(background_image).value})`;
+        }
+
+        function getAppLogo() {
+            const logo = appGetConfigLabel("APP_LOGO");
+
+            if (!logo) {
+                return "";
+            }
+
+            return JSON.parse(logo)?.value;
+        }
+
+        function getConfigName() {
+            const config = appGetDefaultConfig();
+
+            if (!config) {
+                return {
+                    name: appTranslateText("LBL_CHOOSE_CONFIG"),
+                    mode: "",
+                };
+            }
+
+            if (JSON.parse(config)?.name && JSON.parse(config)?.mode) {
+                return {
+                    name: JSON.parse(config)?.name,
+                    mode: JSON.parse(config)?.mode,
+                };
+            }
+
+            return {
+                name: appTranslateText("LBL_CHOOSE_CONFIG"),
+                mode: "",
+            };
+        }
+
+        function writeConfigValueOnButton() {
+            valueOnButtonOfCarrierList.html(getConfigName()?.name);
+        }
+
+        function connectionState(state) {
+            const connectionValue = `${state || appGetConnectionState()}`;
+
+            switch (connectionValue) {
+                case "DISCONNECTED":
+                    buttonStartStopValue.html(appTranslateText("LBL_BTN_START"));
+                    vpnStatusValue.html(appTranslateText("LBL_STATE_DISCONNECTED"));
+                    break;
+                case "CONNECTING":
+                    buttonStartStopValue.html(appTranslateText("LBL_BTN_STOP"));
+                    vpnStatusValue.html(appTranslateText("LBL_STATE_CONNECTING"));
+                    break;
+                case "CONNECTED":
+                    buttonStartStopValue.html(appTranslateText("LBL_BTN_STOP"));
+                    vpnStatusValue.html(appTranslateText("LBL_STATE_CONNECTED"));
+                    break;
+                case "STOPPING":
+                    buttonStartStopValue.html(appTranslateText("LBL_BTN_STOPPING"));
+                    vpnStatusValue.html(appTranslateText("LBL_STATE_STOPPING"));
+                    break;
+                case "NO_NETWORK":
+                    buttonStartStopValue.html(appTranslateText("LBL_BTN_STOP"));
+                    vpnStatusValue.html(appTranslateText("LBL_STATE_NO_NETWORK"));
+                    break;
+                case "AUTH":
+                    buttonStartStopValue.html(appTranslateText("LBL_BTN_STOP"));
+                    vpnStatusValue.html(appTranslateText("LBL_STATE_AUTH"));
+                    break;
+                case "AUTH_FAILED":
+                    buttonStartStopValue.html(appTranslateText("LBL_BTN_START"));
+                    vpnStatusValue.html(appTranslateText("LBL_STATE_AUTH_FAILED"));
+                    break;
+            }
+        }
+
+        function startStopConnection() {
+            const state = appGetConnectionState();
+            state !== "CONNECTED" ? appStartConnection() : appStopConnection();
+        }
+
+        function startHotspot() {
+            appStartHotspot();
+
+            valueOfButtonHotspot.html("DESATIVAR");
+
+            return;
+        }
+
+        function stopHotspot() {
+            appStopHotspot();
+
+            valueOfButtonHotspot.html("ATIVAR");
+
+            return;
+        }
+
+        function toggleHotspot() {
+            appGetStatusHotspot() === "STOPPED" ? startHotspot() : stopHotspot();
+
+            return;
+        }
+
+        function setStatusHotspot() {
+            if (appGetStatusHotspot() === "STOPPED") {
+                valueOfButtonHotspot.html("ATIVAR");
+
+                return;
+            } else {
+                valueOfButtonHotspot.html("DESATIVAR");
+
+                return;
+            }
+
+            return;
+        }
+
+        function showInputPasswordValue() {
+            eyeViewPasswordInput.addClass("hidden");
+            eyeNotViewPasswordInput.removeClass("hidden");
+            inputPassword.attr({ type: "text" });
+        }
+
+        function hiddenInputPasswordValue() {
+            eyeViewPasswordInput.removeClass("hidden");
+            eyeNotViewPasswordInput.addClass("hidden");
+            inputPassword.attr({ type: "password" });
+        }
+
+        function showInputUUIDValue() {
+            eyeViewUUID.addClass("hidden");
+            eyeNotViewUUID.removeClass("hidden");
+            inputUUID.attr({ type: "text" });
+        }
+
+        function hiddenInputUUIDValue() {
+            eyeViewUUID.removeClass("hidden");
+            eyeNotViewUUID.addClass("hidden");
+            inputUUID.attr({ type: "password" });
+        }
+
+        function showContainerMenu() {
+            containerMenu.removeClass("-translate-x-full");
+
+            return;
+        }
+
+        function hiddenContainerMenu() {
+            containerMenu.addClass("-translate-x-full");
+
+            return;
+        }
+
+        function showContainerTerms() {
+            containerTerms.removeClass("scale-0");
+
+            return;
+        }
+        function hiddenContainerTerms() {
+            containerTerms.addClass("scale-0");
+
+            return;
+        }
+
+        function showContainerPerfil() {
+            containerPerfil.removeClass("scale-0");
+
+            return;
+        }
+        function hiddenContainerPerfil() {
+            containerPerfil.addClass("scale-0");
+
+            return;
+        }
+
+        function showContainerHelp() {
+            containerHelp.removeClass("scale-0");
+
+            return;
+        }
+        function hiddenContainerHelp() {
+            containerHelp.addClass("scale-0");
+
+            return;
+        }
+
+        function showContainerCache() {
+            containerCache.removeClass("scale-0");
+
+            return;
+        }
+        function hiddenContainerCache() {
+            containerCache.addClass("scale-0");
+
+            return;
+        }
+
+        function showContainerBattery() {
+            containerBattery.removeClass("scale-0");
+
+            return;
+        }
+        function hiddenContainerBattery() {
+            containerBattery.addClass("scale-0");
+
+            return;
+        }
+
+        function showContainerAPN() {
+            containerAPN.removeClass("scale-0");
+
+            return;
+        }
+        function hiddenContainerAPN() {
+            containerAPN.addClass("scale-0");
+
+            return;
+        }
+
+        function showContainerHotspot() {
+            containerHotspot.removeClass("scale-0");
+
+            return;
+        }
+        function hiddenContainerHotspot() {
+            containerHotspot.addClass("scale-0");
+
+            return;
+        }
+
+        function writeCarrierList() {
+            const data = appGetAllConfigs();
+
+            if (data) {
+                const areaCarrierList = document.getElementById("area-carrier-list");
+                areaCarrierList.innerHTML = "";
+
+                data.sort((a, b) => a.sorter - b.sorter);
+
+                data.forEach((item, index) => item.items.sort((a, b) => a.sorter - b.sorter));
+
+                data.forEach((category) => {
+                    const div = document.createElement("div");
+                    const header = document.createElement("header");
+                    const h1 = document.createElement("h1");
+                    const ul = document.createElement("ul");
+
+                    div.classList.add("flex", "flex-col", "items-start", "gap-2", "mt-4");
+                    header.classList.add("w-full", "text-sm", "font-semibold", "text-black");
+                    ul.classList.add("w-full", "flex", "flex-col", "gap-2");
+                    ul.style.padding = "10px";
+
+                    h1.textContent = category.name;
+                    header.appendChild(h1);
+                    div.appendChild(header);
+
+                    category.items.forEach((item) => {
+                        const li = document.createElement("li");
+                        const liDivLeft = document.createElement("div");
+                        const carrierIcon = document.createElement("img");
+                        const liDivCenter = document.createElement("div");
+                        const configTitle = document.createElement("h1");
+                        const configDescription = document.createElement("span");
+                        const liDivRight = document.createElement("div");
+                        const configType = document.createElement("span");
+
+                        li.classList.add("w-full", "h-auto", "flex", "items-center", "gap-4", "px-4", "py-2", "rounded-md", "bg-white", "cursor-pointer", "hover:bg-gray-800", "transition-colors", "duration-300", "border", "border-gray-800");
+                        li.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.1)";
+                        li.style.borderRadius = "20px";
+                        li.style.paddingLeft = "10px";
+                        li.style.paddingRight = "10px";
+                        liDivLeft.classList.add("w-10", "h-[100%]", "flex", "items-center");
+                        liDivCenter.classList.add("flex-1", "flex", "flex-col", "gap-1", "truncate");
+                        configTitle.classList.add("text-black", "text-xs", "truncate");
+                        configDescription.classList.add("text-black", "text-[0.65rem]", "truncate");
+                        liDivRight.classList.add("w-14", "h-[100%]", "flex", "items-end", "truncate");
+                        configType.classList.add("text-black", "text-[0.5rem]", "leading-7", "truncate");
+                        configTitle.style.marginLeft = "10px";
+                        configDescription.style.marginLeft = "10px";
+
+                        carrierIcon.src = item.icon;
+                        carrierIcon.alt = item.name;
+
+                        configTitle.textContent = item.name;
+                        configDescription.textContent = item.description;
+
+                        configType.textContent = item.mode;
+
+                        liDivLeft.appendChild(carrierIcon);
+
+                        liDivCenter.appendChild(configTitle);
+                        liDivCenter.appendChild(configDescription);
+
+                        liDivRight.appendChild(configType);
+
+                        li.appendChild(liDivLeft);
+                        li.appendChild(liDivCenter);
+                        li.appendChild(liDivRight);
+
+                        li.addEventListener("click", () => {
+                            appSetConfig(item.id);
+                            hiddenContainerConfigs();
+                        });
+
+                        ul.appendChild(li);
+                    });
+
+                    div.appendChild(ul);
+                    areaCarrierList.appendChild(div);
+                });
+            }
+        }
+
+        function showContainerConfigs() {
+            writeCarrierList();
+            document.getElementById("container-configs").classList.remove("scale-0");
+        }
+
+        function hiddenContainerConfigs() {
+            document.getElementById("container-configs").classList.add("scale-0");
+        }
+
+        function checkV2ray() {
+            const data = JSON.parse(appGetDefaultConfig());
+
+            if (!data) {
+                return false;
+            }
+
+            if (data.mode?.toLowerCase().startsWith("v2ray")) {
+                if (data.auth?.v2ray_uuid) {
+                    return "exists v2ray config";
+                }
+                return true;
+            }
+
+            return false;
+        }
+
+        function toggleInput() {
+            const v2rayUUID = checkV2ray();
+            const containerInputUsername = document.getElementById("containerInputUsername");
+            const containerInputPassword = document.getElementById("containerInputPassword");
+            const containerInputUUID = document.getElementById("containerInputUUID");
+
+            if (v2rayUUID === "exists v2ray config") {
+                containerInputUsername.classList.add("hidden");
+                containerInputPassword.classList.add("hidden");
+                containerInputUUID.classList.add("hidden");
+            } else if (v2rayUUID) {
+                containerInputUsername.classList.add("hidden");
+                containerInputPassword.classList.add("hidden");
+                containerInputUUID.classList.remove("hidden");
+                containerInputUUID.classList.add("flex");
+            } else {
+                containerInputUsername.classList.remove("hidden");
+                containerInputPassword.classList.remove("hidden");
+                containerInputUUID.classList.add("flex");
+                containerInputUUID.classList.add("hidden");
+            }
+        }
+
+        function formatBytes(bytes) {
+            const sizes = ["B/s", "KB/s", "MB/s", "GB/s", "TB/s"];
+
+            if (bytes === 0) return "0 B/s";
+
+            const i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
+
+            return (bytes / Math.pow(1024, i)).toPrecision(3) + " " + sizes[i];
+        }
+
+        function updateNetworkStats() {
+            const newNetworkDownload = appGetDownloadBytes();
+
+            //pingValue.html(`${window?.DtGetPingResult?.execute() ?? '00'}ms`)
+
+            downloadValue.html(formatBytes(newNetworkDownload - currentNetworkDownload));
+
+            localStorage.setItem("networkDownload", formatBytes(newNetworkDownload - currentNetworkDownload));
+        }
+
+        function carrierLocalIp() {
+            const carrierLocalIp = window?.DtGetLocalIP?.execute();
+
+            if (!carrierLocalIp) {
+                localIp.html("Buscando...");
+                return;
+            }
+
+            if (carrierLocalIp === "127.0.0.1") {
+                localIp.html("SEM IP");
+                return;
+            }
+
+            if (!carrierLocalIp) {
+                localIp.html("Sem rede.");
+                return;
+            }
+
+            localIp.html(`${carrierLocalIp}`);
+        }
+
+        function writeConfigVersion() {
+            const version = window?.DtGetLocalConfigVersion?.execute() ?? 'Atualize';
+            configVersion.html(`${version}`)
+        }
+
+        function getExpirationDateOfUser() {
+            const expirationDate = localStorage.getItem("expirationDate");
+
+            if (expirationDate) {
+
+                return `${expirationDate}`;
+            }
+
+            return "...";
+        }
+
+        function toggleLabelHeight(inputId) {
+            const input = document.getElementById(inputId);
+            const label = document.querySelector(`label[for="${inputId}"]`);
+
+            if (input.checked) {
+                label.style.maxHeight = label.scrollHeight + "px";
+            } else {
+                label.style.maxHeight = "32px";
+            }
+        }
+
+        function toggleMoreInputs() {
+            const data = JSON.parse(appGetDefaultConfig());
+
+            if (!data) return null;
+
+            containerInputUsername.removeClass("hidden");
+            containerInputPassword.removeClass("hidden");
+            containerInputUUID.addClass("hidden");
+
+            if (data?.auth?.username) {
+                containerInputUsername.addClass("hidden");
+            }
+
+            if (data?.auth?.password) {
+                containerInputPassword.addClass("hidden");
+            }
+
+            if (!data?.auth?.username) {
+                containerInputUsername.removeClass("hidden");
+            }
+
+            if (!data?.auth?.password) {
+                containerInputPassword.removeClass("hidden");
+            }
+
+            if (data.mode?.toLowerCase().startsWith("v2ray")) {
+                if (data?.auth?.v2ray_uuid) {
+                    containerInputUUID.addClass("hidden");
+                    containerInputUsername.addClass("hidden");
+                    containerInputPassword.addClass("hidden");
+                }
+
+                if (!data?.auth?.v2ray_uuid) {
+                    containerInputUUID.removeClass("hidden");
+                    containerInputUsername.addClass("hidden");
+                    containerInputPassword.addClass("hidden");
+                }
+            }
+        }
+    </script>
+
+    <script>
+        function hideElementsOnConnecting() {
+            buttonOfListCarrier.addClass("hidden");
+            containerInputUsername.addClass("hidden");
+            containerInputPassword.addClass("hidden");
+            containerInputUUID.addClass("hidden");
+        }
+
+        function hideElementsOnConnected() {
+            buttonOfListCarrier.addClass("hidden");
+            containerInputUsername.addClass("hidden");
+            containerInputPassword.addClass("hidden");
+            containerInputUUID.addClass("hidden");
+        }
+
+        function hideElementsOnAuth() {
+            buttonOfListCarrier.addClass("hidden");
+            containerInputUsername.addClass("hidden");
+            containerInputPassword.addClass("hidden");
+            containerInputUUID.addClass("hidden");
+        }
+
+        function hideElementsOnNetwork() {
+            buttonOfListCarrier.addClass("hidden");
+            containerInputUsername.addClass("hidden");
+            containerInputPassword.addClass("hidden");
+            containerInputUUID.addClass("hidden");
+        }
+
+        function showElementsOnDisconnect() {
+            buttonOfListCarrier.removeClass("hidden");
+            containerInputUsername.removeClass("hidden");
+            containerInputPassword.removeClass("hidden");
+        }
+
+        function showElementsOnFailed() {
+            buttonOfListCarrier.removeClass("hidden");
+            containerInputUsername.removeClass("hidden");
+            containerInputPassword.removeClass("hidden");
+        }
+
+        const spinnerContainer = Dom("#spinner");
+
+        function showSpinner() {
+            spinnerContainer.style({ display: "block" });
+        }
+
+        function hideSpinner() {
+            spinnerContainer.style({ display: "none" });
+        }
+
+        const connectedContainer = Dom("#connected-img");
+
+        function showConnected() {
+            connectedContainer.style({ display: "block" });
+        }
+
+        function hideConnected() {
+            connectedContainer.style({ display: "none" });
+        }
+
+        function showConnectedImage() {
+            connectedContainer.style({ display: "block" });
+        }
+
+        function hideConnectedImage() {
+            connectedContainer.style({ display: "none" });
+        }
+
+    </script>
+
+    <!-- AÇÕES -->
+    <script>
+        body.style({
+            background: getAppBackground(),
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+        });
+
+        containerHome.style({
+            padding: `${appGetStatusbarHeightSize() + 5}px 15px ${appGetNavbarHeightSize() + 30}px 15px`,
+        });
+
+        appLogo.attr({ src: getAppLogo() });
+
+        appLogo.on({ click: () => AppUpdate() });
+
+        buttonOfListCarrier.on({ click: () => showContainerConfigs() });
+        valueOnButtonOfCarrierList.html(getConfigName()?.name);
+        closeContainerConfigs.on({ click: () => hiddenContainerConfigs() });
+
+        inputUsername.attr({ placeholder: appTranslateText("LBL_USERNAME") });
+        inputPassword.attr({ placeholder: appTranslateText("LBL_PASSWORD") });
+        inputUUID.attr({ placeholder: appTranslateText("LBL_UUID") });
+
+        inputUsername.attr({ value: appGetUsername() });
+        inputPassword.attr({ value: appGetPassword() });
+        inputUUID.attr({ value: appGetUUID() });
+
+        inputUsername.on({ input: (e) => appSetUsername(e.target.value) });
+        inputPassword.on({ input: (e) => appSetPassword(e.target.value) });
+        inputUUID.on({ input: (e) => appSetUUID(e.target.value) });
+
+        eyeViewPasswordInput.on({ click: () => showInputPasswordValue() });
+        eyeNotViewPasswordInput.on({ click: () => hiddenInputPasswordValue() });
+
+        eyeViewUUID.on({ click: () => showInputUUIDValue() });
+        eyeNotViewUUID.on({ click: () => hiddenInputUUIDValue() });
+
+        buttonStartStopVpn.on({ click: () => startStopConnection() });
+
+        buttonLogs.on({ click: () => appOpenDialogDialogs() });
+
+        containerMenu.style({
+            padding: `${appGetStatusbarHeightSize() + 10}px 10px ${appGetNavbarHeightSize() + 10}px 10px`,
+        });
+
+        openMenuButton.on({ click: () => showContainerMenu() });
+
+        hiddenContainerMenuButton.on({ click: () => hiddenContainerMenu() });
+
+        expiresDateUserInMenu.html(getExpirationDateOfUser());
+
+        navRenew.on({ click: () => appIntoBrowser("") });
+
+        navUpdate.on({ click: () => AppUpdate() });
+
+        navTerms.on({ click: () => showContainerTerms() });
+        closeContainerTerms.on({ click: () => hiddenContainerTerms() });
+
+        navPerfil.on({ click: () => showContainerPerfil() });
+        closeContainerPerfil.on({ click: () => hiddenContainerPerfil() });
+
+        navHelp.on({ click: () => showContainerHelp() });
+        closeContainerHelp.on({ click: () => hiddenContainerHelp() });
+
+        navHotspot.on({ click: () => showContainerHotspot() });
+        buttonStartOrStopHotspot.on({ click: () => toggleHotspot() });
+        closeContainerHotspotButton.on({ click: () => hiddenContainerHotspot() });
+
+        navCache.on({ click: () => showContainerCache() });
+        closeContainerCache.on({ click: () => hiddenContainerCache() });
+
+        navBattery.on({ click: () => showContainerBattery() });
+        closeContainerBattery.on({ click: () => hiddenContainerBattery() });
+
+        navAPN.on({ click: () => showContainerAPN() });
+        closeContainerAPN.on({ click: () => hiddenContainerAPN() });
+
+        navAccessPoint.on({ click: () => appApnConfiguration() });
+
+        navAppCleanData.on({ click: () => appClearData() });
+
+        connectionState();
+        setStatusHotspot();
+        toggleMoreInputs();
+        updateNetworkStats();
+        carrierLocalIp();
+        writeConfigVersion();
+        //AppUpdate();
+    </script>
+
+    <script>
+        function connectionState(state) {
+            switch (state) {
+                case "DISCONNECTED":
+                    showElementsOnDisconnect();
+                    hideConnectedImage();
+                    hideSpinner();
+                    hideConnected();
+                    buttonStartStopValue.html(appTranslateText("LBL_BTN_START"));
+                    vpnStatusValue.html(appTranslateText("LBL_STATE_DISCONNECTED"));
+                    break;
+                case "CONNECTING":
+                    hideElementsOnConnecting();
+                    hideConnectedImage();
+                    showSpinner();
+                    buttonStartStopValue.html(appTranslateText("LBL_BTN_STOP"));
+                    vpnStatusValue.html(appTranslateText("LBL_STATE_CONNECTING"));
+                    break;
+                case "CONNECTED":
+                    hideElementsOnConnected();
+                    hideSpinner();
+                    showConnected();
+                    buttonStartStopValue.html(appTranslateText("LBL_BTN_STOP"));
+                    vpnStatusValue.html(appTranslateText("LBL_STATE_CONNECTED"));
+                    break;
+                case "STOPPING":
+                    buttonStartStopValue.html(appTranslateText("LBL_BTN_STOPPING"));
+                    vpnStatusValue.html(appTranslateText("LBL_STATE_STOPPING"));
+                    break;
+                case "NO_NETWORK":
+                    hideElementsOnNetwork();
+                    hideConnectedImage();
+                    showSpinner();
+                    buttonStartStopValue.html(appTranslateText("LBL_BTN_STOP"));
+                    vpnStatusValue.html(appTranslateText("LBL_STATE_NO_NETWORK"));
+                    break;
+                case "AUTH":
+                    hideElementsOnAuth();
+                    hideConnectedImage();
+                    showSpinner();
+                    buttonStartStopValue.html(appTranslateText("LBL_BTN_STOP"));
+                    vpnStatusValue.html(appTranslateText("LBL_STATE_AUTH"));
+                    break;
+                case "AUTH_FAILED":
+                    showElementsOnFailed();
+                    hideConnectedImage();
+                    hideSpinner();
+                    buttonStartStopValue.html(appTranslateText("LBL_BTN_START"));
+                    vpnStatusValue.html(appTranslateText("LBL_STATE_AUTH_FAILED"));
+                    break;
+            }
+        }
+
+        window.addEventListener('connectionstatechanged', () => {
+            const newState = appGetConnectionState();
+            connectionState(newState);
+        });
+
+        connectionState(appGetConnectionState());
+    </script>
+
+    <!-- FUNÇÕES PARA O APP -->
+    <script>
+        function dtConfigClickListener() {
+            writeConfigValueOnButton();
+
+            toggleMoreInputs();
+
+            inputUsername.attr({ value: appGetUsername() });
+            inputPassword.attr({ value: appGetPassword() });
+            inputUUID.attr({ value: appGetUUID() });
+        }
+
+        function dtVpnStateListener(state) {
+            connectionState(state);
+        }
+
+        const dtCheckUserModelListener = (model) => {
+            const data = JSON.parse(model);
+            expiresDateUserInMenu.html(`${data.expiration_date}`);
+            localStorage.setItem("expirationDate", data.expiration_date);
+        };
+    </script>
+
+    <script>
+        function appGetUsername() {
+            return document.getElementById('input-username').value;
+        }
+
+        function updateUsername() {
+            const usernameContainer = document.getElementById('username-container');
+            const username = appGetUsername();
+            usernameContainer.textContent = username;
+        }
+
+        updateUsername();
+        document.getElementById('input-username').addEventListener('input', updateUsername);
+    </script>
+
+    <script>
+        setInterval(() => {
+            //pingValue.html(`${window?.DtGetPingResult?.execute() ?? '00'}ms`);
+        }, 500);
+
+        setInterval(() => {
+            //writeConfigVersion();
+        }, 500);
+
+        setInterval(() => {
+            carrierLocalIp();
+        }, 500);
+    </script>
+
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+
+            const isDarkMode = body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isDarkMode);
+        }
+
+        const savedDarkMode = localStorage.getItem('darkMode');
+        if (savedDarkMode === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+    </script>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const isDarkModeEnabled = localStorage.getItem('darkModeEnabled') === 'true';
+
+        darkModeToggle.checked = isDarkModeEnabled;
+        toggleDarkMode();
+
+        function toggleDarkMode() {
+            const isDarkModeEnabled = darkModeToggle.checked;
+
+            document.body.classList.toggle('dark-mode', isDarkModeEnabled);
+
+            const moonIcon = document.getElementById('moonIcon');
+            const sunIcon = document.getElementById('sunIcon');
+            moonIcon.style.display = isDarkModeEnabled ? 'none' : 'block';
+            sunIcon.style.display = isDarkModeEnabled ? 'block' : 'none';
+            localStorage.setItem('darkModeEnabled', isDarkModeEnabled);
+        }
+
+        darkModeToggle.addEventListener('change', toggleDarkMode);
+    </script>
+
+</body>
+
+</html>
